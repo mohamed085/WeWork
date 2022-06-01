@@ -1,23 +1,33 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Home from "@/views/Home";
+import Services from "@/views/Services";
+import Deliver from "@/views/Deliver";
+import Index from "@/views/Projects/Index";
+import AllCategories from "@/views/Projects/AllCategories";
+import SoftwareCategory from "@/views/Projects/SoftwareCategory";
+import DecorationCategory from "@/views/Projects/DecorationCategory";
+import MarketingCategory from "@/views/Projects/MarketingCategory";
+import Clients from "@/views/Clients";
+import Team from "@/views/Team";
 
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: HomeView
-  },
-  {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  }
+    { path: '/',component: Home },
+    { path: '/services',component: Services },
+    { path: '/deliver',component: Deliver },
+    { path: '/clients',component: Clients },
+    { path: '/team',component: Team },
+    { path: '/projects',component: Index,
+        children: [
+            { path: '',component: AllCategories },
+            { path: '/projects/software',component: SoftwareCategory },
+            { path: '/projects/decoration',component: DecorationCategory },
+            { path: '/projects/decoration',component: DecorationCategory },
+            { path: '/projects/marketing',component: MarketingCategory },
+        ]
+    },
 ]
 
 const router = new VueRouter({

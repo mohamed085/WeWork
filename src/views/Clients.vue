@@ -1,0 +1,207 @@
+<template>
+  <div>
+    <Navbar></Navbar>
+
+    <div class="clients ar" v-if="getLang === 'ar'">
+      <div class="intro">
+        <div class="title">عملاءنا</div>
+        <div class="title-2">
+          استكشف دراسات حالة تطوير البرمجيات من الشركات التي تواجه تحديات مماثلة
+        </div>
+        <div class="desc">
+          طلبوا من نحن نعمل ترقية منتجهم الرقمي وتحديد اتجاه لتطوير البرمجيات المرنة. 98٪ من قادة التكنولوجيا يوصوننا. معظم البقاء أكثر من 3 سنوات.
+        </div>
+      </div>
+    </div>
+
+    <div class="clients en" v-if="getLang === 'en'">
+      <div class="intro">
+        <div class="title">Our Clients</div>
+        <div class="title-2">
+          Explore software development case studies from companies with similar challenges
+        </div>
+        <div class="desc">
+          They asked The Software House to upgrade their digital product and set a direction for resilient software development. 98% of tech leaders recommends us. Most stay over 3 years.
+        </div>
+      </div>
+    </div>
+
+    <div class="clients-items row">
+      <div class="clients-items__item col-6 col-md-3">
+        <img src="../assets/img/clients/ع.png">
+      </div>
+      <div class="clients-items__item col-6 col-md-3">
+        <img src="../assets/img/clients/egada-01.png">
+      </div>
+      <div class="clients-items__item col-6 col-md-3">
+        <img src="../assets/img/clients/ui.png">
+      </div>
+      <div class="clients-items__item col-6 col-md-3">
+        <img src="../assets/img/clients/دوناتيلو-01.png">
+      </div>
+      <div class="clients-items__item col-6 col-md-3">
+        <img src="../assets/img/clients/ض.png">
+      </div>
+      <div class="clients-items__item col-6 col-md-3">
+        <img src="../assets/img/clients/نورا-01.png">
+      </div>
+      <div class="clients-items__item col-6 col-md-3">
+        <img src="../assets/img/clients/ya-form.png">
+      </div>
+      <div class="clients-items__item col-6 col-md-3">
+        <img src="../assets/img/clients/yy.png">
+      </div>
+      <div class="clients-items__item col-6 col-md-3">
+        <img src="../assets/img/clients/e.png">
+      </div>
+
+    </div>
+
+    <Footer></Footer>
+  </div>
+
+</template>
+
+<script>
+import Navbar from "@/components/ui/Navbar";
+import Footer from "@/components/ui/Footer";
+export default {
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "Clients",
+  components: {
+    Footer, Navbar
+  },
+  computed: {
+    getLang() {
+      return this.$store.getters['main/getLang'];
+    }
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+@import "../assets/css/variables";
+@import "../assets/css/typography";
+@import "../assets/css/mixins";
+
+.clients {
+  margin: 4rem 0 0rem;
+}
+
+.mobile {
+  display: none;
+}
+
+.break {
+  background-color: $color-primary;
+  width: 60px;
+  height: 6px;
+  margin: 0 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: "The Sans Arabic";
+}
+
+.title-2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: "The Sans Arabic";
+}
+
+.title-3 {
+  font-weight: 500;
+  color: #707070;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: "The Sans Arabic";
+}
+
+.desc {
+  font-size: 1rem;
+  margin: 1rem 1.5rem;
+  font-weight: 500 ;
+  font-family: "The Sans Arabic";
+
+}
+
+.btn {
+  background-color: $color-white;
+  color: $color-primary;
+  border: 1px solid $color-white;
+  text-decoration: none;
+  padding: .6rem 1rem;
+  border-radius: .5rem;
+  font-size: 1rem;
+  font-family: "The Sans Arabic";
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    border: 1px solid $color-primary;
+  }
+}
+
+.intro {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & .title-2,
+  & .desc {
+    width: 55%;
+    text-align: center;
+  }
+}
+
+.clients-items {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10rem;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+
+    & img {
+      height: 150px;
+      max-width: 100%;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+
+
+@include respond(tab-port) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .title-2 {
+    font-size: 2rem;
+  }
+
+  .title-3 {
+    font-size: 1.5rem;
+  }
+
+
+  .intro .title-2,
+  .intro .desc {
+    width: 92%;
+  }
+}
+</style>
