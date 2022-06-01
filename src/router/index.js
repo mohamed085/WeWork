@@ -10,6 +10,7 @@ import DecorationCategory from "@/views/Projects/DecorationCategory";
 import MarketingCategory from "@/views/Projects/MarketingCategory";
 import Clients from "@/views/Clients";
 import Team from "@/views/Team";
+import Contact from "@/views/Contact";
 
 Vue.use(VueRouter)
 
@@ -19,6 +20,7 @@ const routes = [
     { path: '/deliver',component: Deliver },
     { path: '/clients',component: Clients },
     { path: '/team',component: Team },
+    { path: '/contact-us',component: Contact },
     { path: '/projects',component: Index,
         children: [
             { path: '',component: AllCategories },
