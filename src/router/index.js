@@ -12,6 +12,7 @@ import Clients from "@/views/Clients";
 import Team from "@/views/Team";
 import Contact from "@/views/Contact";
 import About from "@/views/About";
+import Join from "@/views/Join";
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,7 @@ const routes = [
     { path: '/team',component: Team },
     { path: '/contact-us',component: Contact },
     { path: '/about-us',component: About },
+    { path: '/join-us',component: Join },
     { path: '/projects',component: Index,
         children: [
             { path: '',component: AllCategories },

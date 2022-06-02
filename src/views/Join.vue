@@ -4,87 +4,89 @@
 
     <div class="ar" v-if="getLang === 'ar'">
       <div class="intro">
-        <div class="title">تواصل بنا</div>
+        <div class="title">انضم</div>
         <div class="title-3">
-          هل لديك فكرة عن حل تكنولوجيا المعلومات أو تبحث عن الإلهام؟
-        </div>
-        <div class="title-3">
-          اتصل بنا ومعا يمكننا إنشاء الحل الذي تحتاجه.
+          إذا كنت تبحث عن فرصة عمل جديدة انضم إلينا وسوف نقوم بالرد قريبا
         </div>
         <div class="desc">
-          نحن نرحب دائماً بتعاونك معنا ومشاركتنا كل مقترحاتك. يمكنك الاتصال بنا وستسعدنا خدمتك
+          نحن نرحب دائماً بكم
         </div>
-      </div>
-
-        <div class="contact__info">
-          <div class="row">
-            <div class="col-12">
-              <div class="contact__info__contact-form">
-                <div class="contact__info__title">نموذج التواصل الالكتروني</div>
-                <b-form>
-                  <div class="row">
-                    <div class="col-12 col-md-6">
-                      <div class="form-group">
-                        <span>الإسم*</span>
-                        <b-form-input class="input" type="text" placeholder="الإسم" required></b-form-input>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                      <div class="form-group">
-                        <span>البريد الإلكتروني*</span>
-                        <b-form-input class="input" type="email" placeholder="البريد الإلكتروني" required></b-form-input>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                      <div class="form-group">
-                        <span>رقم الجوال*</span>
-                        <b-form-input class="input" type="tel" placeholder="رقم الجوال" required></b-form-input>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-group">
-                        <span>عنوان الرسالة*</span>
-                        <b-form-input class="input" type="text" placeholder="عنوان الرسالة" required></b-form-input>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-group">
-                        <span>الرسالة*</span>
-                        <b-form-textarea class="input" rows="5"></b-form-textarea>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-group form-group-btn">
-                        <button type="submit" class="form-btn">إرسال</button>
-                      </div>
-                    </div>
-                  </div>
-                </b-form>
-              </div>
-            </div>
-          </div>
-        </div>
-
-    </div>
-
-    <div class="en" v-if="getLang === 'en'">
-      <div class="intro">
-        <div class="title">Contact</div>
-        <div class="title-3">
-          Have an idea for an IT solution or looking for inspiration?
-        </div>
-        <div class="title-3">
-          Contact us and together we can create the solution you need.
-        </div>
-        <div class="desc">
-          We always welcome your cooperation with us and share all your suggestions. You can contact us and we will be happy to serve you        </div>
       </div>
 
       <div class="contact__info">
         <div class="row">
           <div class="col-12">
             <div class="contact__info__contact-form">
-              <div class="contact__info__title">Contact Form</div>
+              <div class="contact__info__title">إنشاء سيرة ذاتية جديدة</div>
+              <b-form>
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <span>الإسم*</span>
+                      <b-form-input class="input" type="text" placeholder="الإسم" required></b-form-input>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <span>البريد الإلكتروني*</span>
+                      <b-form-input class="input" type="email" placeholder="البريد الإلكتروني" required></b-form-input>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <span>رقم الجوال*</span>
+                      <b-form-input class="input" type="tel" placeholder="رقم الجوال" required></b-form-input>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <span>الوظيفة*</span>
+                      <b-form-input class="input" type="tel" placeholder="الوظيفة" required></b-form-input>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <span>السيرة الذاتية*</span>
+                      <b-form-file
+                          class="file"
+                          drop-placeholder="Drop file here..."
+                          plain
+                          required
+                      ></b-form-file>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group form-group-btn">
+                      <button type="submit" class="form-btn">إرسال</button>
+                    </div>
+                  </div>
+                </div>
+              </b-form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="en" v-if="getLang === 'en'">
+      <div class="intro">
+        <div class="title">Join</div>
+        <div class="title-3">
+          If you are looking for a new job opportunity join us we will reply
+        </div>
+        <div class="desc">
+          We always welcome you
+        </div>
+      </div>
+
+      <div class="contact__info">
+        <div class="row">
+          <div class="col-12">
+            <div class="contact__info__contact-form">
+              <div class="contact__info__title">Create new CV</div>
               <b-form>
                 <div class="row">
                   <div class="col-12 col-md-6">
@@ -105,17 +107,24 @@
                       <b-form-input class="input" type="tel" placeholder="Phone" required></b-form-input>
                     </div>
                   </div>
-                  <div class="col-12">
+                  <div class="col-12 col-md-6">
                     <div class="form-group">
-                      <span>Message title*</span>
-                      <b-form-input class="input" type="text" placeholder="Message title" required></b-form-input>
+                      <span>Job*</span>
+                      <b-form-input class="input" type="tel" placeholder="Job" required></b-form-input>
                     </div>
                   </div>
                   <div class="col-12">
                     <div class="form-group">
-                      <span>Message*</span>
-                      <b-form-textarea class="input" rows="5"></b-form-textarea>
+                      <span>CV*</span>
+                      <b-form-file
+                          class="file"
+                          drop-placeholder="Drop file here..."
+                          plain
+                          required
+                      ></b-form-file>
                     </div>
+                  </div>
+                  <div class="col-12">
                   </div>
                   <div class="col-12">
                     <div class="form-group form-group-btn">
@@ -128,6 +137,7 @@
           </div>
         </div>
       </div>
+
     </div>
 
     <div class="space"></div>
@@ -146,8 +156,8 @@ export default {
   },
   data() {
     return {
-      message: {
-        type: null
+      new_job: {
+        cv: null,
       }
     }
   },
@@ -271,6 +281,30 @@ export default {
   justify-content: end;
 }
 
+.file {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px !important;
+  box-shadow: 0 0 20px #0000000d;
+  height: auto;
+  background: #f5f7f7;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid #ffffff;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:focus {
+    color: #495057;
+    background-color: #fff;
+    outline: 0;
+    box-shadow: 0 0 0 1px $color-primary-dark-1 !important;
+    border-color: $color-primary-dark-1;
+  }
+
+}
+
 .form-btn {
   color: #fff;
   background-color: $color-primary-dark-1;
@@ -290,6 +324,7 @@ export default {
 
   }
 }
+
 
 
 @include respond(tab-port) {
