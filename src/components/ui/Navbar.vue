@@ -324,7 +324,7 @@ export default {
     &__item {
       padding: .5rem 1rem;
       text-decoration: none;
-      color: $color-primary;
+      color: $color-black;
       font-size: 1rem;
       position: relative;
       display: flex;
@@ -335,7 +335,7 @@ export default {
         position: absolute;
         width: 10px;
         height: 10px;
-        background-color: $color-primary-dark-1;
+        background-color: $color-primary;
         transform: translate(-50%, -8px) rotate(45deg);
         transition: .3s cubic-bezier(.55,.17,.05,.85);
         opacity: 0;
@@ -345,7 +345,7 @@ export default {
       &:hover,
       &.active,
       &.router-link-active {
-        color: $color-primary-dark-1;
+        color: $color-primary;
         transition: 0.1s;
       }
 

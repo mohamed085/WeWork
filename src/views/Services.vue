@@ -47,13 +47,13 @@
               <div class="service__categories__category__items__item">
                 <div class="service__categories__category__items__item__content">
                   <div class="service__categories__category__items__item__front">
-                    <i class="fas fa-laptop"></i>
+                    <i class="fas fa-mobile-alt"></i>
                     <span class="break"></span>
-                    <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
+                    <span class="service__categories__category__items__item__title">تطبيقات الجوال</span>
                     <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
                   </div>
                   <div class="service__categories__category__items__item__back">
-                    <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
+                    <span class="service__categories__category__items__item__title">تطبيقات الجوال</span>
                     <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
                       </span>
                     <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
@@ -63,13 +63,13 @@
               <div class="service__categories__category__items__item">
                 <div class="service__categories__category__items__item__content">
                   <div class="service__categories__category__items__item__front">
-                    <i class="fas fa-laptop"></i>
+                    <i class="fas fa-quidditch"></i>
                     <span class="break"></span>
-                    <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
+                    <span class="service__categories__category__items__item__title">تصميمات UI/UX</span>
                     <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
                   </div>
                   <div class="service__categories__category__items__item__back">
-                    <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
+                    <span class="service__categories__category__items__item__title">تصميمات UI/UX</span>
                     <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
                       </span>
                     <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
@@ -115,13 +115,13 @@
             <div class="service__categories__category__items__item">
               <div class="service__categories__category__items__item__content">
                 <div class="service__categories__category__items__item__front">
-                  <i class="fas fa-laptop"></i>
+                  <i class="fas fa-mobile-alt"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
+                  <span class="service__categories__category__items__item__title">تطبيقات الجوال</span>
                   <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
+                  <span class="service__categories__category__items__item__title">تطبيقات الجوال</span>
                   <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
                       </span>
                   <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
@@ -131,13 +131,13 @@
             <div class="service__categories__category__items__item">
               <div class="service__categories__category__items__item__content">
                 <div class="service__categories__category__items__item__front">
-                  <i class="fas fa-laptop"></i>
+                  <i class="fas fa-quidditch"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
+                  <span class="service__categories__category__items__item__title">تصميمات UI/UX</span>
                   <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
+                  <span class="service__categories__category__items__item__title">تصميمات UI/UX</span>
                   <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
                       </span>
                   <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
@@ -850,6 +850,10 @@ export default {
 
 .services-view {
   margin: 4rem 0 8rem;
+}
+
+.mobile {
+  display: none;
 }
 
 .intro {

@@ -78,7 +78,7 @@
             </div>
             <div class="who-we-are__service__center col-12 col-md-2">
               <span>ابدأ بتنفيذ مشروعك الآن</span>
-              <router-link to="/" class="section__btn">ابدأ الآن</router-link>
+              <router-link to="/contact-us" class="section__btn">ابدأ الآن</router-link>
             </div>
             <div class="who-we-are__service__right col-12 col-md-5">
               <img src="../assets/img/iMacProLeftSideViewMockup1.png">
@@ -95,7 +95,7 @@
           <div class="service__categories">
             <div class="service__categories__category">
               <div class="service__categories__category__title">
-                <span class="service__categories__category__title__main">خدمات هندسة البرمجيات</span>
+                <span class="service__categories__category__title__main">خدمات نحن نعمل</span>
                 <span class="break"></span>
                 <span class="service__categories__category__title__desc">يهتم بتطوير وإنشاء برمجيات عالية الجودة ، مع مراعاة اهتمامات المستخدم واحتياجاته ومتطلباته على جميع المستويات ، ويهتم بشكل عام بتحليل البرامج والتصاميم وكيفية بنائها ، ويعمل على التحقق منها ، وحتى إدارتها ، حتى نقوم بتصميم البرامج الصحيحة والسليمة.</span>
               </div>
@@ -105,11 +105,11 @@
                     <div class="service__categories__category__items__item__front">
                       <i class="fas fa-laptop"></i>
                       <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
+                      <span class="service__categories__category__items__item__title">الخدمات البرمجية</span>
                       <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
                     </div>
                     <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
+                      <span class="service__categories__category__items__item__title">الخدمات البرمجية</span>
                       <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
                       </span>
                       <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
@@ -121,11 +121,11 @@
                     <div class="service__categories__category__items__item__front">
                       <i class="fas fa-laptop"></i>
                       <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
+                      <span class="service__categories__category__items__item__title">الخدمات التسويقية</span>
                       <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
                     </div>
                     <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
+                      <span class="service__categories__category__items__item__title">الخدمات التسويقية</span>
                       <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
                       </span>
                       <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
@@ -137,125 +137,11 @@
                     <div class="service__categories__category__items__item__front">
                       <i class="fas fa-laptop"></i>
                       <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
+                      <span class="service__categories__category__items__item__title">الخدمات التصميمية</span>
                       <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
                     </div>
                     <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                      <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="service__categories__category">
-              <div class="service__categories__category__title">
-                <span class="service__categories__category__title__main">خدمات هندسة البرمجيات</span>
-                <span class="break"></span>
-                <span class="service__categories__category__title__desc">يهتم بتطوير وإنشاء برمجيات عالية الجودة ، مع مراعاة اهتمامات المستخدم واحتياجاته ومتطلباته على جميع المستويات ، ويهتم بشكل عام بتحليل البرامج والتصاميم وكيفية بنائها ، ويعمل على التحقق منها ، وحتى إدارتها ، حتى نقوم بتصميم البرامج الصحيحة والسليمة.</span>
-              </div>
-              <div class="service__categories__category__items">
-                <div class="service__categories__category__items__item">
-                  <div class="service__categories__category__items__item__content">
-                    <div class="service__categories__category__items__item__front">
-                      <i class="fas fa-laptop"></i>
-                      <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
-                    </div>
-                    <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                      <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="service__categories__category__items__item">
-                  <div class="service__categories__category__items__item__content">
-                    <div class="service__categories__category__items__item__front">
-                      <i class="fas fa-laptop"></i>
-                      <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
-                    </div>
-                    <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                      <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="service__categories__category__items__item">
-                  <div class="service__categories__category__items__item__content">
-                    <div class="service__categories__category__items__item__front">
-                      <i class="fas fa-laptop"></i>
-                      <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
-                    </div>
-                    <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                      <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="service__categories__category">
-              <div class="service__categories__category__title">
-                <span class="service__categories__category__title__main">خدمات هندسة البرمجيات</span>
-                <span class="break"></span>
-                <span class="service__categories__category__title__desc">يهتم بتطوير وإنشاء برمجيات عالية الجودة ، مع مراعاة اهتمامات المستخدم واحتياجاته ومتطلباته على جميع المستويات ، ويهتم بشكل عام بتحليل البرامج والتصاميم وكيفية بنائها ، ويعمل على التحقق منها ، وحتى إدارتها ، حتى نقوم بتصميم البرامج الصحيحة والسليمة.</span>
-              </div>
-              <div class="service__categories__category__items">
-                <div class="service__categories__category__items__item">
-                  <div class="service__categories__category__items__item__content">
-                    <div class="service__categories__category__items__item__front">
-                      <i class="fas fa-laptop"></i>
-                      <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
-                    </div>
-                    <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                      <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="service__categories__category__items__item">
-                  <div class="service__categories__category__items__item__content">
-                    <div class="service__categories__category__items__item__front">
-                      <i class="fas fa-laptop"></i>
-                      <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
-                    </div>
-                    <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                      <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="service__categories__category__items__item">
-                  <div class="service__categories__category__items__item__content">
-                    <div class="service__categories__category__items__item__front">
-                      <i class="fas fa-laptop"></i>
-                      <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
-                    </div>
-                    <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
+                      <span class="service__categories__category__items__item__title">الخدمات التصميمية</span>
                       <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
                       </span>
                       <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
@@ -265,6 +151,7 @@
               </div>
             </div>
           </div>
+          <router-link to="/services" class="btn btn-bg">تعرف علي المزيد</router-link>
         </div>
       </div>
 
@@ -337,7 +224,7 @@
             <div class="section__container sub-section">
               <div class="sub-section__title">لنصنع معًا</div>
               <div class="sub-section__title-2">أخبرنا عن مشاكلك وسنبحث عن الحل الأفضل!</div>
-              <div class="sub-section__btn">لنتحدث</div>
+              <router-link to="/contact-us" class="sub-section__btn">لنتحدث</router-link>
             </div>
           </div>
         </div>
@@ -346,7 +233,7 @@
             <div class="section__container sub-section">
               <div class="sub-section__title">نحن نوظف</div>
               <div class="sub-section__title-2">أرسل لنا سيرتك الذاتية وكن عضوًا في نحن نعمل!</div>
-              <div class="sub-section__btn sub-section__btn-2">قدم الآن</div>
+              <router-link to="/join-us" class="sub-section__btn sub-section__btn-2">قدم الآن</router-link>
             </div>
           </div>
 
@@ -457,7 +344,7 @@
             </div>
             <div class="who-we-are__service__center col-12 col-md-2">
               <span>Start your project now</span>
-              <router-link class="section__btn" to="/">Start now</router-link>
+              <router-link class="section__btn" to="/contact-us">Start now</router-link>
             </div>
             <div class="who-we-are__service__right col-12 col-md-5">
               <img src="../assets/img/MacbookPro1.png">
@@ -525,115 +412,8 @@
                 </div>
               </div>
             </div>
-            <div class="service__categories__category">
-              <div class="service__categories__category__title">
-                <span class="service__categories__category__title__main">Software engineering services</span>
-                <span class="break"></span>
-                <span class="service__categories__category__title__desc">It is concerned with developing and creating high-quality software, taking into account the user's interests, needs and requirements at all levels, and it is generally concerned with analyzing software, designs and how to build them, and works to verify them, and even manage them, until we engineer correct and sound software.</span>
-              </div>
-              <div class="service__categories__category__items">
-                <div class="service__categories__category__items__item">
-                  <div class="service__categories__category__items__item__content">
-                    <div class="service__categories__category__items__item__front">
-                      <i class="fas fa-laptop"></i>
-                      <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">Websites</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
-                    </div>
-                    <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">Websites</span>
-                      <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="service__categories__category__items__item">
-                  <div class="service__categories__category__items__item__content">
-                    <div class="service__categories__category__items__item__front">
-                      <i class="fas fa-laptop"></i>
-                      <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">Websites</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
-                    </div>
-                    <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">Websites</span>
-                      <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="service__categories__category__items__item">
-                  <div class="service__categories__category__items__item__content">
-                    <div class="service__categories__category__items__item__front">
-                      <i class="fas fa-laptop"></i>
-                      <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">Websites</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
-                    </div>
-                    <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">Websites</span>
-                      <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="service__categories__category">
-              <div class="service__categories__category__title">
-                <span class="service__categories__category__title__main">Software engineering services</span>
-                <span class="break"></span>
-                <span class="service__categories__category__title__desc">It is concerned with developing and creating high-quality software, taking into account the user's interests, needs and requirements at all levels, and it is generally concerned with analyzing software, designs and how to build them, and works to verify them, and even manage them, until we engineer correct and sound software.</span>
-              </div>
-              <div class="service__categories__category__items">
-                <div class="service__categories__category__items__item">
-                  <div class="service__categories__category__items__item__content">
-                    <div class="service__categories__category__items__item__front">
-                      <i class="fas fa-laptop"></i>
-                      <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">Websites</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
-                    </div>
-                    <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">Websites</span>
-                      <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="service__categories__category__items__item">
-                  <div class="service__categories__category__items__item__content">
-                    <div class="service__categories__category__items__item__front">
-                      <i class="fas fa-laptop"></i>
-                      <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">Websites</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
-                    </div>
-                    <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">Websites</span>
-                      <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="service__categories__category__items__item">
-                  <div class="service__categories__category__items__item__content">
-                    <div class="service__categories__category__items__item__front">
-                      <i class="fas fa-laptop"></i>
-                      <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">Websites</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
-                    </div>
-                    <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">Websites</span>
-                      <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
+          <router-link to="/services" class="btn btn-bg">Read more</router-link>
         </div>
       </div>
 
@@ -707,7 +487,7 @@
             <div class="section__container sub-section">
               <div class="sub-section__title">Let's craft together</div>
               <div class="sub-section__title-2">Tell us about your issues and we will brainstorm the best solution!</div>
-              <div class="sub-section__btn">Let's talk</div>
+              <router-link to="/contact-us" class="sub-section__btn">Let's talk</router-link>
             </div>
           </div>
         </div>
@@ -716,7 +496,7 @@
             <div class="section__container sub-section">
               <div class="sub-section__title">We are Hiring</div>
               <div class="sub-section__title-2"> Send us your resume and become a member of We Work!</div>
-              <div class="sub-section__btn sub-section__btn-2">Apply now</div>
+              <router-link to="/join-us" class="sub-section__btn sub-section__btn-2">Apply now</router-link>
             </div>
           </div>
 

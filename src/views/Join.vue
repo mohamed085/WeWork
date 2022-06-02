@@ -328,9 +328,10 @@ export default {
 
 
 @include respond(tab-port) {
-  .intro .title-2,
+  .intro .title-3,
   .intro .desc {
-    width: 92%;
+    text-align: center;
+    padding: 0 5%;
   }
 }
 </style>

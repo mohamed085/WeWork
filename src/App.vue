@@ -123,12 +123,9 @@ export default {
 
 
 .space {
-  margin-bottom: 12rem;
+  height: 5rem;
 }
 
-.mobile {
-  display: none;
-}
 
 .break {
   background-color: $color-primary;
@@ -145,12 +142,20 @@ export default {
 .title-2 {
   font-size: 2.5rem;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .title-3 {
   font-weight: 500;
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+.title-4 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: $color-grey-dark-2;
 }
 
 .desc {
@@ -177,14 +182,14 @@ export default {
 }
 
 .btn-bg {
-  background-color: $color-primary;
-  color: $color-white;
-  border: 1px solid $color-primary;
+  background-color: $color-primary !important;
+  color: $color-white !important;
+  border: 1px solid $color-primary !important;
 
   &:hover {
-    background-color: $color-white;
-    color: $color-primary;
-    border: 1px solid $color-primary;
+    background-color: $color-white !important;
+    color: $color-primary !important;
+    border: 1px solid $color-primary !important;
   }
 }
 
@@ -279,5 +284,30 @@ export default {
     border-radius: .5rem !important;
   }
 
+}
+
+@include respond(tab-port) {
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .title-2 {
+    font-size: 2rem;
+  }
+
+  .title-3 {
+    font-size: 1.6rem;
+  }
+
+  .title-4 {
+    font-size: 1.4rem;
+  }
+
+  .desc {
+    padding: 0 5%;
+    font-size: .8rem;
+    width: 100%;
+  }
 }
 </style>
