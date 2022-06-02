@@ -323,9 +323,8 @@ export default {
 
     &__item {
       padding: .5rem 1rem;
-      font-family: "The Sans Arabic";
       text-decoration: none;
-      color: $color-black;
+      color: $color-primary;
       font-size: 1rem;
       position: relative;
       display: flex;
@@ -336,7 +335,7 @@ export default {
         position: absolute;
         width: 10px;
         height: 10px;
-        background-color: $color-primary;
+        background-color: $color-primary-dark-1;
         transform: translate(-50%, -8px) rotate(45deg);
         transition: .3s cubic-bezier(.55,.17,.05,.85);
         opacity: 0;
@@ -346,7 +345,7 @@ export default {
       &:hover,
       &.active,
       &.router-link-active {
-        color: $color-primary;
+        color: $color-primary-dark-1;
         transition: 0.1s;
       }
 

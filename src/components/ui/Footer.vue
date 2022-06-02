@@ -102,8 +102,7 @@
 
     <div class="footer-2">
       <img class="footer-2__logo-site" src="../../assets/img/logo-white-2.png">
-      <span class="footer-2__desc">The site is authenticated by <a href="#">Marouf </a> platform of the Saudi Ministry of Commerce
-</span>
+      <span class="footer-2__desc">The site is authenticated by <a href="#">Marouf </a> platform of the Saudi Ministry of Commerce</span>
       <img class="footer-2__logo-site-2" src="../../assets/img/maroof.png">
       <span class="footer-2__desc">Commercial Registration No. 4030383581</span>
       <span class="footer-2__desc">All rights reserved to the Foundation <router-link to="/">We Work</router-link>  @2022</span>
@@ -154,9 +153,8 @@ export default {
     }
   }
 
-  &__desc{
+  &__desc {
     font-size: .8rem;
-    font-family: "The Sans Arabic";
     font-weight: 400;
     padding: 0 1rem;
   }
@@ -165,7 +163,6 @@ export default {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 20px;
-    font-family: "The Sans Arabic";
   }
 
   &__items {
@@ -177,7 +174,6 @@ export default {
       text-decoration: none;
       color: $color-white;
       font-size: 1rem;
-      font-family: "The Sans Arabic";
       font-weight: 500;
       padding: .3rem 0;
 
@@ -203,7 +199,6 @@ export default {
 
       & p {
         font-size: 1rem;
-        font-family: "The Sans Arabic";
         font-weight: 400;
 
         & span {
@@ -216,7 +211,6 @@ export default {
       margin: 2rem 1rem;
       text-decoration: none;
       font-size: 1rem;
-      font-family: "The Sans Arabic";
       font-weight: 500;
       background-color: $color-primary-dark-1;
       color: $color-white;
@@ -255,7 +249,6 @@ export default {
 
   &__desc {
     font-size: 1rem;
-    font-family: "The Sans Arabic";
     font-weight: 400;
     padding: 1rem 0;
     text-align: center;

@@ -85,64 +85,7 @@ export default {
 @import "../assets/css/mixins";
 
 .clients {
-  margin: 4rem 0 0rem;
-}
-
-.mobile {
-  display: none;
-}
-
-.break {
-  background-color: $color-primary;
-  width: 60px;
-  height: 6px;
-  margin: 0 1rem;
-}
-
-.title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  font-family: "The Sans Arabic";
-}
-
-.title-2 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  font-family: "The Sans Arabic";
-}
-
-.title-3 {
-  font-weight: 500;
-  color: #707070;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-family: "The Sans Arabic";
-}
-
-.desc {
-  font-size: 1rem;
-  margin: 1rem 1.5rem;
-  font-weight: 500 ;
-  font-family: "The Sans Arabic";
-
-}
-
-.btn {
-  background-color: $color-white;
-  color: $color-primary;
-  border: 1px solid $color-white;
-  text-decoration: none;
-  padding: .6rem 1rem;
-  border-radius: .5rem;
-  font-size: 1rem;
-  font-family: "The Sans Arabic";
-
-  &:hover {
-    background-color: $color-primary;
-    color: $color-white;
-    border: 1px solid $color-primary;
-  }
+  margin: 4rem 0 0;
 }
 
 .intro {
@@ -186,19 +129,6 @@ export default {
 
 
 @include respond(tab-port) {
-  .title {
-    font-size: 2.5rem;
-  }
-
-  .title-2 {
-    font-size: 2rem;
-  }
-
-  .title-3 {
-    font-size: 1.5rem;
-  }
-
-
   .intro .title-2,
   .intro .desc {
     width: 92%;

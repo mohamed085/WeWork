@@ -74,6 +74,7 @@ export default {
 
 #app {
   box-sizing: border-box;
+  font-family: "We work Bold";
 
   // This defines what 1rem is
   font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
@@ -118,6 +119,73 @@ export default {
 
 .hidden {
   display: none;
+}
+
+
+.space {
+  margin-bottom: 12rem;
+}
+
+.mobile {
+  display: none;
+}
+
+.break {
+  background-color: $color-primary;
+  width: 5rem;
+  height: 6px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.title-2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.title-3 {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.desc {
+  font-size: 1rem;
+  margin: .5rem 1rem;
+  font-weight: 500;
+  width: 60%;
+}
+
+.btn {
+  background-color: $color-white;
+  color: $color-primary;
+  border: 1px solid $color-white;
+  text-decoration: none;
+  padding: .6rem 1rem;
+  border-radius: .5rem;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    border: 1px solid $color-primary;
+  }
+}
+
+.btn-bg {
+  background-color: $color-primary;
+  color: $color-white;
+  border: 1px solid $color-primary;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+  }
 }
 
 .scroll {
@@ -212,5 +280,4 @@ export default {
   }
 
 }
-
 </style>

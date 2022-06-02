@@ -257,67 +257,8 @@ export default {
   padding: 0;
 }
 
-.space {
-  margin-bottom: 10rem;
-}
-
 .col-12, .col-md-4 {
   padding: 0;
-}
-
-.mobile {
-  display: none;
-}
-
-.break {
-  background-color: $color-primary;
-  width: 6rem;
-  height: 6px;
-  margin: 0 1rem;
-}
-
-.title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  font-family: "The Sans Arabic";
-}
-
-.title-2 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  font-family: "The Sans Arabic";
-}
-
-.title-3 {
-  font-weight: 500;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-family: "The Sans Arabic";
-}
-
-.desc {
-  font-size: 1rem;
-  margin: 1rem;
-  font-weight: 500 ;
-  font-family: "The Sans Arabic";
-}
-
-.btn {
-  background-color: $color-white;
-  color: $color-primary;
-  border: 1px solid $color-white;
-  text-decoration: none;
-  padding: .6rem 1rem;
-  border-radius: .5rem;
-  font-size: 1rem;
-  font-family: "The Sans Arabic";
-
-  &:hover {
-    background-color: $color-primary;
-    color: $color-white;
-    border: 1px solid $color-primary;
-  }
 }
 
 .intro {
@@ -382,7 +323,6 @@ export default {
   &__details {
     display: flex;
     flex-direction: column;
-    font-family: "The Sans Arabic";
     padding: 0 15px;
 
     &__title {

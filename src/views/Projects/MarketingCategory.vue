@@ -328,7 +328,6 @@ a {
       font-weight: 700 !important;
       line-height: 1.4;
       font-size: 34px;
-      font-family: 'We work Bold' !important;
     }
 
     &__btn {
@@ -431,7 +430,6 @@ a {
         text-decoration: none;
         color: #343434;
         font-size: 18px;
-        font-family: "We work Bold";
         font-weight: 500;
 
         &:hover {

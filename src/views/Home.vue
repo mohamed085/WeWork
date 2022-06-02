@@ -854,12 +854,6 @@ export default {
 .home_view {
 }
 
-.break {
-  background-color: $color-primary;
-  width: 60px;
-  height: 6px;
-}
-
 .slider {
   height: 100vh;
   position: relative;
@@ -919,7 +913,6 @@ export default {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          font-family: "The Sans Arabic";
           user-select: none;
 
           &__main-title {
@@ -1036,7 +1029,6 @@ export default {
             top: 0;
             left: 0;
             padding: 0 0 0 12%;
-            font-family: "We work Bold";
 
             &__btn a {
               background: linear-gradient(90deg, $color-primary-dark-1, $color-primary-light);
@@ -1082,14 +1074,12 @@ export default {
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    font-family: "The Sans Arabic";
   }
 
   &__title-2 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 2.5rem;
-    font-family: "The Sans Arabic";
   }
 
   &__desc {
@@ -1108,7 +1098,6 @@ export default {
     padding: .6rem 1rem;
     border-radius: .5rem;
     font-size: 1rem;
-    font-family: "The Sans Arabic";
 
     &:hover {
       background-color: $color-primary;
@@ -1148,7 +1137,6 @@ export default {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-family: "The Sans Arabic";
 
       & span {
         text-align: center;
@@ -1197,7 +1185,6 @@ export default {
           font-size: 1.8rem;
           font-weight: 600;
           margin-bottom: .5rem;
-          font-family: "The Sans Arabic";
           color: $color-primary-dark-1;
         }
 
@@ -1265,7 +1252,6 @@ export default {
             font-size: 1.6rem;
             font-weight: 600;
             margin: 1rem 0;
-            font-family: "The Sans Arabic";
             color: $color-primary-dark-1;
           }
 
@@ -1277,7 +1263,6 @@ export default {
 
           &__read-more {
             font-size: 18px;
-            font-family: "The Sans Arabic";
             color: $color-primary-dark-1;
             text-decoration: none;
             margin-top: auto;
@@ -1335,7 +1320,6 @@ export default {
           font-size: 1.6rem;
           font-weight: 700;
           margin-bottom: 10px;
-          font-family: "The Sans Arabic";
         }
       }
 
@@ -1374,7 +1358,6 @@ export default {
     text-decoration: none;
     padding: 10px 18px;
     border-radius: 10px;
-    font-family: "The Sans Arabic";
 
     &:hover {
       background-color: $color-white;
@@ -1411,14 +1394,12 @@ export default {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    font-family: "The Sans Arabic";
   }
 
   &__title-2 {
     padding: 0 1rem;
     font-size: 1.1rem;
     font-weight: 500;
-    font-family: "The Sans Arabic";
   }
 
   &__btn {
@@ -1428,7 +1409,6 @@ export default {
     border-radius: 10px;
     font-size: 1rem;
     font-weight: 500;
-    font-family: "The Sans Arabic";
     cursor: pointer;
     background-color: $color-primary-dark-1;
     color: $color-white;

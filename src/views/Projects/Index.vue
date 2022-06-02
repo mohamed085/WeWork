@@ -199,61 +199,6 @@ export default {
   padding: 0 1%;
 }
 
-.mobile {
-  display: none;
-}
-
-.break {
-  background-color: $color-primary;
-  width: 6rem;
-  height: 6px;
-  margin: 0 1rem;
-}
-
-.title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  font-family: "The Sans Arabic";
-}
-
-.title-2 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  font-family: "The Sans Arabic";
-}
-
-.title-3 {
-  font-weight: 500;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-family: "The Sans Arabic";
-}
-
-.desc {
-  font-size: 1rem;
-  margin: 1rem;
-  font-weight: 500 ;
-  font-family: "The Sans Arabic";
-}
-
-.btn {
-  background-color: $color-white;
-  color: $color-primary;
-  border: 1px solid $color-white;
-  text-decoration: none;
-  padding: .6rem 1rem;
-  border-radius: .5rem;
-  font-size: 1rem;
-  font-family: "The Sans Arabic";
-
-  &:hover {
-    background-color: $color-primary;
-    color: $color-white;
-    border: 1px solid $color-primary;
-  }
-}
-
 .intro {
   margin-top: 4rem !important;
   position: relative;
@@ -293,6 +238,10 @@ export default {
 .main-projects {
   margin: 3rem 5rem;
 
+  & .btn:hover {
+    color: $color-white;
+  }
+
   &__project {
     padding: 2rem 5%;
     margin-bottom: 3rem;
@@ -328,7 +277,6 @@ export default {
       padding: 1rem;
       margin: 0 .5rem;
       font-weight: 500;
-      font-family: "The Sans Arabic";
       color: $color-primary-dark-1;
 
       &:hover,

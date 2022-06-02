@@ -852,63 +852,6 @@ export default {
   margin: 4rem 0 8rem;
 }
 
-.mobile {
-  display: none;
-}
-
-.break {
-  background-color: $color-primary;
-  width: 60px;
-  height: 6px;
-  margin: 0 1rem;
-}
-
-.title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  font-family: "The Sans Arabic";
-}
-
-.title-2 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  font-family: "The Sans Arabic";
-}
-
-.title-3 {
-  font-weight: 500;
-  color: #707070;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  font-family: "The Sans Arabic";
-}
-
-.desc {
-  width: 60%;
-  text-align: center;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-  font-weight: 500 ;
-}
-
-.btn {
-  background-color: $color-white;
-  color: $color-primary;
-  border: 1px solid $color-white;
-  text-decoration: none;
-  padding: .6rem 1rem;
-  border-radius: .5rem;
-  font-size: 1rem;
-  font-family: "The Sans Arabic";
-
-  &:hover {
-    background-color: $color-primary;
-    color: $color-white;
-    border: 1px solid $color-primary;
-  }
-}
-
 .intro {
   position: relative;
   padding: 2rem 4rem 0;
@@ -954,7 +897,6 @@ export default {
   &__title {
     font-size: 2rem;
     font-weight: 500;
-    font-family: "The Sans Arabic";
     padding: 2rem 0 1rem;
 
     & span {
@@ -966,7 +908,6 @@ export default {
     font-size: 1rem;
     margin: 1rem;
     font-weight: 500 ;
-    font-family: "The Sans Arabic";
   }
 }
 
@@ -1036,7 +977,6 @@ export default {
       font-size: 1.6rem;
       font-weight: 600;
       margin: 1rem 0;
-      font-family: "The Sans Arabic";
       color: $color-primary-dark-1;
     }
 
@@ -1048,7 +988,6 @@ export default {
 
     &__read-more {
       font-size: 18px;
-      font-family: "The Sans Arabic";
       color: $color-primary-dark-1;
       text-decoration: none;
       margin-top: auto;
@@ -1079,18 +1018,6 @@ export default {
 
 
 @include respond(tab-port) {
-  .title {
-    font-size: 2.5rem;
-  }
-
-  .title-2 {
-    font-size: 2rem;
-  }
-
-  .title-3 {
-    font-size: 1.5rem;
-  }
-
   .intro {
     padding: 2rem 2rem 0;
   }
