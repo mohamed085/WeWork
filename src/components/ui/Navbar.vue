@@ -24,15 +24,15 @@
             <div class="navbar-2__content__bg-screen">
               <div class="navbar-2__content__bg-screen__items">
                 <router-link to="/" exact class="navbar-2__content__bg-screen__items__item"><span>الرئيسية</span></router-link>
+                <router-link to="/about-us" class="navbar-2__content__bg-screen__items__item"><span>معلومات عنا</span></router-link>
                 <router-link to="/services" class="navbar-2__content__bg-screen__items__item"><span>الخدمات</span></router-link>
                 <router-link to="/deliver" class="navbar-2__content__bg-screen__items__item"><span>التسليم</span></router-link>
                 <router-link to="/projects" class="navbar-2__content__bg-screen__items__item"><span>المشاريع</span></router-link>
                 <router-link to="/clients" class="navbar-2__content__bg-screen__items__item"><span>العملاء</span></router-link>
                 <router-link to="/team" class="navbar-2__content__bg-screen__items__item"><span>الفريق</span></router-link>
                 <router-link to="/contact-us" class="navbar-2__content__bg-screen__items__item"><span>تواصل بنا</span></router-link>
-                <router-link to="/about-us" class="navbar-2__content__bg-screen__items__item"><span>معلومات عنا</span></router-link>
                 <router-link to="/join-us" class="navbar-2__content__bg-screen__items__item"><span>انضم الينا</span></router-link>
-                <router-link to="/blogs" class="navbar-2__content__bg-screen__items__item"><span>المقالات</span></router-link>
+<!--                <router-link to="/blogs" class="navbar-2__content__bg-screen__items__item"><span>المقالات</span></router-link>-->
               </div>
             </div>
           </div>
@@ -45,15 +45,15 @@
         </div>
         <div class="mobile-nav__items">
           <router-link to="/" exact class="mobile-nav__items__item"><span>الرئيسية</span></router-link>
+          <router-link to="/about-us" class="mobile-nav__items__item"><span>معلومات عنا</span></router-link>
           <router-link to="/services" class="mobile-nav__items__item"><span>الخدمات</span></router-link>
           <router-link to="/deliver" class="mobile-nav__items__item"><span>التسليم</span></router-link>
           <router-link to="/projects" class="mobile-nav__items__item"><span>المشاريع</span></router-link>
           <router-link to="/clients" class="mobile-nav__items__item"><span>العملاء</span></router-link>
           <router-link to="/team" class="mobile-nav__items__item"><span>الفريق</span></router-link>
           <router-link to="/contact-us" class="mobile-nav__items__item"><span>تواصل بنا</span></router-link>
-          <router-link to="/about-us" class="mobile-nav__items__item"><span>معلومات عنا</span></router-link>
           <router-link to="/join-us" class="mobile-nav__items__item"><span>انضم الينا</span></router-link>
-          <router-link to="/blogs" class="mobile-nav__items__item"><span>المقالات</span></router-link>
+<!--          <router-link to="/blogs" class="mobile-nav__items__item"><span>المقالات</span></router-link>-->
         </div>
       </div>
 
@@ -83,15 +83,15 @@
           <div class="navbar-2__content__bg-screen">
             <div class="navbar-2__content__bg-screen__items">
               <router-link to="/" exact class="navbar-2__content__bg-screen__items__item"><span>Home</span></router-link>
+              <router-link to="/about-us" class="navbar-2__content__bg-screen__items__item"><span>About us</span></router-link>
               <router-link to="/services" class="navbar-2__content__bg-screen__items__item"><span>Services</span></router-link>
               <router-link to="/deliver" class="navbar-2__content__bg-screen__items__item"><span>Deliver</span></router-link>
               <router-link to="/projects" class="navbar-2__content__bg-screen__items__item"><span>Projects</span></router-link>
               <router-link to="/clients" class="navbar-2__content__bg-screen__items__item"><span>Clients</span></router-link>
               <router-link to="/team" class="navbar-2__content__bg-screen__items__item"><span>Team</span></router-link>
               <router-link to="/contact-us" class="navbar-2__content__bg-screen__items__item"><span>Contact us</span></router-link>
-              <router-link to="/about-us" class="navbar-2__content__bg-screen__items__item"><span>About us</span></router-link>
               <router-link to="/join-us" class="navbar-2__content__bg-screen__items__item"><span>Join us</span></router-link>
-              <router-link to="/blogs" class="navbar-2__content__bg-screen__items__item"><span>Blogs</span></router-link>
+<!--              <router-link to="/blogs" class="navbar-2__content__bg-screen__items__item"><span>Blogs</span></router-link>-->
             </div>
           </div>
         </div>
@@ -105,15 +105,15 @@
         </div>
         <div class="mobile-nav__items">
           <router-link to="/" exact class="mobile-nav__items__item"><span>Home</span></router-link>
+          <router-link to="/about-us" class="mobile-nav__items__item"><span>About us</span></router-link>
           <router-link to="/services" class="mobile-nav__items__item"><span>Services</span></router-link>
           <router-link to="/deliver" class="mobile-nav__items__item"><span>Deliver</span></router-link>
           <router-link to="/projects" class="mobile-nav__items__item"><span>Projects</span></router-link>
           <router-link to="/clients" class="mobile-nav__items__item"><span>Clients</span></router-link>
           <router-link to="/team" class="mobile-nav__items__item"><span>Team</span></router-link>
           <router-link to="/contact-us" class="mobile-nav__items__item"><span>Contact us</span></router-link>
-          <router-link to="/about-us" class="mobile-nav__items__item"><span>About us</span></router-link>
           <router-link to="/join-us" class="mobile-nav__items__item"><span>Join us</span></router-link>
-          <router-link to="/blogs" class="mobile-nav__items__item"><span>Blogs</span></router-link>
+<!--          <router-link to="/blogs" class="mobile-nav__items__item"><span>Blogs</span></router-link>-->
         </div>
       </div>
 

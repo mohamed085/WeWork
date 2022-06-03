@@ -434,6 +434,12 @@ export default {
       return this.$store.getters['main/getLang'];
     }
   },
+  mounted: function () {
+    window.setInterval(() => {
+      this.displayIntro('next')
+    }, 5000);
+
+  },
   methods: {
     displayIntro(intro) {
       if (intro == 'intro_1') {

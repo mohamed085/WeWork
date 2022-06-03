@@ -558,7 +558,7 @@ export default {
   mounted: function () {
     window.setInterval(() => {
       this.displaySlider('next')
-    }, 10000);
+    }, 5000);
 
   },
   computed: {

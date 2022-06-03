@@ -64,7 +64,7 @@
 
     <!-- Photography apps -->
     <div class="section">
-      <router-link to="projects/132568">
+      <router-link to="/projects/132568">
         <div class="section__container row">
           <div class="section__sub-1 col-12 col-md-3">
             <div class="section__title">
@@ -191,7 +191,7 @@
 
     <!-- Photography apps -->
     <div class="section">
-      <router-link to="projects/132568">
+      <router-link to="/projects/132568">
         <div class="section__container row">
           <div class="section__sub-1 col-12 col-md-3">
             <div class="section__title">

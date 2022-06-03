@@ -160,6 +160,7 @@
 
     <router-view />
 
+    <ProjectMessage></ProjectMessage>
     <div class="space"></div>
     <Footer></Footer>
   </div>
@@ -168,10 +169,12 @@
 <script>
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
+import ProjectMessage from "@/components/ProjectMessage";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Index",
   components: {
+    ProjectMessage,
     Footer, Navbar
   },
   computed: {

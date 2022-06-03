@@ -13,6 +13,14 @@ import Team from "@/views/Team";
 import Contact from "@/views/Contact";
 import About from "@/views/About";
 import Join from "@/views/Join";
+import MobileApps from "@/views/Projects/MobileApps";
+import Websites from "@/views/Projects/Websites";
+import MotionGraphicProjects from "@/views/Projects/MotionGraphicProjects";
+import ProjectsCategory from "@/views/Projects/ProjectsCategory";
+import MobileApp from "@/views/Projects/MobileApp";
+import Project from "@/views/Projects/Project";
+import Website from "@/views/Projects/Website";
+import MotionGraphic from "@/views/Projects/MotionGraphic";
 
 Vue.use(VueRouter)
 
@@ -34,6 +42,15 @@ const routes = [
             { path: '/projects/marketing',component: MarketingCategory },
         ]
     },
+    { path: '/mobile-applications', component: MobileApps },
+    { path: '/websites', component: Websites },
+    { path: '/motion-graphic', component: MotionGraphicProjects },
+    { path: '/projects/:id', component: ProjectsCategory },
+    { path: '/mobile-application/:id', component: MobileApp },
+    { path: '/project/:id', component: Project },
+    { path: '/website/:id', component: Website },
+    { path: '/motion-graphic/:id', component: MotionGraphic },
+
 ]
 
 const router = new VueRouter({
