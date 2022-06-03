@@ -1,5 +1,6 @@
 <template>
   <div class="home_view">
+    <SocialMedia></SocialMedia>
     <Navbar></Navbar>
 
     <div class="ar" v-if="getLang === 'ar'">
@@ -541,10 +542,12 @@
 <script>
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
+import SocialMedia from "@/components/ui/SocialMedia";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Home",
   components: {
+    SocialMedia,
     Footer,
     Navbar,
   },
@@ -559,7 +562,6 @@ export default {
     window.setInterval(() => {
       this.displaySlider('next')
     }, 5000);
-
   },
   computed: {
     getLang() {

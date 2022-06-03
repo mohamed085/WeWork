@@ -21,6 +21,24 @@ import MobileApp from "@/views/Projects/MobileApp";
 import Project from "@/views/Projects/Project";
 import Website from "@/views/Projects/Website";
 import MotionGraphic from "@/views/Projects/MotionGraphic";
+import Dashboard from "@/views/Dashboard/Index";
+import Main from "@/views/Dashboard/Main";
+import Users from "@/views/Dashboard/Users";
+import ContactForms from "@/views/Dashboard/ContactForms";
+import ContactFormPreview from "@/views/Dashboard/ContactFormPreview";
+import JoinForms from "@/views/Dashboard/JoinForms";
+import NewProjectsForms from "@/views/Dashboard/NewProjectsForms";
+import NewProjectsFormsPreview from "@/views/Dashboard/NewProjectsFormsPreview";
+import DashboardClients from "@/views/Dashboard/Clients/Index";
+import DashboardClientsItems from "@/views/Dashboard/Clients/Items";
+import DashboardClientsAdd from "@/views/Dashboard/Clients/Add";
+import DashboardClientsEdit from "@/views/Dashboard/Clients/Edit";
+import DashboardClientsSettings from "@/views/Dashboard/Clients/Settings";
+import DashboardTeam from "@/views/Dashboard/Team/Index";
+import DashboardTeamItems from "@/views/Dashboard/Team/Items";
+import DashboardTeamAdd from "@/views/Dashboard/Team/Add";
+import DashboardTeamEdit from "@/views/Dashboard/Team/Edit";
+import DashboardTeamSettings from "@/views/Dashboard/Team/Settings";
 
 Vue.use(VueRouter)
 
@@ -50,6 +68,34 @@ const routes = [
     { path: '/project/:id', component: Project },
     { path: '/website/:id', component: Website },
     { path: '/motion-graphic/:id', component: MotionGraphic },
+    { path: '/dashboard', component: Dashboard,
+        children: [
+            { path: '/dashboard',component: Main },
+            { path: '/dashboard/users',component: Users },
+            { path: '/dashboard/users',component: Users },
+            { path: '/dashboard/contact-forms',component: ContactForms },
+            { path: '/dashboard/contact-forms/:id',component: ContactFormPreview },
+            { path: '/dashboard/join-forms',component: JoinForms },
+            { path: '/dashboard/new-projects-forms',component: NewProjectsForms },
+            { path: '/dashboard/new-projects-forms/:id',component: NewProjectsFormsPreview },
+            { path: '/dashboard/clients',component: DashboardClients,
+                children: [
+                    { path: '/dashboard/clients',component: DashboardClientsItems },
+                    { path: '/dashboard/clients/add',component: DashboardClientsAdd },
+                    { path: '/dashboard/clients/edit/:id',component: DashboardClientsEdit },
+                    { path: '/dashboard/clients/setting',component: DashboardClientsSettings },
+                ]
+            },
+            { path: '/dashboard/team', component: DashboardTeam,
+                children: [
+                    { path: '/dashboard/team',component: DashboardTeamItems },
+                    { path: '/dashboard/team/add',component: DashboardTeamAdd },
+                    { path: '/dashboard/team/edit/:id',component: DashboardTeamEdit },
+                    { path: '/dashboard/team/setting',component: DashboardTeamSettings },
+                ]
+            }
+        ]
+    },
 
 ]
 

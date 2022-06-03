@@ -148,7 +148,6 @@
       </div>
 
       <div class="categories">
-        <div class="title text-center">Discover all projects</div>
         <div class="categories__filter">
           <router-link class="categories__filter__item" exact to="/projects">All</router-link>
           <router-link class="categories__filter__item" to="/projects/software">Software </router-link>
@@ -156,6 +155,7 @@
           <router-link class="categories__filter__item" to="/projects/marketing">Marketing</router-link>
         </div>
       </div>
+
     </div>
 
     <router-view />
@@ -281,8 +281,8 @@ export default {
 
     &__item {
       text-decoration: none;
-      font-size: 1.4rem;
-      padding: .5rem 1rem;
+      font-size: 1.2rem;
+      padding: .5rem 1.5rem;
       font-weight: 500;
       color: $color-primary;
       border-right: 1px solid $color-primary;
@@ -294,7 +294,6 @@ export default {
       }
 
       &:last-child {
-        border: none;
         border-bottom-left-radius: 1rem;
         border-top-left-radius: 1rem;
       }
@@ -309,6 +308,25 @@ export default {
     }
   }
 }
+
+.en .categories__filter__item {
+  border-left: 1px solid $color-primary;
+
+  &:first-child {
+    border: none;
+    border-radius: 0;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+  }
+
+  &:last-child {
+    border-radius: 0;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+}
+
 
 @include respond(tab-port) {
   .title {

@@ -265,13 +265,14 @@ export default {
           &.router-link-active {
             color: $color-primary;
             transition: 0.1s;
+            border-bottom: 3px solid $color-primary;
           }
 
           &:hover::before,
           &.active::before,
           &.router-link-active::before  {
             z-index: 1;
-            opacity: 1;
+            //opacity: 1;
             transform: translate(-50%,0) rotate(45deg);
           }
 
@@ -347,13 +348,14 @@ export default {
       &.router-link-active {
         color: $color-primary;
         transition: 0.1s;
+        border-bottom: 3px solid $color-primary;
       }
 
       &:hover::before,
       &.active::before,
       &.router-link-active::before  {
         z-index: 1;
-        opacity: 1;
+        //opacity: 1;
         transform: translate(-50%,0) rotate(45deg);
       }
 

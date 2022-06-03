@@ -1,5 +1,6 @@
 <template>
   <div>
+    <SocialMedia></SocialMedia>
     <Navbar></Navbar>
 
     <div class="deliver-view ar" v-if="getLang === 'ar'">
@@ -287,10 +288,12 @@
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import ProjectMessage from "@/components/ProjectMessage";
+import SocialMedia from "@/components/ui/SocialMedia";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Deliver",
   components: {
+    SocialMedia,
     ProjectMessage,
     Footer, Navbar
   },

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <SocialMedia></SocialMedia>
     <Navbar></Navbar>
 
     <div class="ar about" v-if="getLang === 'ar'">
@@ -410,11 +411,13 @@
 <script>
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
+import SocialMedia from "@/components/ui/SocialMedia";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "About",
   components: {
+    SocialMedia,
     Footer, Navbar
   },
   data() {

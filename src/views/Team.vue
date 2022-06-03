@@ -1,5 +1,6 @@
 <template>
   <div>
+    <SocialMedia></SocialMedia>
     <Navbar></Navbar>
 
     <div class="team ar" v-if="getLang === 'ar'">
@@ -234,10 +235,12 @@
 <script>
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
+import SocialMedia from "@/components/ui/SocialMedia";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Team",
   components: {
+    SocialMedia,
     Footer, Navbar
   },
   computed: {
