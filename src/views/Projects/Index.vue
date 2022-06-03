@@ -269,25 +269,43 @@ export default {
 
 .categories {
   padding: 1rem 5%;
+  display: flex;
+  justify-content: center;
 
   &__filter {
     display: flex;
     justify-content: center;
+    border: 1px solid $color-primary;
+    border-radius: 1rem;
+    padding: 0 !important;
 
     &__item {
       text-decoration: none;
       font-size: 1.4rem;
-      padding: 1rem;
-      margin: 0 .5rem;
+      padding: .5rem 1rem;
       font-weight: 500;
-      color: $color-primary-dark-1;
+      color: $color-primary;
+      border-right: 1px solid $color-primary;
+
+      &:first-child {
+        border: none;
+        border-bottom-right-radius: 1rem;
+        border-top-right-radius: 1rem;
+      }
+
+      &:last-child {
+        border: none;
+        border-bottom-left-radius: 1rem;
+        border-top-left-radius: 1rem;
+      }
 
       &:hover,
       &.active,
       &.router-link-active {
-        color: $color-primary;
-        border-bottom: 3px solid $color-primary;
+        color: $color-white;
+        background: linear-gradient(90deg, $color-primary-light, $color-primary-dark-1);
       }
+
     }
   }
 }

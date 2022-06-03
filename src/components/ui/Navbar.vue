@@ -14,7 +14,7 @@
       <div class="navbar-2"
           :class="{sticky: scrollPosition > 40}">
           <div class="navbar-2__logo">
-            <img src="../../assets/img/black-logo.png">
+            <img src="../../assets/img/blue-logo-2.png">
           </div>
           <div class="navbar-2__content">
             <div class="navbar-2__content__mobile">
@@ -40,7 +40,7 @@
 
       <div class="mobile-nav" v-if="mobileNav">
         <div class="mobile-nav__header">
-          <img src="../../assets/img/black-logo.png">
+          <img src="../../assets/img/blue-logo-2.png">
           <i v-if="mobileNav" @click="closeMobileNav()" class="fas fa-times"></i>
         </div>
         <div class="mobile-nav__items">
@@ -73,7 +73,7 @@
       <div class="navbar-2"
            :class="{sticky: scrollPosition > 40}">
         <div class="navbar-2__logo">
-          <img src="../../assets/img/black-logo.png">
+          <img src="../../assets/img/blue-logo-2.png">
         </div>
         <div class="navbar-2__content">
           <div class="navbar-2__content__mobile">
