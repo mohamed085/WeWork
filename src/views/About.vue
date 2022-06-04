@@ -437,11 +437,13 @@ export default {
       return this.$store.getters['main/getLang'];
     }
   },
+  created() {
+    window.scrollTo(0,0)
+  },
   mounted: function () {
     window.setInterval(() => {
       this.displayIntro('next')
     }, 5000);
-
   },
   methods: {
     displayIntro(intro) {

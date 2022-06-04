@@ -6,7 +6,7 @@
       <div class="filter__container">
         <router-link to="/dashboard/clients" exact class="filter__item">كل العملاء</router-link>
         <router-link to="/dashboard/clients/add" class="filter__item">إضافة عميل جديد</router-link>
-        <router-link to="/dashboard/clients/setting" class="filter__item">أعدادات صفحة العملاء</router-link>
+        <router-link to="/dashboard/clients/setting" class="filter__item">إعدادات صفحة العملاء</router-link>
       </div>
     </div>
 

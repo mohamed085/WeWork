@@ -563,6 +563,9 @@ export default {
       this.displaySlider('next')
     }, 5000);
   },
+  created() {
+    window.scrollTo(0,0)
+  },
   computed: {
     getLang() {
       return this.$store.getters['main/getLang'];

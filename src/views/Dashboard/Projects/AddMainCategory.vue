@@ -4,25 +4,13 @@
       <div class="row pe-3 ps-3">
         <div class="col-12">
           <div class="form-group">
-            <span>العنوان بالعربي</span>
+            <span>الإسم بالعربي</span>
             <b-form-input class="input" type="text"></b-form-input>
           </div>
         </div>
         <div class="col-12">
           <div class="form-group">
-            <span>العنوان بالإنجليزي</span>
-            <b-form-input class="input" type="text"></b-form-input>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="form-group">
-            <span>الوصف بالعربي</span>
-            <b-form-input class="input" type="text"></b-form-input>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="form-group">
-            <span>الوصف بالإنجليزي</span>
+            <span>الإسم بالانجليزي</span>
             <b-form-input class="input" type="text"></b-form-input>
           </div>
         </div>
@@ -36,8 +24,7 @@
 
 <script>
 export default {
-  // eslint-disable-next-line vue/multi-word-component-names
-  name: "Settings"
+  name: "AddMainCategory"
 }
 </script>
 

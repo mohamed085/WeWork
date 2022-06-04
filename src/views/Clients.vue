@@ -74,6 +74,9 @@ export default {
     SocialMedia,
     Footer, Navbar
   },
+  created() {
+    window.scrollTo(0,0)
+  },
   computed: {
     getLang() {
       return this.$store.getters['main/getLang'];

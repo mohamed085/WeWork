@@ -92,7 +92,7 @@ export default {
 }
 
 i {
-  transition: .01s all;
+  transition: .01s all !important;
 }
 
 ::selection {

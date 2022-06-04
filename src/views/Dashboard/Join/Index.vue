@@ -1,17 +1,15 @@
 <template>
   <div>
-    <div class="title-2">الفريق</div>
+    <div class="title-2">انضم</div>
 
     <div class="filter">
       <div class="filter__container">
-        <router-link to="/dashboard/team" exact class="filter__item">كل اعضاء الفريق</router-link>
-        <router-link to="/dashboard/team/add" class="filter__item">إضافة عضو جديد في الفريق</router-link>
-        <router-link to="/dashboard/team/setting" class="filter__item">إعدادات صفحة الفريق</router-link>
+        <router-link to="/dashboard/join" exact class="filter__item">طلبات الإنضمام</router-link>
+        <router-link to="/dashboard/join/setting" class="filter__item">إعدادات صفحة إنضم إالينا</router-link>
       </div>
     </div>
 
     <router-view></router-view>
-
   </div>
 </template>
 

@@ -2,12 +2,13 @@
   <div class="social-media">
     <div class="social-media__initi-grad-bg"></div>
     <div class="social-media__content">
-      <a href="https://www.facebook.com/" target="_blank" class="social-media__content__button"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.facebook.com/" target="_blank" class="social-media__content__button"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.facebook.com/" target="_blank" class="social-media__content__button"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/we_work.pro/" target="_blank" class="social-media__content__button"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCkdffzul5ViURf-vlrbC0bg" target="_blank" class="social-media__content__button"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.linkedin.com/company/weworksa/" target="_blank" class="social-media__content__button"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://twitter.com/Weworkpro" target="_blank" class="social-media__content__button"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.snapchat.com/add/weworkpro" target="_blank" class="social-media__content__button"><i class="fab fa-snapchat"></i></a>
       <a href="https://www.facebook.com/" target="_blank" class="social-media__content__button"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.facebook.com/" target="_blank" class="social-media__content__button"><i class="fab fa-snapchat"></i></a>
-      <a href="https://www.facebook.com/" target="_blank" class="social-media__content__button"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.facebook.com/" target="_blank" class="social-media__content__button"><i class="fab fa-whatsapp"></i></a>
     </div>
   </div>
 

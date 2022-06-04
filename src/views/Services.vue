@@ -843,6 +843,10 @@ export default {
       return this.$store.getters['main/getLang'];
     }
   },
+  created() {
+    window.scrollTo(0,0)
+  },
+
 }
 </script>
 

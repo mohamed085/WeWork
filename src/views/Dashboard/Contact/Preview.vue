@@ -37,14 +37,14 @@
 
 <script>
 export default {
-  name: "ContactFormPreview"
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "Preview"
 }
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/css/variables";
-@import "../../assets/css/mixins";
-@import "../../assets/css/dashboard";
-
+@import "../../../assets/css/variables";
+@import "../../../assets/css/mixins";
+@import "../../../assets/css/dashboard";
 
 </style>

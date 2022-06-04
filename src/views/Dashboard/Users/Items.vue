@@ -6,6 +6,8 @@
         <tr>
           <th scope="col">#</th>
           <th scope="col">الصورة</th>
+          <th scope="col">الاسم</th>
+          <th scope="col">البريد الالكتروني</th>
           <th scope="col"></th>
         </tr>
         </thead>
@@ -13,10 +15,12 @@
         <tr>
           <th>1</th>
           <th>
-            <div class="table-img">
+            <div class="table-img-sm">
               <img src="../../../assets/img/clients/e.png">
             </div>
           </th>
+          <th>محمد</th>
+          <th>mohamed@gmail.com</th>
           <th>
             <div class="table-action">
               <i class="fas fa-trash-alt"></i>

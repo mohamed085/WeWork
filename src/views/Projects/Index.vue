@@ -1,5 +1,6 @@
 <template>
   <div>
+    <SocialMedia></SocialMedia>
     <Navbar></Navbar>
 
     <div class="projects-view ar" v-if="getLang === 'ar'">
@@ -170,12 +171,17 @@
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import ProjectMessage from "@/components/ProjectMessage";
+import SocialMedia from "@/components/ui/SocialMedia";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Index",
   components: {
+    SocialMedia,
     ProjectMessage,
     Footer, Navbar
+  },
+  created() {
+    window.scrollTo(0,0)
   },
   computed: {
     getLang() {

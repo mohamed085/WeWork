@@ -1,19 +1,21 @@
 <template>
   <div class="ar home animate__animated animate__fadeInRight">
-    <div class="sidebar animate__animated animate__fadeInRight" v-if="sidebar">
-      <div class="sidebar__top">
-        <img src="../../assets/img/logo-white-2.png">
+    <div class="side-bar animate__animated animate__fadeInRight" v-if="sidebar">
+      <div class="side-bar__top">
+        <router-link to="/">
+          <img src="../../assets/img/logo-white-2.png">
+        </router-link>
       </div>
-      <div class="sidebar__items">
-        <router-link to="/dashboard" class="sidebar__items__item" exact>الرئيسية</router-link>
-        <router-link to="/dashboard/users" class="sidebar__items__item">المستخدمون</router-link>
-        <router-link to="/dashboard/join-forms" class="sidebar__items__item">طلبات التوظيف</router-link>
-        <router-link to="/dashboard/contact-forms" class="sidebar__items__item">طلبات التواصل</router-link>
-        <router-link to="/dashboard/new-projects-forms" class="sidebar__items__item">طلبات المشاريع الجديدة</router-link>
-        <router-link to="/dashboard/projects-categories" class="sidebar__items__item">فئات المشاريع</router-link>
-        <router-link to="/dashboard/clients" class="sidebar__items__item">العملاء</router-link>
-        <router-link to="/dashboard/team" class="sidebar__items__item">الفريق</router-link>
-        <router-link to="/dashboard/deliver" class="sidebar__items__item">التسليم</router-link>
+      <div class="side-bar__items">
+        <router-link to="/dashboard" class="side-bar__items__item" exact>الرئيسية</router-link>
+        <router-link to="/dashboard/users" class="side-bar__items__item">المستخدمون</router-link>
+        <router-link to="/dashboard/join" class="side-bar__items__item">الإنضمام</router-link>
+        <router-link to="/dashboard/contact" class="side-bar__items__item">التواصل</router-link>
+        <router-link to="/dashboard/projects" class="side-bar__items__item">المشاريع</router-link>
+        <router-link to="/dashboard/clients" class="side-bar__items__item">العملاء</router-link>
+        <router-link to="/dashboard/team" class="side-bar__items__item">الفريق</router-link>
+        <router-link to="/dashboard/deliver" class="side-bar__items__item">التسليم</router-link>
+        <router-link to="/dashboard/social" class="side-bar__items__item">وسائل التواصل</router-link>
       </div>
     </div>
 
@@ -84,26 +86,26 @@ export default {
 .home {
   display: flex;
   font-size: 1rem;
+  height: 6000rem;
 }
 
 .animate__animated .animate__fadeInRight {
   --animate-duration: .01s;
 }
 
-.sidebar {
-  min-width: 250px;
-  max-width: 250px;
-  background-color: #15283c;
-  color: $color-white;
-  z-index: 11;
-  box-shadow: 0 0 3px 0px rgb(0 0 0 / 40%);
-  background-image: url(../../assets/img/pattern_h.png);
+.side-bar {
+  width: 250px;
   min-height: 100vh;
   height: 100%;
+  background-color: #15283c;
+  color: $color-white;
+  box-shadow: 0 0 3px 0px rgb(0 0 0 / 40%);
+  background-image: url(../../assets/img/pattern_h.png);
+  z-index: 11;
   position: fixed;
   top: 0;
   right: 0;
-  bottom: 0;
+  overflow-x: hidden;
 
   &__top {
     padding: 15px 25px;
@@ -154,8 +156,9 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
   height: 3.5rem;
+  position: fixed;
+  top: 0;
 
   &__right,
   &__left {

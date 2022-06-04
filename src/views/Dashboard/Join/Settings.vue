@@ -5,29 +5,29 @@
         <div class="col-12">
           <div class="form-group">
             <span>العنوان بالعربي</span>
-            <b-form-input class="input" type="text"></b-form-input>
+            <b-form-input className="input" type="text"></b-form-input>
           </div>
         </div>
         <div class="col-12">
           <div class="form-group">
             <span>العنوان بالإنجليزي</span>
-            <b-form-input class="input" type="text"></b-form-input>
+            <b-form-input className="input" type="text"></b-form-input>
           </div>
         </div>
         <div class="col-12">
           <div class="form-group">
             <span>الوصف بالعربي</span>
-            <b-form-input class="input" type="text"></b-form-input>
+            <b-form-input className="input" type="text"></b-form-input>
           </div>
         </div>
         <div class="col-12">
           <div class="form-group">
             <span>الوصف بالإنجليزي</span>
-            <b-form-input class="input" type="text"></b-form-input>
+            <b-form-input className="input" type="text"></b-form-input>
           </div>
         </div>
         <div class="col-12 justify-content-end">
-          <b-button type="submit" class="btn">حفظ</b-button>
+          <b-button type="submit" className="btn">حفظ</b-button>
         </div>
       </div>
     </b-form>

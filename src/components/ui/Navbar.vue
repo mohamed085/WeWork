@@ -288,7 +288,6 @@ export default {
   opacity: 1;
   background: $color-white;
   z-index: 100;
-
 }
 
 .mobile-nav {
@@ -308,7 +307,6 @@ export default {
     align-items: center;
 
     & img {
-      width: 60%;
       height: 40px;
     }
 

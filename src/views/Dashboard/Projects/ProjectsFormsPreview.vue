@@ -43,13 +43,13 @@
 
 <script>
 export default {
-  name: "NewProjectsFormsPreview"
+  name: "ProjectsFormsPreview"
 }
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/css/variables";
-@import "../../assets/css/mixins";
-@import "../../assets/css/dashboard";
+@import "../../../assets/css/variables";
+@import "../../../assets/css/mixins";
+@import "../../../assets/css/dashboard";
 
 </style>

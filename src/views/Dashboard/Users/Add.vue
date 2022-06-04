@@ -4,8 +4,20 @@
       <div class="row pe-3 ps-3">
         <div class="col-12">
           <div class="form-group">
-            <span>ال id</span>
-            <b-form-input class="input" type="text" disabled></b-form-input>
+            <span>الإسم</span>
+            <b-form-input class="input" type="text"></b-form-input>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-group">
+            <span>البريد الالكتروني</span>
+            <b-form-input class="input" type="email"></b-form-input>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-group">
+            <span>الرقم السري</span>
+            <b-form-input class="input" type="password"></b-form-input>
           </div>
         </div>
         <div class="col-12">
@@ -25,7 +37,7 @@
 <script>
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: "Edit"
+  name: "Add"
 }
 </script>
 

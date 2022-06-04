@@ -22,17 +22,29 @@ import Project from "@/views/Projects/Project";
 import Website from "@/views/Projects/Website";
 import MotionGraphic from "@/views/Projects/MotionGraphic";
 import Dashboard from "@/views/Dashboard/Index";
-import Main from "@/views/Dashboard/Main";
-import Users from "@/views/Dashboard/Users";
-import ContactForms from "@/views/Dashboard/ContactForms";
-import ContactFormPreview from "@/views/Dashboard/ContactFormPreview";
-import JoinForms from "@/views/Dashboard/JoinForms";
-import NewProjectsForms from "@/views/Dashboard/NewProjectsForms";
-import NewProjectsFormsPreview from "@/views/Dashboard/NewProjectsFormsPreview";
+import MainDashboard from "@/views/Dashboard/Main";
+import UsersDashboard from "@/views/Dashboard/Users/Index";
+import UsersDashboardItems from "@/views/Dashboard/Users/Items";
+import UsersDashboardAdd from "@/views/Dashboard/Users/Add";
+import JoinDashboard from "@/views/Dashboard/Join/Index";
+import JoinDashboardForms from "@/views/Dashboard/Join/Forms";
+import JoinDashboardSettings from "@/views/Dashboard/Join/Settings";
+import ContactDashboard from "@/views/Dashboard/Contact/Index";
+import ContactDashboardForms from "@/views/Dashboard/Contact/Forms";
+import ContactSettingsDashboard from "@/views/Dashboard/Contact/Settings";
+import ContactDashboardPreview from "@/views/Dashboard/Contact/Preview";
+import ProjectsDashboard from "@/views/Dashboard/Projects/Index";
+import ProjectsMainCategoriesDashboard from "@/views/Dashboard/Projects/MainCategories";
+import ProjectsAddMainCategoriesDashboard from "@/views/Dashboard/Projects/AddMainCategory";
+import ProjectsViewMainCategoriesDashboard from "@/views/Dashboard/Projects/PreviewMainCategory";
+
+import ProjectsFormsDashboard from "@/views/Dashboard/Projects/ProjectsForms";
+import ProjectsFormsPreviewDashboard from "@/views/Dashboard/Projects/ProjectsFormsPreview";
+
+
 import DashboardClients from "@/views/Dashboard/Clients/Index";
 import DashboardClientsItems from "@/views/Dashboard/Clients/Items";
 import DashboardClientsAdd from "@/views/Dashboard/Clients/Add";
-import DashboardClientsEdit from "@/views/Dashboard/Clients/Edit";
 import DashboardClientsSettings from "@/views/Dashboard/Clients/Settings";
 import DashboardTeam from "@/views/Dashboard/Team/Index";
 import DashboardTeamItems from "@/views/Dashboard/Team/Items";
@@ -70,19 +82,41 @@ const routes = [
     { path: '/motion-graphic/:id', component: MotionGraphic },
     { path: '/dashboard', component: Dashboard,
         children: [
-            { path: '/dashboard',component: Main },
-            { path: '/dashboard/users',component: Users },
-            { path: '/dashboard/users',component: Users },
-            { path: '/dashboard/contact-forms',component: ContactForms },
-            { path: '/dashboard/contact-forms/:id',component: ContactFormPreview },
-            { path: '/dashboard/join-forms',component: JoinForms },
-            { path: '/dashboard/new-projects-forms',component: NewProjectsForms },
-            { path: '/dashboard/new-projects-forms/:id',component: NewProjectsFormsPreview },
+            { path: '/dashboard',component: MainDashboard },
+            { path: '/dashboard/users',component: UsersDashboard,
+                children: [
+                    { path: '/dashboard/users',component: UsersDashboardItems },
+                    { path: '/dashboard/users/add',component: UsersDashboardAdd },
+                ]
+            },
+            { path: '/dashboard/join',component: JoinDashboard,
+                children: [
+                    { path: '/dashboard/join',component: JoinDashboardForms },
+                    { path: '/dashboard/join/setting',component: JoinDashboardSettings },
+                ]
+            },
+            { path: '/dashboard/contact',component: ContactDashboard,
+                children: [
+                    { path: '/dashboard/contact',component: ContactDashboardForms },
+                    { path: '/dashboard/contact/view/:id',component: ContactDashboardPreview },
+                    { path: '/dashboard/contact/setting',component: ContactSettingsDashboard },
+                ]
+            },
+            { path: '/dashboard/projects',component: ProjectsDashboard,
+                children: [
+                    { path: '/dashboard/projects',component: ProjectsMainCategoriesDashboard },
+                    { path: '/dashboard/projects/main-category/add',component: ProjectsAddMainCategoriesDashboard },
+                    { path: '/dashboard/projects/main-category/view/:id',component: ProjectsViewMainCategoriesDashboard },
+
+                    { path: '/dashboard/projects/forms',component: ProjectsFormsDashboard },
+                    { path: '/dashboard/projects/forms/:id',component: ProjectsFormsPreviewDashboard },
+                ]
+            },
+
             { path: '/dashboard/clients',component: DashboardClients,
                 children: [
                     { path: '/dashboard/clients',component: DashboardClientsItems },
                     { path: '/dashboard/clients/add',component: DashboardClientsAdd },
-                    { path: '/dashboard/clients/edit/:id',component: DashboardClientsEdit },
                     { path: '/dashboard/clients/setting',component: DashboardClientsSettings },
                 ]
             },

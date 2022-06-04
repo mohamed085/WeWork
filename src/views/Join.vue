@@ -45,6 +45,12 @@
                       <b-form-input class="input" type="tel" placeholder="الوظيفة" required></b-form-input>
                     </div>
                   </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <span>العنوان*</span>
+                      <b-form-input class="input" type="tel" placeholder="العنوان" required></b-form-input>
+                    </div>
+                  </div>
                   <div class="col-12">
                     <div class="form-group">
                       <span>السيرة الذاتية*</span>
@@ -114,6 +120,12 @@
                       <b-form-input class="input" type="tel" placeholder="Job" required></b-form-input>
                     </div>
                   </div>
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <span>Address*</span>
+                      <b-form-input class="input" type="tel" placeholder="Address" required></b-form-input>
+                    </div>
+                  </div>
                   <div class="col-12">
                     <div class="form-group">
                       <span>CV*</span>
@@ -163,6 +175,9 @@ export default {
         cv: null,
       }
     }
+  },
+  created() {
+    window.scrollTo(0,0)
   },
   computed: {
     getLang() {
