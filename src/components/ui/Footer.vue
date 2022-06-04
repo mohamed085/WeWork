@@ -38,6 +38,7 @@
           <div class="break"></div>
           <div class="footer__contact__details">
             <p><span>الهاتف: </span>+966 50 352 2883</p>
+            <p><span>الهاتف: </span>+20 0533516227</p>
             <p><span>البريد الالكتروني: </span>info@we-work.pro</p>
           </div>
           <router-link to="/contact-us" class="footer__contact__btn">استخدم نموذج الاتصال <i class="fas fa-arrow-left"></i> </router-link>
@@ -93,6 +94,7 @@
           <div class="break"></div>
           <div class="footer__contact__details">
             <p><span>Phone: </span>+966 50 352 2883</p>
+            <p><span>Phone: </span>+20 0533516227</p>
             <p><span>Email: </span>info@we-work.pro</p>
           </div>
           <router-link to="/contact-us" class="footer__contact__btn">Use contact form <i class="fas fa-arrow-right"></i> </router-link>

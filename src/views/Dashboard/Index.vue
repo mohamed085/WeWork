@@ -86,7 +86,6 @@ export default {
 .home {
   display: flex;
   font-size: 1rem;
-  height: 6000rem;
 }
 
 .animate__animated .animate__fadeInRight {

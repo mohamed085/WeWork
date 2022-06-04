@@ -4,19 +4,25 @@
       <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">الإسم بالعربي</th>
-        <th scope="col">الإسم بالانجليزي</th>
+        <th scope="col">الإسم</th>
+        <th scope="col">البريد الإلكتروني</th>
+        <th scope="col">رقم الجوال</th>
+        <th scope="col">اسم الشركة</th>
+        <th scope="col">البريد الالكتروني الخاص بالشركة</th>
         <th scope="col"></th>
       </tr>
       </thead>
       <tbody>
       <tr>
         <th>1</th>
-        <th>البرمجيات</th>
-        <th>Software</th>
+        <th>محمد عماد</th>
+        <th>mohamed085@gmail.com</th>
+        <th>01012703497</th>
+        <th>We work</th>
+        <th>mohamed085@gmail.com</th>
         <th>
           <div class="table-action">
-            <router-link to="/dashboard/projects/main-category/view/165533"><i class="fas fa-eye"></i></router-link> |
+            <router-link to="/dashboard/projects/forms/view/4556"><i class="fas fa-eye"></i></router-link> |
             <i class="fas fa-trash-alt"></i>
           </div>
         </th>
@@ -30,7 +36,7 @@
 <script>
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: "MainCategories"
+  name: "Forms"
 }
 </script>
 

@@ -4,9 +4,9 @@
 
     <div class="filter">
       <div class="filter__container">
-        <router-link to="/dashboard/projects" exact class="filter__item">الفئات الاساسية</router-link>
-        <router-link to="/dashboard/projects/main-category/add" exact class="filter__item">إضافة فئه أساسية</router-link>
-        <router-link to="/dashboard/projects/forms" exact class="filter__item">طلبات المشاريع الجديدة</router-link>
+        <router-link to="/dashboard/projects/main-categories" class="filter__item">الفئات الرئسية</router-link>
+        <router-link to="/dashboard/projects/forms" class="filter__item">طلبات المشاريع الجديدة</router-link>
+        <router-link to="/dashboard/projects/setting" class="filter__item">إعدادات صفحة المشاريع</router-link>
       </div>
     </div>
 

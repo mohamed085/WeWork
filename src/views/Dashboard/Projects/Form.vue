@@ -1,6 +1,6 @@
 <template>
   <div class="contact-form row">
-    <div class="title-2">نموذج طلب عمل مشروع: 5</div>
+    <div class="title-2">نموذج تواصل: 5</div>
 
     <div class="col-12 col-md-6">
       <div class="form-group">
@@ -20,21 +20,15 @@
         <b-form-input class="input" type="text" disabled></b-form-input>
       </div>
     </div>
-    <div class="col-12 col-md-6">
+    <div class="col-12">
       <div class="form-group">
-        <span>اسم الشركة*</span>
+        <span>عنوان الرسالة*</span>
         <b-form-input class="input" type="text" disabled></b-form-input>
       </div>
     </div>
     <div class="col-12">
       <div class="form-group">
-        <span>عنوان البريد الإلكتروني للشركة*</span>
-        <b-form-input class="input" type="text" disabled></b-form-input>
-      </div>
-    </div>
-    <div class="col-12">
-      <div class="form-group">
-        <span>الفكرة*</span>
+        <span>الرسالة*</span>
         <b-form-textarea class="input" rows="5" disabled></b-form-textarea>
       </div>
     </div>
@@ -43,13 +37,11 @@
 
 <script>
 export default {
-  name: "ProjectsFormsPreview"
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "Form"
 }
 </script>
 
-<style lang="scss" scoped>
-@import "../../../assets/css/variables";
-@import "../../../assets/css/mixins";
-@import "../../../assets/css/dashboard";
+<style scoped>
 
 </style>

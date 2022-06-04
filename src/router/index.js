@@ -34,12 +34,14 @@ import ContactDashboardForms from "@/views/Dashboard/Contact/Forms";
 import ContactSettingsDashboard from "@/views/Dashboard/Contact/Settings";
 import ContactDashboardPreview from "@/views/Dashboard/Contact/Preview";
 import ProjectsDashboard from "@/views/Dashboard/Projects/Index";
-import ProjectsMainCategoriesDashboard from "@/views/Dashboard/Projects/MainCategories";
-import ProjectsAddMainCategoriesDashboard from "@/views/Dashboard/Projects/AddMainCategory";
-import ProjectsViewMainCategoriesDashboard from "@/views/Dashboard/Projects/PreviewMainCategory";
-
-import ProjectsFormsDashboard from "@/views/Dashboard/Projects/ProjectsForms";
-import ProjectsFormsPreviewDashboard from "@/views/Dashboard/Projects/ProjectsFormsPreview";
+import ProjectsFormsDashboard from "@/views/Dashboard/Projects/Forms";
+import ProjectsFormDashboard from "@/views/Dashboard/Projects/Form";
+import ProjectsSettingsDashboard from "@/views/Dashboard/Projects/Settings";
+import ProjectsMainCategoryDashboard from "@/views/Dashboard/Projects/MainCategory/Index";
+import ProjectsMainCategoryItemsDashboard from "@/views/Dashboard/Projects/MainCategory/Items";
+import ProjectsMainCategoryAddDashboard from "@/views/Dashboard/Projects/MainCategory/Add";
+import ProjectsMainCategoryEditDashboard from "@/views/Dashboard/Projects/MainCategory/Edit";
+//import ProjectsSubCategoriesDashboard from "@/views/Dashboard/Projects/SubCategories/Index";
 
 
 import DashboardClients from "@/views/Dashboard/Clients/Index";
@@ -104,14 +106,19 @@ const routes = [
             },
             { path: '/dashboard/projects',component: ProjectsDashboard,
                 children: [
-                    { path: '/dashboard/projects',component: ProjectsMainCategoriesDashboard },
-                    { path: '/dashboard/projects/main-category/add',component: ProjectsAddMainCategoriesDashboard },
-                    { path: '/dashboard/projects/main-category/view/:id',component: ProjectsViewMainCategoriesDashboard },
-
+                    { path: '/dashboard/projects/main-categories',component: ProjectsMainCategoryDashboard,
+                        children: [
+                            { path: '/dashboard/projects/main-categories',component: ProjectsMainCategoryItemsDashboard },
+                            { path: '/dashboard/projects/main-categories/add',component: ProjectsMainCategoryAddDashboard },
+                            { path: '/dashboard/projects/main-categories/edit/:id',component: ProjectsMainCategoryEditDashboard },
+                        ]
+                    },
+                    { path: '/dashboard/projects/setting',component: ProjectsSettingsDashboard },
                     { path: '/dashboard/projects/forms',component: ProjectsFormsDashboard },
-                    { path: '/dashboard/projects/forms/:id',component: ProjectsFormsPreviewDashboard },
+                    { path: '/dashboard/projects/forms/view/:id',component: ProjectsFormDashboard },
                 ]
             },
+
 
             { path: '/dashboard/clients',component: DashboardClients,
                 children: [
