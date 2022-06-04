@@ -37,7 +37,7 @@
           <router-link to="/" class="topbar__profile__setting__item">
             <i class="fas fa-cog"></i>الإعدادات
           </router-link>
-          <span class="topbar__profile__setting__item">
+          <span class="topbar__profile__setting__item" @click="$store.dispatch('logout')">
             <i class="fas fa-sign-out-alt"></i>تسجيل الخروج
           </span>
         </div>
@@ -51,6 +51,8 @@
 </template>
 
 <script>
+import router from "@/router";
+
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Index",
@@ -61,6 +63,9 @@ export default {
     }
   },
   created() {
+    if (!this.$store.getters.is_authenticated) {
+      router.push("/login")
+    }
   },
   mounted() {
   },
@@ -125,6 +130,7 @@ export default {
       text-decoration: none;
       color: $color-white;
       font-size: 1.1rem;
+      cursor: pointer;
 
       &:hover,
       &.active,

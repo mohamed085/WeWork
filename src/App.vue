@@ -23,6 +23,9 @@ export default {
   created() {
     this.$store.dispatch('main/tryToGetLang');
     console.log("App -- Lang = " , this.$store.getters["main/getLang"])
+
+    this.$store.dispatch('tryLogin')
+    console.log("App -- isAuthenticated = " , this.$store.getters.is_authenticated)
   },
   methods: {
     updateScroll() {

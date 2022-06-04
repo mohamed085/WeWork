@@ -5,12 +5,9 @@
         <thead>
         <tr>
           <th scope="col">#</th>
+          <th scope="col">الوجو</th>
           <th scope="col">الاسم بالعربي</th>
           <th scope="col">الاسم بالانجليزي</th>
-          <th scope="col">العنوان الاول بالعربي</th>
-          <th scope="col">العنوان الاول بالانجليزي</th>
-          <th scope="col">العنوان الثاني بالعربي</th>
-          <th scope="col">العنوان الثاني بالانجليزي</th>
           <th scope="col">الوصف بالعربي</th>
           <th scope="col">الوصف بالانجليزي</th>
           <th scope="col"></th>
@@ -19,17 +16,18 @@
         <tbody>
         <tr>
           <th>1</th>
-          <th>تطبيقات الهاتف الجوال</th>
+          <th>
+            <div class="table-img-sm">
+              <img src="../../../../assets/img/clients/e.png">
+            </div>
+          </th>
           <th>Mobile Phone Application</th>
           <th>تطبيقات الهاتف الجوال</th>
           <th>Mobile Phone Application</th>
           <th>تطبيقات الهاتف الجوال</th>
-          <th>Mobile Phone Application</th>
-          <th>تطبيقات الهاتف الجوال</th>
-          <th>Mobile Phone Application</th>
           <th>
             <div class="table-action">
-              <router-link to="/dashboard/projects/item/items/4556"><i class="fas fa-eye"></i></router-link> |
+              <router-link to="/dashboard/projects/item/view/4556"><i class="fas fa-eye"></i></router-link> |
               <router-link to="/dashboard/projects/sub-categories/edit/98465"><i class="fas fa-edit"></i></router-link> |
               <i class="fas fa-trash-alt"></i>
             </div>

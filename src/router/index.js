@@ -44,6 +44,9 @@ import ProjectsMainCategoryEditDashboard from "@/views/Dashboard/Projects/MainCa
 import ProjectsSubCategoryDashboard from "@/views/Dashboard/Projects/SubCategories/Index";
 import ProjectsSubCategoryItemsDashboard from "@/views/Dashboard/Projects/SubCategories/Items";
 import ProjectsSubCategoryAddDashboard from "@/views/Dashboard/Projects/SubCategories/Add";
+import ProjectsIndexDashboard from "@/views/Dashboard/Projects/Projects/Index";
+import ProjectsItemDashboard from "@/views/Dashboard/Projects/Projects/Items";
+import ProjectsAddDashboard from "@/views/Dashboard/Projects/Projects/Add";
 
 
 import DashboardClients from "@/views/Dashboard/Clients/Index";
@@ -55,11 +58,13 @@ import DashboardTeamItems from "@/views/Dashboard/Team/Items";
 import DashboardTeamAdd from "@/views/Dashboard/Team/Add";
 import DashboardTeamEdit from "@/views/Dashboard/Team/Edit";
 import DashboardTeamSettings from "@/views/Dashboard/Team/Settings";
+import Login from "@/views/Login";
 
 Vue.use(VueRouter)
 
 const routes = [
     { path: '/',component: Home },
+    { path: '/login',component: Login },
     { path: '/services',component: Services },
     { path: '/deliver',component: Deliver },
     { path: '/clients',component: Clients },
@@ -124,9 +129,16 @@ const routes = [
                 children: [
                     { path: '/dashboard/projects/sub-categories/items/:id', component: ProjectsSubCategoryItemsDashboard },
                     { path: '/dashboard/projects/sub-categories/add/:id', component: ProjectsSubCategoryAddDashboard },
+                    { path: '/dashboard/projects/sub-categories/view/:id', component: ProjectsSubCategoryAddDashboard },
+                    { path: '/dashboard/projects/sub-categories/edit/:id', component: ProjectsSubCategoryAddDashboard },
                 ]
             },
-
+            { path: '/dashboard/projects/item', component: ProjectsIndexDashboard,
+                children: [
+                    { path: '/dashboard/projects/item/items/:id', component: ProjectsItemDashboard },
+                    { path: '/dashboard/projects/item/add/:id', component: ProjectsAddDashboard }
+                ]
+            },
             { path: '/dashboard/clients',component: DashboardClients,
                 children: [
                     { path: '/dashboard/clients',component: DashboardClientsItems },

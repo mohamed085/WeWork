@@ -136,3 +136,15 @@
   }
 
 }
+
+.err {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  padding: .7rem 1rem;
+  border: 1px solid #ff3131;
+  font-size: 1rem;
+  color: #ff3131;
+  background: #ff8787;
+  border-radius: 10px;
+}

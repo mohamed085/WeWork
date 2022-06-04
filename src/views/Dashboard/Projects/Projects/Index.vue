@@ -1,14 +1,13 @@
 <template>
   <div>
-    <div class="title-2">الفئة الرئسية: 1 (تطبيقات الهاتف الجوال)</div>
+    <div class="title-2">الفئة الفرعية: 1 (البرمجيات)</div>
 
     <div class="filter">
       <div class="filter__container">
-        <router-link to="/dashboard/projects/sub-categories/items/4556" class="filter__item">كل الفئات الفرعية</router-link>
-        <router-link to="/dashboard/projects/sub-categories/add/4556" class="filter__item">إضافة فئه غرعية</router-link>
+        <router-link to="/dashboard/projects/item/items/4556" class="filter__item">كل المشاريع</router-link>
+        <router-link to="/dashboard/projects/item/add/4556" class="filter__item">إضافة مشروع جديد</router-link>
       </div>
     </div>
-
 
     <router-view></router-view>
   </div>
