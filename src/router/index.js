@@ -41,7 +41,9 @@ import ProjectsMainCategoryDashboard from "@/views/Dashboard/Projects/MainCatego
 import ProjectsMainCategoryItemsDashboard from "@/views/Dashboard/Projects/MainCategory/Items";
 import ProjectsMainCategoryAddDashboard from "@/views/Dashboard/Projects/MainCategory/Add";
 import ProjectsMainCategoryEditDashboard from "@/views/Dashboard/Projects/MainCategory/Edit";
-//import ProjectsSubCategoriesDashboard from "@/views/Dashboard/Projects/SubCategories/Index";
+import ProjectsSubCategoryDashboard from "@/views/Dashboard/Projects/SubCategories/Index";
+import ProjectsSubCategoryItemsDashboard from "@/views/Dashboard/Projects/SubCategories/Items";
+import ProjectsSubCategoryAddDashboard from "@/views/Dashboard/Projects/SubCategories/Add";
 
 
 import DashboardClients from "@/views/Dashboard/Clients/Index";
@@ -118,7 +120,12 @@ const routes = [
                     { path: '/dashboard/projects/forms/view/:id',component: ProjectsFormDashboard },
                 ]
             },
-
+            { path: '/dashboard/projects/sub-categories/items/:id', component: ProjectsSubCategoryDashboard,
+                children: [
+                    { path: '/dashboard/projects/sub-categories/items/:id', component: ProjectsSubCategoryItemsDashboard },
+                    { path: '/dashboard/projects/sub-categories/add/:id', component: ProjectsSubCategoryAddDashboard },
+                ]
+            },
 
             { path: '/dashboard/clients',component: DashboardClients,
                 children: [
