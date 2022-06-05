@@ -27,8 +27,8 @@
       </div>
       <div class="topbar__left">
         <div @click="profileSetting()" class="topbar__profile">
+          <span class="topbar__profile__name">{{ this.$store.getters.name }}</span>
           <b-avatar></b-avatar>
-          <span class="topbar__profile__name">محمد عماد</span>
         </div>
         <div v-if="profile__setting" class="topbar__profile__setting">
           <router-link to="/" class="topbar__profile__setting__item">

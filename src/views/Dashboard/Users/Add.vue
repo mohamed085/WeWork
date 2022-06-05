@@ -48,7 +48,9 @@ import router from "@/router";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Add",
-  components: {Spinner},
+  components: {
+    Spinner
+  },
   data() {
     return {
       is_loading: false,

@@ -18,101 +18,20 @@
         </video>
       </div>
 
-      <main class="team-member">
-        <div class="row">
-          <div class="col-12 col-md-4">
+      <spinner v-if="is_loading"></spinner>
+      <main v-else class="team-member">
+        <div class="row justify-content-center"
+             v-if="!is_loading && items.length > 0">
+          <div v-for="user in items" :key="user.id"
+               class="col-12 col-md-4">
             <div class="employee">
               <div class="employee__img">
-                <img src="../assets/img/ww.jpeg">
+                <img :src="user.photo">
               </div>
               <div class="employee__details">
-                <span class="employee__details__title">مطور برامج</span>
-                <span class="employee__details__sub-title">مطور الواجهة الأمامية</span>
-                <span class="employee__details__name">م.محمد عماد حشاد</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="employee">
-              <div class="employee__img">
-                <img src="../assets/img/ww.jpeg">
-              </div>
-              <div class="employee__details">
-                <span class="employee__details__title">مطور برامج</span>
-                <span class="employee__details__sub-title">مطور الواجهة الأمامية</span>
-                <span class="employee__details__name">م.محمد عماد حشاد</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="employee">
-              <div class="employee__img">
-                <img src="../assets/img/ww.jpeg">
-              </div>
-              <div class="employee__details">
-                <span class="employee__details__title">مطور برامج</span>
-                <span class="employee__details__sub-title">مطور الواجهة الأمامية</span>
-                <span class="employee__details__name">م.محمد عماد حشاد</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="employee">
-              <div class="employee__img">
-                <img src="../assets/img/ww.jpeg">
-              </div>
-              <div class="employee__details">
-                <span class="employee__details__title">مطور برامج</span>
-                <span class="employee__details__sub-title">مطور الواجهة الأمامية</span>
-                <span class="employee__details__name">م.محمد عماد حشاد</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="employee">
-              <div class="employee__img">
-                <img src="../assets/img/ww.jpeg">
-              </div>
-              <div class="employee__details">
-                <span class="employee__details__title">مطور برامج</span>
-                <span class="employee__details__sub-title">مطور الواجهة الأمامية</span>
-                <span class="employee__details__name">م.محمد عماد حشاد</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="employee">
-              <div class="employee__img">
-                <img src="../assets/img/ww.jpeg">
-              </div>
-              <div class="employee__details">
-                <span class="employee__details__title">مطور برامج</span>
-                <span class="employee__details__sub-title">مطور الواجهة الأمامية</span>
-                <span class="employee__details__name">م.محمد عماد حشاد</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="employee">
-              <div class="employee__img">
-                <img src="../assets/img/ww.jpeg">
-              </div>
-              <div class="employee__details">
-                <span class="employee__details__title">مطور برامج</span>
-                <span class="employee__details__sub-title">مطور الواجهة الأمامية</span>
-                <span class="employee__details__name">م.محمد عماد حشاد</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="employee">
-              <div class="employee__img">
-                <img src="../assets/img/ww.jpeg">
-              </div>
-              <div class="employee__details">
-                <span class="employee__details__title">مطور برامج</span>
-                <span class="employee__details__sub-title">مطور الواجهة الأمامية</span>
-                <span class="employee__details__name">م.محمد عماد حشاد</span>
+                <span class="employee__details__title">{{ user.job_title_ar }}</span>
+                <span class="employee__details__sub-title">{{ user.job_description_ar }}</span>
+                <span class="employee__details__name">{{ user.name_ar }}</span>
               </div>
             </div>
           </div>
@@ -136,91 +55,22 @@
         </video>
       </div>
 
-      <main class="team-member">
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <div class="employee">
-              <div class="employee__img">
-                <img src="../assets/img/ww.jpeg">
-              </div>
-              <div class="employee__details">
-                <span class="employee__details__title">Software Developer</span>
-                <span class="employee__details__sub-title">Front-end developer</span>
-                <span class="employee__details__name">Eng.Mohamed Emad Hashad</span>
-              </div>
+      <spinner v-if="is_loading"></spinner>
+      <main v-else class="team-member">
+        <div class="row justify-content-center"
+             v-if="!is_loading && items.length > 0">
+        <div v-for="user in items" :key="user.id"
+            class="col-12 col-md-4">
+          <div class="employee">
+            <div class="employee__img">
+              <img :src="user.photo">
+            </div>
+            <div class="employee__details">
+              <span class="employee__details__title">{{ user.job_title_en }}</span>
+              <span class="employee__details__sub-title">{{ user.job_description_en }}</span>
+              <span class="employee__details__name">{{ user.name_en }}</span>
             </div>
           </div>
-          <div class="col-12 col-md-4">
-            <div class="employee">
-              <div class="employee__img">
-                <img src="../assets/img/ww.jpeg">
-              </div>
-              <div class="employee__details">
-                <span class="employee__details__title">Software Developer</span>
-                <span class="employee__details__sub-title">Front-end developer</span>
-                <span class="employee__details__name">Eng.Mohamed Emad Hashad</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="employee">
-              <div class="employee__img">
-                <img src="../assets/img/ww.jpeg">
-              </div>
-              <div class="employee__details">
-                <span class="employee__details__title">Software Developer</span>
-                <span class="employee__details__sub-title">Front-end developer</span>
-                <span class="employee__details__name">Eng.Mohamed Emad Hashad</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="employee">
-              <div class="employee__img">
-                <img src="../assets/img/ww.jpeg">
-              </div>
-              <div class="employee__details">
-                <span class="employee__details__title">Software Developer</span>
-                <span class="employee__details__sub-title">Front-end developer</span>
-                <span class="employee__details__name">Eng.Mohamed Emad Hashad</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="employee">
-              <div class="employee__img">
-                <img src="../assets/img/ww.jpeg">
-              </div>
-              <div class="employee__details">
-                <span class="employee__details__title">Software Developer</span>
-                <span class="employee__details__sub-title">Front-end developer</span>
-                <span class="employee__details__name">Eng.Mohamed Emad Hashad</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="employee">
-              <div class="employee__img">
-                <img src="../assets/img/ww.jpeg">
-              </div>
-              <div class="employee__details">
-                <span class="employee__details__title">Software Developer</span>
-                <span class="employee__details__sub-title">Front-end developer</span>
-                <span class="employee__details__name">Eng.Mohamed Emad Hashad</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="employee">
-              <div class="employee__img">
-                <img src="../assets/img/ww.jpeg">
-              </div>
-              <div class="employee__details">
-                <span class="employee__details__title">Software Developer</span>
-                <span class="employee__details__sub-title">Front-end developer</span>
-                <span class="employee__details__name">Eng.Mohamed Emad Hashad</span>
-              </div>
-            </div>
           </div>
         </div>
       </main>
@@ -236,21 +86,63 @@
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import SocialMedia from "@/components/ui/SocialMedia";
+import Spinner from "@/components/ui/Spinner";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Team",
   components: {
+    Spinner,
     SocialMedia,
     Footer, Navbar
   },
+  data() {
+    return {
+      is_loading: false,
+      error: false,
+      error_message_ar: '',
+      items: '',
+    }
+  },
   created() {
-    window.scrollTo(0,0)
+    window.scrollTo(0,0);
+    this.loadTeamMembers();
   },
   computed: {
     getLang() {
       return this.$store.getters['main/getLang'];
     }
   },
+  methods: {
+    async loadTeamMembers() {
+      this.is_loading = true;
+
+      let myHeaders = new Headers();
+
+      let requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+      };
+
+      await fetch("https://backend-elbanna.we-work.pro/api/user/get-teams", requestOptions)
+          .then(response => response.json())
+          .then(result => {
+
+            if (!result.status) {
+              this.error = true;
+              this.error_message_ar = result.msg;
+            } else {
+              this.items = result.data;
+            }
+          })
+          .catch(error => {
+            this.error = true;
+            this.error_message_ar = error.message;
+          });
+
+      this.is_loading = false;
+    },
+  }
 }
 </script>
 

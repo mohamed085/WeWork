@@ -27,33 +27,12 @@
       </div>
     </div>
 
-    <div class="clients-items row">
-      <div class="clients-items__item col-6 col-md-3">
-        <img src="../assets/img/clients/ع.png">
-      </div>
-      <div class="clients-items__item col-6 col-md-3">
-        <img src="../assets/img/clients/egada-01.png">
-      </div>
-      <div class="clients-items__item col-6 col-md-3">
-        <img src="../assets/img/clients/ui.png">
-      </div>
-      <div class="clients-items__item col-6 col-md-3">
-        <img src="../assets/img/clients/دوناتيلو-01.png">
-      </div>
-      <div class="clients-items__item col-6 col-md-3">
-        <img src="../assets/img/clients/ض.png">
-      </div>
-      <div class="clients-items__item col-6 col-md-3">
-        <img src="../assets/img/clients/نورا-01.png">
-      </div>
-      <div class="clients-items__item col-6 col-md-3">
-        <img src="../assets/img/clients/ya-form.png">
-      </div>
-      <div class="clients-items__item col-6 col-md-3">
-        <img src="../assets/img/clients/yy.png">
-      </div>
-      <div class="clients-items__item col-6 col-md-3">
-        <img src="../assets/img/clients/e.png">
+    <spinner v-if="is_loading"></spinner>
+
+    <div v-if="!is_loading && items.length > 0" class="clients-items row">
+      <div v-for="client in items" :key="client.id"
+           class="clients-items__item col-6 col-md-3">
+        <img :src="client.photo">
       </div>
 
     </div>
@@ -67,21 +46,63 @@
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import SocialMedia from "@/components/ui/SocialMedia";
+import Spinner from "@/components/ui/Spinner";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Clients",
   components: {
+    Spinner,
     SocialMedia,
     Footer, Navbar
   },
+  data() {
+    return {
+      is_loading: false,
+      error: false,
+      error_message_ar: '',
+      items: '',
+    }
+  },
   created() {
-    window.scrollTo(0,0)
+    window.scrollTo(0,0);
+    this.loadClients();
   },
   computed: {
     getLang() {
       return this.$store.getters['main/getLang'];
     }
   },
+  methods: {
+    async loadClients() {
+      this.is_loading = true;
+
+      let myHeaders = new Headers();
+
+      let requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+      };
+
+      await fetch("https://backend-elbanna.we-work.pro/api/user/get-all-clients", requestOptions)
+          .then(response => response.json())
+          .then(result => {
+
+            if (!result.status) {
+              this.error = true;
+              this.error_message_ar = result.msg;
+            } else {
+              this.items = result.data;
+            }
+          })
+          .catch(error => {
+            this.error = true;
+            this.error_message_ar = error.message;
+          });
+
+      this.is_loading = false;
+    },
+  }
 }
 </script>
 

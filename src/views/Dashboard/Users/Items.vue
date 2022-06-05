@@ -1,5 +1,7 @@
 <template>
   <div>
+    <div class="err" v-if="error">{{ error_message_ar }}</div>
+
     <div class="table-responsive">
       <table class="table table-striped table-hover">
         <thead>
@@ -11,33 +13,117 @@
           <th scope="col"></th>
         </tr>
         </thead>
-        <tbody>
-        <tr>
-          <th>1</th>
+        <tbody v-if="!is_loading && items.length > 0">
+        <tr v-for="user in items" :key="user.id">
+          <th>{{ user.id }}</th>
           <th>
             <div class="table-img-sm">
-              <img src="../../../assets/img/clients/e.png">
+              <img :src="user.photo">
             </div>
           </th>
-          <th>محمد</th>
-          <th>mohamed@gmail.com</th>
+          <th>{{ user.name }}</th>
+          <th>{{ user.email }}</th>
           <th>
             <div class="table-action">
-              <i class="fas fa-trash-alt"></i>
+              <i @click="deleteUsers(user.id)" class="fas fa-trash-alt"></i>
             </div>
           </th>
         </tr>
         </tbody>
-
       </table>
     </div>
+
+    <div v-if="items.length < 1" class="title-4 text-center">
+      لا يوجد مستخدمين
+    </div>
+
+    <spinner v-if="is_loading"></spinner>
   </div>
 </template>
 
 <script>
+import Spinner from "@/components/ui/Spinner";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: "Items"
+  name: "Items",
+  components: {
+    Spinner
+  },
+  data() {
+    return {
+      is_loading: false,
+      error: false,
+      error_message_ar: '',
+      items: '',
+    }
+  },
+  created() {
+    this.loadUsers();
+  },
+  methods: {
+    async loadUsers() {
+      this.is_loading = true;
+
+      let myHeaders = new Headers();
+      let token = this.$store.getters.token;
+      myHeaders.append("Authorization", "Bearer " + token);
+
+      let requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+      };
+
+      await fetch("https://backend-elbanna.we-work.pro/api/admin/auth/admins", requestOptions)
+          .then(response => response.json())
+          .then(result => {
+
+            if (!result.status) {
+              this.error = true;
+              this.error_message_ar = result.msg;
+            } else {
+              this.items = result.data;
+            }
+          })
+          .catch(error => {
+            this.error = true;
+            this.error_message_ar = error.message;
+          });
+
+      this.is_loading = false;
+    },
+    async deleteUsers(id) {
+      this.is_loading = true;
+
+      let myHeaders = new Headers();
+      let token = this.$store.getters.token;
+      myHeaders.append("Authorization", "Bearer " + token);
+
+      let requestOptions = {
+        method: 'DELETE',
+        headers: myHeaders,
+        redirect: 'follow'
+      };
+
+      let url = `https://backend-elbanna.we-work.pro/api/admin/auth/delete-admin/` + id;
+
+      await fetch(url, requestOptions)
+          .then(response => response.json())
+          .then(result => {
+            if (!result.status) {
+              this.error = true;
+              this.error_message_ar = result.msg;
+            }
+          })
+          .catch(error => {
+            this.error = true;
+            this.error_message_ar = error.message;
+          });
+
+      await this.loadUsers();
+      this.is_loading = false;
+    },
+  }
 }
 </script>
 
