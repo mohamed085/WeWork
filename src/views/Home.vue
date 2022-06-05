@@ -3,511 +3,516 @@
     <SocialMedia></SocialMedia>
     <Navbar></Navbar>
 
-    <div class="ar" v-if="getLang === 'ar'">
-      <div class="slider">
-        <div class="slider__owl-main">
-          <div class="slider__owl-main__slide-items">
-            <div v-if="slider_1" class="slider__owl-main__slide-items__item animate__animated animate__fadeIn">
-              <div class="slider__owl-main__slide-items__item__overlay"></div>
-              <img class="slider__owl-main__slide-items__item__bg" src="../assets/img/slider_3_ar.jpg">
-              <div class="slider__owl-main__slide-items__item__content">
-                <div class="slider__owl-main__slide-items__item__content__main-title">
-                  منصة البيانات المفتوحة للرخص التجارية
+    <spinner class="spinner" v-if="is_loading"></spinner>
+
+    <div v-else>
+      <div class="ar" v-if="getLang === 'ar'">
+        <div class="slider">
+          <div class="slider__owl-main">
+            <div class="slider__owl-main__slide-items">
+              <div v-if="slider_1" class="slider__owl-main__slide-items__item animate__animated animate__fadeIn">
+                <div class="slider__owl-main__slide-items__item__overlay"></div>
+                <img class="slider__owl-main__slide-items__item__bg" :src="sliders[0].image_ar">
+                <div class="slider__owl-main__slide-items__item__content">
+                  <div class="slider__owl-main__slide-items__item__content__main-title">
+                    {{ sliders[0].title_ar }}
+                  </div>
+                  <div class="slider__owl-main__slide-items__item__content__sub-title">
+                    {{ sliders[0].description_ar }}
+                  </div>
+                  <div class="slider__owl-main__slide-items__item__content__btn btn--animated mt-4 mr-3">
+                    <router-link to="">تعرف علي المزيد</router-link>
+                  </div>
                 </div>
-                <div class="slider__owl-main__slide-items__item__content__sub-title">
-                  تمكنك من معرفة الانتشار الجغرافي على الخارطة للرخص التجارية الصادرة حسب الأنشطة
+              </div>
+              <div v-if="slider_2" class="slider__owl-main__slide-items__item animate__animated animate__fadeIn">
+                <div class="slider__owl-main__slide-items__item__overlay"></div>
+                <img class="slider__owl-main__slide-items__item__bg" :src="sliders[1].image_ar">
+                <div class="slider__owl-main__slide-items__item__content">
+                  <div class="slider__owl-main__slide-items__item__content__main-title">
+                    {{ sliders[1].title_ar }}
+                  </div>
+                  <div class="slider__owl-main__slide-items__item__content__sub-title">
+                    {{ sliders[1].description_ar }}
+                  </div>
+                  <div class="slider__owl-main__slide-items__item__content__btn btn--animated mt-4 mr-3">
+                    <router-link to="">تعرف علي المزيد</router-link>
+                  </div>
                 </div>
-                <div class="slider__owl-main__slide-items__item__content__btn btn--animated mt-4 mr-3">
-                  <router-link to="">تعرف علي المزيد</router-link>
+              </div>
+              <div v-if="slider_3" class="slider__owl-main__slide-items__item animate__animated animate__fadeIn">
+                <div class="slider__owl-main__slide-items__item__overlay"></div>
+                <img class="slider__owl-main__slide-items__item__bg" :src="sliders[2].image_ar">
+                <div class="slider__owl-main__slide-items__item__content">
+                  <div class="slider__owl-main__slide-items__item__content__main-title">
+                    {{ sliders[2].title_ar }}
+                  </div>
+                  <div class="slider__owl-main__slide-items__item__content__sub-title">
+                    {{ sliders[2].description_ar }}
+                  </div>
+                  <div class="slider__owl-main__slide-items__item__content__btn btn--animated mt-4 mr-3">
+                    <router-link to="">تعرف علي المزيد</router-link>
+                  </div>
                 </div>
               </div>
             </div>
-            <div v-if="slider_2" class="slider__owl-main__slide-items__item animate__animated animate__fadeIn">
-              <div class="slider__owl-main__slide-items__item__overlay"></div>
-              <img class="slider__owl-main__slide-items__item__bg" src="../assets/img/slider_3_ar.jpg">
-              <div class="slider__owl-main__slide-items__item__content">
-                <div class="slider__owl-main__slide-items__item__content__main-title">
-                  منصة البيانات المفتوحة للرخص التجارية
-                </div>
-                <div class="slider__owl-main__slide-items__item__content__sub-title">
-                  تمكنك من معرفة الانتشار الجغرافي على الخارطة للرخص التجارية الصادرة حسب الأنشطة
-                </div>
-                <div class="slider__owl-main__slide-items__item__content__btn btn--animated mt-4 mr-3">
-                  <router-link to="">تعرف علي المزيد</router-link>
-                </div>
+
+
+            <div class="slider__owl-dots">
+              <div  @click="displaySlider('last')" class="slider__owl-dots__next"><i class="fas fa-angle-right"></i></div>
+              <div class="slider__owl-dots__slide">
+                <div @click="displaySlider('slider_1')" :class="{active: slider_1}" class="slider__owl-dots__slide__item"></div>
+                <div @click="displaySlider('slider_2')" :class="{active: slider_2}" class="slider__owl-dots__slide__item"></div>
+                <div @click="displaySlider('slider_3')" :class="{active: slider_3}" class="slider__owl-dots__slide__item"></div>
               </div>
-            </div>
-            <div v-if="slider_3" class="slider__owl-main__slide-items__item animate__animated animate__fadeIn">
-              <div class="slider__owl-main__slide-items__item__overlay"></div>
-              <img class="slider__owl-main__slide-items__item__bg" src="../assets/img/slider_3_ar.jpg">
-              <div class="slider__owl-main__slide-items__item__content">
-                <div class="slider__owl-main__slide-items__item__content__main-title">
-                  منصة البيانات المفتوحة للرخص التجارية
-                </div>
-                <div class="slider__owl-main__slide-items__item__content__sub-title">
-                  تمكنك من معرفة الانتشار الجغرافي على الخارطة للرخص التجارية الصادرة حسب الأنشطة
-                </div>
-                <div class="slider__owl-main__slide-items__item__content__btn btn--animated mt-4 mr-3">
-                  <router-link to="">تعرف علي المزيد</router-link>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="slider__owl-dots">
-            <div  @click="displaySlider('last')" class="slider__owl-dots__next"><i class="fas fa-angle-right"></i></div>
-            <div class="slider__owl-dots__slide">
-              <div @click="displaySlider('slider_1')" :class="{active: slider_1}" class="slider__owl-dots__slide__item"></div>
-              <div @click="displaySlider('slider_2')" :class="{active: slider_2}" class="slider__owl-dots__slide__item"></div>
-              <div @click="displaySlider('slider_3')" :class="{active: slider_3}" class="slider__owl-dots__slide__item"></div>
-            </div>
-            <div @click="displaySlider('next')"  class="slider__owl-dots__previous"><i class="fas fa-angle-left"></i></div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="section section-bg who-we-are">
-        <div class="section__container">
-          <div class="section__title">نحن خبراء تطوير البرمجيات</div>
-          <div class="section__title-2">نبني شراكات طويلة الأمد</div>
-          <div class="section__desc">الذين يستفيدون من التكنولوجيا ويطرحون الأسئلة الصحيحة ليقدموا لك نتائج ملموسة في شكل برامج موثوقة وعالية الجودة ومستدامة يتم تسليمها في الوقت المحدد وفي المرة الأولى الصحيحة.</div>
-          <div class="who-we-are__service row">
-            <div class="who-we-are__service__left col-12 col-md-5">
-              <img src="../assets/img/MacbookPro1.png">
-            </div>
-            <div class="who-we-are__service__center col-12 col-md-2">
-              <span>ابدأ بتنفيذ مشروعك الآن</span>
-              <router-link to="/contact-us" class="section__btn">ابدأ الآن</router-link>
-            </div>
-            <div class="who-we-are__service__right col-12 col-md-5">
-              <img src="../assets/img/iMacProLeftSideViewMockup1.png">
+              <div @click="displaySlider('next')"  class="slider__owl-dots__previous"><i class="fas fa-angle-left"></i></div>
             </div>
           </div>
 
         </div>
-      </div>
 
-      <div class="section service">
-        <div class="service__container ">
-          <div class="section__title">خدماتنا</div>
-          <div class="section__desc">السبب الوحيد لعملنا هو جعل الحياة أقل صعوبة لعملائنا.</div>
-          <div class="service__categories">
-            <div class="service__categories__category">
-              <div class="service__categories__category__title">
-                <span class="service__categories__category__title__main">خدمات نحن نعمل</span>
-                <span class="break"></span>
-                <span class="service__categories__category__title__desc">يهتم بتطوير وإنشاء برمجيات عالية الجودة ، مع مراعاة اهتمامات المستخدم واحتياجاته ومتطلباته على جميع المستويات ، ويهتم بشكل عام بتحليل البرامج والتصاميم وكيفية بنائها ، ويعمل على التحقق منها ، وحتى إدارتها ، حتى نقوم بتصميم البرامج الصحيحة والسليمة.</span>
+        <div class="section section-bg who-we-are">
+          <div class="section__container">
+            <div class="section__title">نحن خبراء تطوير البرمجيات</div>
+            <div class="section__title-2">نبني شراكات طويلة الأمد</div>
+            <div class="section__desc">الذين يستفيدون من التكنولوجيا ويطرحون الأسئلة الصحيحة ليقدموا لك نتائج ملموسة في شكل برامج موثوقة وعالية الجودة ومستدامة يتم تسليمها في الوقت المحدد وفي المرة الأولى الصحيحة.</div>
+            <div class="who-we-are__service row">
+              <div class="who-we-are__service__left col-12 col-md-5">
+                <img src="../assets/img/MacbookPro1.png">
               </div>
-              <div class="service__categories__category__items">
-                <div class="service__categories__category__items__item">
-                  <div class="service__categories__category__items__item__content">
-                    <div class="service__categories__category__items__item__front">
-                      <i class="fas fa-laptop"></i>
-                      <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">الخدمات البرمجية</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
-                    </div>
-                    <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">الخدمات البرمجية</span>
-                      <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
+              <div class="who-we-are__service__center col-12 col-md-2">
+                <span>ابدأ بتنفيذ مشروعك الآن</span>
+                <router-link to="/contact-us" class="section__btn">ابدأ الآن</router-link>
+              </div>
+              <div class="who-we-are__service__right col-12 col-md-5">
+                <img src="../assets/img/iMacProLeftSideViewMockup1.png">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section service">
+          <div class="service__container ">
+            <div class="section__title">خدماتنا</div>
+            <div class="section__desc">السبب الوحيد لعملنا هو جعل الحياة أقل صعوبة لعملائنا.</div>
+            <div class="service__categories">
+              <div class="service__categories__category">
+                <div class="service__categories__category__title">
+                  <span class="service__categories__category__title__main">خدمات نحن نعمل</span>
+                  <span class="break"></span>
+                  <span class="service__categories__category__title__desc">يهتم بتطوير وإنشاء برمجيات عالية الجودة ، مع مراعاة اهتمامات المستخدم واحتياجاته ومتطلباته على جميع المستويات ، ويهتم بشكل عام بتحليل البرامج والتصاميم وكيفية بنائها ، ويعمل على التحقق منها ، وحتى إدارتها ، حتى نقوم بتصميم البرامج الصحيحة والسليمة.</span>
+                </div>
+                <div class="service__categories__category__items">
+                  <div class="service__categories__category__items__item">
+                    <div class="service__categories__category__items__item__content">
+                      <div class="service__categories__category__items__item__front">
+                        <i class="fas fa-laptop"></i>
+                        <span class="break"></span>
+                        <span class="service__categories__category__items__item__title">الخدمات البرمجية</span>
+                        <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                      </div>
+                      <div class="service__categories__category__items__item__back">
+                        <span class="service__categories__category__items__item__title">الخدمات البرمجية</span>
+                        <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
                       </span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                        <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="service__categories__category__items__item">
-                  <div class="service__categories__category__items__item__content">
-                    <div class="service__categories__category__items__item__front">
-                      <i class="fas fa-laptop"></i>
-                      <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">الخدمات التسويقية</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
-                    </div>
-                    <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">الخدمات التسويقية</span>
-                      <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
+                  <div class="service__categories__category__items__item">
+                    <div class="service__categories__category__items__item__content">
+                      <div class="service__categories__category__items__item__front">
+                        <i class="fas fa-laptop"></i>
+                        <span class="break"></span>
+                        <span class="service__categories__category__items__item__title">الخدمات التسويقية</span>
+                        <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                      </div>
+                      <div class="service__categories__category__items__item__back">
+                        <span class="service__categories__category__items__item__title">الخدمات التسويقية</span>
+                        <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
                       </span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                        <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="service__categories__category__items__item">
-                  <div class="service__categories__category__items__item__content">
-                    <div class="service__categories__category__items__item__front">
-                      <i class="fas fa-laptop"></i>
-                      <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">الخدمات التصميمية</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
-                    </div>
-                    <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">الخدمات التصميمية</span>
-                      <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
+                  <div class="service__categories__category__items__item">
+                    <div class="service__categories__category__items__item__content">
+                      <div class="service__categories__category__items__item__front">
+                        <i class="fas fa-laptop"></i>
+                        <span class="break"></span>
+                        <span class="service__categories__category__items__item__title">الخدمات التصميمية</span>
+                        <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                      </div>
+                      <div class="service__categories__category__items__item__back">
+                        <span class="service__categories__category__items__item__title">الخدمات التصميمية</span>
+                        <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
                       </span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                        <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <router-link to="/services" class="btn btn-bg">تعرف علي المزيد</router-link>
           </div>
-          <router-link to="/services" class="btn btn-bg">تعرف علي المزيد</router-link>
         </div>
-      </div>
 
-      <div class="section section-bg blogs">
-        <div class="section__container">
-          <div class="section__title">قيمة العميل والثقة</div>
-          <div class="blogs__items row">
-            <div class="col-12 col-md-4">
-              <div class="blogs__items__item">
-                <div class="blogs__items__item__name">
-                  <b-avatar size="3rem"></b-avatar>
-                  <span>Mohamed Emad</span>
+        <div class="section section-bg blogs">
+          <div class="section__container">
+            <div class="section__title">قيمة العميل والثقة</div>
+            <div class="blogs__items row">
+              <div class="col-12 col-md-4">
+                <div class="blogs__items__item">
+                  <div class="blogs__items__item__name">
+                    <b-avatar size="3rem"></b-avatar>
+                    <span>Mohamed Emad</span>
+                  </div>
+                  <div class="blogs__items__item__content">بمجرد أن بدأت العمل معهم ، كان من الواضح أنهم كانوا مشاركين ، وقادرون تقنيًا ، ومتفهمون للغاية.</div>
                 </div>
-                <div class="blogs__items__item__content">بمجرد أن بدأت العمل معهم ، كان من الواضح أنهم كانوا مشاركين ، وقادرون تقنيًا ، ومتفهمون للغاية.</div>
               </div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="blogs__items__item">
-                <div class="blogs__items__item__name">
-                  <b-avatar size="3rem"></b-avatar>
-                  <span>Mohamed Emad</span>
+              <div class="col-12 col-md-4">
+                <div class="blogs__items__item">
+                  <div class="blogs__items__item__name">
+                    <b-avatar size="3rem"></b-avatar>
+                    <span>Mohamed Emad</span>
+                  </div>
+                  <div class="blogs__items__item__content">تعتبر موثوقيتها وسرعتها أفضل بكثير مما تمكنت من ملاحظته مع مقدمي الخدمات الآخرين.</div>
                 </div>
-                <div class="blogs__items__item__content">تعتبر موثوقيتها وسرعتها أفضل بكثير مما تمكنت من ملاحظته مع مقدمي الخدمات الآخرين.</div>
               </div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="blogs__items__item">
-                <div class="blogs__items__item__name">
-                  <b-avatar size="3rem"></b-avatar>
-                  <span>Mohamed Emad</span>
-                </div>
-                <div class="blogs__items__item__content">فريق منخرط للغاية ومهني مع أطنان من المعرفة الصناعية والخبرة العملية في قطاع التنقل الإلكتروني.</div>
-              </div>
-            </div>
-          </div>
-          <router-link to="/blogs" class="section__btn mt-5">اكتشف المزيد من الاراء</router-link>
-        </div>
-      </div>
-
-      <div class="section clients">
-        <div class="section__container">
-          <div class="section__title">عملائنا</div>
-          <spinner v-if="clients_is_loading"></spinner>
-
-          <div v-if="!is_loading && clients.length > 0" class="clients__items row">
-            <div v-for="client in clients" :key="client.id"
-                class="clients__items__item col-6 col-md-2">
-              <img :src="client.photo">
-            </div>
-          </div>
-          <router-link class="section__btn section__btn-bg" to="/clients">تعرف علي المزيد</router-link>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <div class="section">
-            <div class="section__container sub-section">
-              <div class="sub-section__title">لنصنع معًا</div>
-              <div class="sub-section__title-2">أخبرنا عن مشاكلك وسنبحث عن الحل الأفضل!</div>
-              <router-link to="/contact-us" class="sub-section__btn">لنتحدث</router-link>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="section section-bg">
-            <div class="section__container sub-section">
-              <div class="sub-section__title">نحن نوظف</div>
-              <div class="sub-section__title-2">أرسل لنا سيرتك الذاتية وكن عضوًا في نحن نعمل!</div>
-              <router-link to="/join-us" class="sub-section__btn sub-section__btn-2">قدم الآن</router-link>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="section work-with">
-        <div class="section__container">
-          <div class="section__title">العمل مع تقنيات المستقبل</div>
-          <div class="row work-with__technologies">
-            <div class="col-6 col-md-3 work-with__technologies__item">
-              <img src="../assets/img/technologies/vuejs.svg">
-            </div>
-            <div class="col-6 col-md-3 work-with__technologies__item">
-              <img src="../assets/img/technologies/aws.svg">
-            </div>
-            <div class="col-6 col-md-3 work-with__technologies__item">
-              <img src="../assets/img/technologies/golang.svg">
-            </div>
-            <div class="col-6 col-md-3 work-with__technologies__item">
-              <img src="../assets/img/technologies/laravel.svg">
-            </div>
-            <div class="col-6 col-md-3 work-with__technologies__item">
-              <img src="../assets/img/technologies/nodejs.svg">
-            </div>
-            <div class="col-6 col-md-3 work-with__technologies__item">
-              <img src="../assets/img/technologies/react.svg">
-            </div>
-            <div class="col-6 col-md-3 work-with__technologies__item">
-              <img src="../assets/img/technologies/typescript.svg">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="en" v-if="getLang === 'en'">
-      <div class="slider">
-        <div class="slider__owl-main">
-          <div class="slider__owl-main__slide-items">
-            <div v-if="slider_1" class="slider__owl-main__slide-items__item animate__animated animate__fadeIn">
-              <div class="slider__owl-main__slide-items__item__overlay"></div>
-              <img class="slider__owl-main__slide-items__item__bg" src="../assets/img/slider_3_en.png">
-              <div class="slider__owl-main__slide-items__item__content">
-                <div class="slider__owl-main__slide-items__item__content__main-title">
-                  What is Lorem Ipsum
-                </div>
-                <div class="slider__owl-main__slide-items__item__content__sub-title">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                </div>
-                <div class="slider__owl-main__slide-items__item__content__btn btn--animated mt-4 mr-3">
-                  <router-link to="">Learn more</router-link>
+              <div class="col-12 col-md-4">
+                <div class="blogs__items__item">
+                  <div class="blogs__items__item__name">
+                    <b-avatar size="3rem"></b-avatar>
+                    <span>Mohamed Emad</span>
+                  </div>
+                  <div class="blogs__items__item__content">فريق منخرط للغاية ومهني مع أطنان من المعرفة الصناعية والخبرة العملية في قطاع التنقل الإلكتروني.</div>
                 </div>
               </div>
             </div>
-            <div v-if="slider_2" class="slider__owl-main__slide-items__item animate__animated animate__fadeIn">
-              <div class="slider__owl-main__slide-items__item__overlay"></div>
-              <img class="slider__owl-main__slide-items__item__bg" src="../assets/img/slider_3_en.png">
-              <div class="slider__owl-main__slide-items__item__content">
-                <div class="slider__owl-main__slide-items__item__content__main-title">
-                  What is Lorem Ipsum
-                </div>
-                <div class="slider__owl-main__slide-items__item__content__sub-title">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                </div>
-                <div class="slider__owl-main__slide-items__item__content__btn btn--animated mt-4 mr-3">
-                  <router-link to="">Learn more</router-link>
-                </div>
-              </div>
-            </div>
-            <div v-if="slider_3" class="slider__owl-main__slide-items__item animate__animated animate__fadeIn">
-              <div class="slider__owl-main__slide-items__item__overlay"></div>
-              <img class="slider__owl-main__slide-items__item__bg" src="../assets/img/slider_3_en.png">
-              <div class="slider__owl-main__slide-items__item__content">
-                <div class="slider__owl-main__slide-items__item__content__main-title">
-                  What is Lorem Ipsum
-                </div>
-                <div class="slider__owl-main__slide-items__item__content__sub-title">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry
-                </div>
-                <div class="slider__owl-main__slide-items__item__content__btn btn--animated mt-4 mr-3">
-                  <router-link to="">Learn more</router-link>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="slider__owl-dots">
-            <div @click="displaySlider('last')"  class="slider__owl-dots__previous"><i class="fas fa-angle-left"></i></div>
-            <div class="slider__owl-dots__slide">
-              <div @click="displaySlider('slider_1')" :class="{active: slider_1}" class="slider__owl-dots__slide__item"></div>
-              <div @click="displaySlider('slider_2')" :class="{active: slider_2}" class="slider__owl-dots__slide__item"></div>
-              <div @click="displaySlider('slider_3')" :class="{active: slider_3}" class="slider__owl-dots__slide__item"></div>
-            </div>
-            <div  @click="displaySlider('next')" class="slider__owl-dots__next"><i class="fas fa-angle-right"></i></div>
+            <router-link to="/blogs" class="section__btn mt-5">اكتشف المزيد من الاراء</router-link>
           </div>
         </div>
-      </div>
 
-      <div class="section section-bg who-we-are">
-        <div class="section__container">
-          <div class="section__title">We are software development experts</div>
-          <div class="section__title-2">We build long-lasting partnerships</div>
-          <div class="section__desc">who leverage technology and ask the right questions to bring you tangible results in the form of reliable, high quality, sustainable software that is delivered on time, right first time.</div>
-          <div class="who-we-are__service row">
-            <div class="who-we-are__service__left col-12 col-md-5">
-              <img src="../assets/img/iMacProLeftSideViewMockup1.png">
+        <div class="section clients">
+          <div class="section__container">
+            <div class="section__title">عملائنا</div>
+            <spinner v-if="clients_is_loading"></spinner>
+
+            <div v-if="!is_loading && clients.length > 0" class="clients__items row">
+              <div v-for="client in clients" :key="client.id"
+                   class="clients__items__item col-6 col-md-2">
+                <img :src="client.photo">
+              </div>
             </div>
-            <div class="who-we-are__service__center col-12 col-md-2">
-              <span>Start your project now</span>
-              <router-link class="section__btn" to="/contact-us">Start now</router-link>
+            <router-link class="section__btn section__btn-bg" to="/clients">تعرف علي المزيد</router-link>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="section">
+              <div class="section__container sub-section">
+                <div class="sub-section__title">لنصنع معًا</div>
+                <div class="sub-section__title-2">أخبرنا عن مشاكلك وسنبحث عن الحل الأفضل!</div>
+                <router-link to="/contact-us" class="sub-section__btn">لنتحدث</router-link>
+              </div>
             </div>
-            <div class="who-we-are__service__right col-12 col-md-5">
-              <img src="../assets/img/MacbookPro1.png">
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="section section-bg">
+              <div class="section__container sub-section">
+                <div class="sub-section__title">نحن نوظف</div>
+                <div class="sub-section__title-2">أرسل لنا سيرتك الذاتية وكن عضوًا في نحن نعمل!</div>
+                <router-link to="/join-us" class="sub-section__btn sub-section__btn-2">قدم الآن</router-link>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section work-with">
+          <div class="section__container">
+            <div class="section__title">العمل مع تقنيات المستقبل</div>
+            <div class="row work-with__technologies">
+              <div class="col-6 col-md-3 work-with__technologies__item">
+                <img src="../assets/img/technologies/vuejs.svg">
+              </div>
+              <div class="col-6 col-md-3 work-with__technologies__item">
+                <img src="../assets/img/technologies/aws.svg">
+              </div>
+              <div class="col-6 col-md-3 work-with__technologies__item">
+                <img src="../assets/img/technologies/golang.svg">
+              </div>
+              <div class="col-6 col-md-3 work-with__technologies__item">
+                <img src="../assets/img/technologies/laravel.svg">
+              </div>
+              <div class="col-6 col-md-3 work-with__technologies__item">
+                <img src="../assets/img/technologies/nodejs.svg">
+              </div>
+              <div class="col-6 col-md-3 work-with__technologies__item">
+                <img src="../assets/img/technologies/react.svg">
+              </div>
+              <div class="col-6 col-md-3 work-with__technologies__item">
+                <img src="../assets/img/technologies/typescript.svg">
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="section service">
-        <div class="service__container">
-          <div class="section__title">Our services</div>
-          <div class="section__desc">The sole reason we are in business is to make life less difficult for our clients.</div>
-          <div class="service__categories">
-            <div class="service__categories__category">
-              <div class="service__categories__category__title">
-                <span class="service__categories__category__title__main">Software engineering services</span>
-                <span class="break"></span>
-                <span class="service__categories__category__title__desc">It is concerned with developing and creating high-quality software, taking into account the user's interests, needs and requirements at all levels, and it is generally concerned with analyzing software, designs and how to build them, and works to verify them, and even manage them, until we engineer correct and sound software.</span>
-              </div>
-              <div class="service__categories__category__items">
-                <div class="service__categories__category__items__item">
-                  <div class="service__categories__category__items__item__content">
-                    <div class="service__categories__category__items__item__front">
-                      <i class="fas fa-laptop"></i>
-                      <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">Websites</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
-                    </div>
-                    <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">Websites</span>
-                      <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
-                    </div>
+      <div class="en" v-if="getLang === 'en'">
+        <div class="slider">
+          <div class="slider__owl-main">
+            <div class="slider__owl-main__slide-items">
+              <div v-if="slider_1" class="slider__owl-main__slide-items__item animate__animated animate__fadeIn">
+                <div class="slider__owl-main__slide-items__item__overlay"></div>
+                <img class="slider__owl-main__slide-items__item__bg" :src="sliders[0].image_en">
+                <div class="slider__owl-main__slide-items__item__content">
+                  <div class="slider__owl-main__slide-items__item__content__main-title">
+                    {{ sliders[0].title_en }}
+                  </div>
+                  <div class="slider__owl-main__slide-items__item__content__sub-title">
+                    {{ sliders[0].description_en }}
+                  </div>
+                  <div class="slider__owl-main__slide-items__item__content__btn btn--animated mt-4 mr-3">
+                    <router-link to="">Learn more</router-link>
                   </div>
                 </div>
-                <div class="service__categories__category__items__item">
-                  <div class="service__categories__category__items__item__content">
-                    <div class="service__categories__category__items__item__front">
-                      <i class="fas fa-laptop"></i>
-                      <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">Websites</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
-                    </div>
-                    <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">Websites</span>
-                      <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
-                    </div>
+              </div>
+              <div v-if="slider_2" class="slider__owl-main__slide-items__item animate__animated animate__fadeIn">
+                <div class="slider__owl-main__slide-items__item__overlay"></div>
+                <img class="slider__owl-main__slide-items__item__bg" :src="sliders[1].image_en">
+                <div class="slider__owl-main__slide-items__item__content">
+                  <div class="slider__owl-main__slide-items__item__content__main-title">
+                    {{ sliders[1].title_en }}
+                  </div>
+                  <div class="slider__owl-main__slide-items__item__content__sub-title">
+                    {{ sliders[1].description_en }}
+                  </div>
+                  <div class="slider__owl-main__slide-items__item__content__btn btn--animated mt-4 mr-3">
+                    <router-link to="">Learn more</router-link>
                   </div>
                 </div>
-                <div class="service__categories__category__items__item">
-                  <div class="service__categories__category__items__item__content">
-                    <div class="service__categories__category__items__item__front">
-                      <i class="fas fa-laptop"></i>
-                      <span class="break"></span>
-                      <span class="service__categories__category__items__item__title">Websites</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
-                    </div>
-                    <div class="service__categories__category__items__item__back">
-                      <span class="service__categories__category__items__item__title">Websites</span>
-                      <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                      <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
-                    </div>
+              </div>
+              <div v-if="slider_3" class="slider__owl-main__slide-items__item animate__animated animate__fadeIn">
+                <div class="slider__owl-main__slide-items__item__overlay"></div>
+                <img class="slider__owl-main__slide-items__item__bg" :src="sliders[2].image_en">
+                <div class="slider__owl-main__slide-items__item__content">
+                  <div class="slider__owl-main__slide-items__item__content__main-title">
+                    {{ sliders[2].title_en }}
+                  </div>
+                  <div class="slider__owl-main__slide-items__item__content__sub-title">
+                    {{ sliders[2].description_en }}
+                  </div>
+                  <div class="slider__owl-main__slide-items__item__content__btn btn--animated mt-4 mr-3">
+                    <router-link to="">Learn more</router-link>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <router-link to="/services" class="btn btn-bg">Read more</router-link>
-        </div>
-      </div>
 
-      <div class="section section-bg blogs">
-        <div class="section__container">
-          <div class="section__title">Client Value & Trust</div>
-          <div class="blogs__items row">
-            <div class="col-12 col-md-4">
-              <div class="blogs__items__item">
-                <div class="blogs__items__item__name">
-                  <b-avatar size="3rem"></b-avatar>
-                  <span>Mohamed Emad</span>
-                </div>
-                <div class="blogs__items__item__content">Once I started working with them, it was clear that they were engaged, technically capable, and very understanding.</div>
+            <div class="slider__owl-dots">
+              <div @click="displaySlider('last')"  class="slider__owl-dots__previous"><i class="fas fa-angle-left"></i></div>
+              <div class="slider__owl-dots__slide">
+                <div @click="displaySlider('slider_1')" :class="{active: slider_1}" class="slider__owl-dots__slide__item"></div>
+                <div @click="displaySlider('slider_2')" :class="{active: slider_2}" class="slider__owl-dots__slide__item"></div>
+                <div @click="displaySlider('slider_3')" :class="{active: slider_3}" class="slider__owl-dots__slide__item"></div>
               </div>
+              <div  @click="displaySlider('next')" class="slider__owl-dots__next"><i class="fas fa-angle-right"></i></div>
             </div>
-            <div class="col-12 col-md-4">
-              <div class="blogs__items__item">
-                <div class="blogs__items__item__name">
-                  <b-avatar size="3rem"></b-avatar>
-                  <span>Mohamed Emad</span>
-                </div>
-                <div class="blogs__items__item__content">Their dependability and speed are significantly better than what I’ve been able to observe with other providers.
-                </div>
+          </div>
+        </div>
+
+        <div class="section section-bg who-we-are">
+          <div class="section__container">
+            <div class="section__title">We are software development experts</div>
+            <div class="section__title-2">We build long-lasting partnerships</div>
+            <div class="section__desc">who leverage technology and ask the right questions to bring you tangible results in the form of reliable, high quality, sustainable software that is delivered on time, right first time.</div>
+            <div class="who-we-are__service row">
+              <div class="who-we-are__service__left col-12 col-md-5">
+                <img src="../assets/img/iMacProLeftSideViewMockup1.png">
               </div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="blogs__items__item">
-                <div class="blogs__items__item__name">
-                  <b-avatar size="3rem"></b-avatar>
-                  <span>Mohamed Emad</span>
-                </div>
-                <div class="blogs__items__item__content">Very engaged and professional team with tons of industry knowledge and hands on experience in the e-mobility sector.</div>
+              <div class="who-we-are__service__center col-12 col-md-2">
+                <span>Start your project now</span>
+                <router-link class="section__btn" to="/contact-us">Start now</router-link>
+              </div>
+              <div class="who-we-are__service__right col-12 col-md-5">
+                <img src="../assets/img/MacbookPro1.png">
               </div>
             </div>
           </div>
-          <router-link to="/blogs" class="section__btn mt-5">Find out more reviews</router-link>
         </div>
-      </div>
 
-      <div class="section clients">
-        <div class="section__container">
-          <div class="section__title">Our clients</div>
-          <spinner v-if="clients_is_loading"></spinner>
-
-          <div v-if="!is_loading && clients.length > 0" class="clients__items row">
-            <div v-for="client in clients" :key="client.id"
-                 class="clients__items__item col-6 col-md-2">
-              <img :src="client.photo">
+        <div class="section service">
+          <div class="service__container">
+            <div class="section__title">Our services</div>
+            <div class="section__desc">The sole reason we are in business is to make life less difficult for our clients.</div>
+            <div class="service__categories">
+              <div class="service__categories__category">
+                <div class="service__categories__category__title">
+                  <span class="service__categories__category__title__main">Software engineering services</span>
+                  <span class="break"></span>
+                  <span class="service__categories__category__title__desc">It is concerned with developing and creating high-quality software, taking into account the user's interests, needs and requirements at all levels, and it is generally concerned with analyzing software, designs and how to build them, and works to verify them, and even manage them, until we engineer correct and sound software.</span>
+                </div>
+                <div class="service__categories__category__items">
+                  <div class="service__categories__category__items__item">
+                    <div class="service__categories__category__items__item__content">
+                      <div class="service__categories__category__items__item__front">
+                        <i class="fas fa-laptop"></i>
+                        <span class="break"></span>
+                        <span class="service__categories__category__items__item__title">Websites</span>
+                        <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                      </div>
+                      <div class="service__categories__category__items__item__back">
+                        <span class="service__categories__category__items__item__title">Websites</span>
+                        <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                        <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="service__categories__category__items__item">
+                    <div class="service__categories__category__items__item__content">
+                      <div class="service__categories__category__items__item__front">
+                        <i class="fas fa-laptop"></i>
+                        <span class="break"></span>
+                        <span class="service__categories__category__items__item__title">Websites</span>
+                        <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                      </div>
+                      <div class="service__categories__category__items__item__back">
+                        <span class="service__categories__category__items__item__title">Websites</span>
+                        <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                        <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="service__categories__category__items__item">
+                    <div class="service__categories__category__items__item__content">
+                      <div class="service__categories__category__items__item__front">
+                        <i class="fas fa-laptop"></i>
+                        <span class="break"></span>
+                        <span class="service__categories__category__items__item__title">Websites</span>
+                        <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                      </div>
+                      <div class="service__categories__category__items__item__back">
+                        <span class="service__categories__category__items__item__title">Websites</span>
+                        <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                        <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <router-link class="section__btn section__btn-bg" to="/clients">Discover more</router-link>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <div class="section">
-            <div class="section__container sub-section">
-              <div class="sub-section__title">Let's craft together</div>
-              <div class="sub-section__title-2">Tell us about your issues and we will brainstorm the best solution!</div>
-              <router-link to="/contact-us" class="sub-section__btn">Let's talk</router-link>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="section section-bg">
-            <div class="section__container sub-section">
-              <div class="sub-section__title">We are Hiring</div>
-              <div class="sub-section__title-2"> Send us your resume and become a member of We Work!</div>
-              <router-link to="/join-us" class="sub-section__btn sub-section__btn-2">Apply now</router-link>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="section work-with">
-        <div class="section__container">
-          <div class="section__title">Work with future-proof technologies</div>
-          <div class="row work-with__technologies">
-            <div class="col-6 col-md-3 work-with__technologies__item">
-              <img src="../assets/img/technologies/vuejs.svg">
-            </div>
-            <div class="col-6 col-md-3 work-with__technologies__item">
-              <img src="../assets/img/technologies/aws.svg">
-            </div>
-            <div class="col-6 col-md-3 work-with__technologies__item">
-              <img src="../assets/img/technologies/golang.svg">
-            </div>
-            <div class="col-6 col-md-3 work-with__technologies__item">
-              <img src="../assets/img/technologies/laravel.svg">
-            </div>
-            <div class="col-6 col-md-3 work-with__technologies__item">
-              <img src="../assets/img/technologies/nodejs.svg">
-            </div>
-            <div class="col-6 col-md-3 work-with__technologies__item">
-              <img src="../assets/img/technologies/react.svg">
-            </div>
-            <div class="col-6 col-md-3 work-with__technologies__item">
-              <img src="../assets/img/technologies/typescript.svg">
-            </div>
+            <router-link to="/services" class="btn btn-bg">Read more</router-link>
           </div>
         </div>
+
+        <div class="section section-bg blogs">
+          <div class="section__container">
+            <div class="section__title">Client Value & Trust</div>
+            <div class="blogs__items row">
+              <div class="col-12 col-md-4">
+                <div class="blogs__items__item">
+                  <div class="blogs__items__item__name">
+                    <b-avatar size="3rem"></b-avatar>
+                    <span>Mohamed Emad</span>
+                  </div>
+                  <div class="blogs__items__item__content">Once I started working with them, it was clear that they were engaged, technically capable, and very understanding.</div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="blogs__items__item">
+                  <div class="blogs__items__item__name">
+                    <b-avatar size="3rem"></b-avatar>
+                    <span>Mohamed Emad</span>
+                  </div>
+                  <div class="blogs__items__item__content">Their dependability and speed are significantly better than what I’ve been able to observe with other providers.
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="blogs__items__item">
+                  <div class="blogs__items__item__name">
+                    <b-avatar size="3rem"></b-avatar>
+                    <span>Mohamed Emad</span>
+                  </div>
+                  <div class="blogs__items__item__content">Very engaged and professional team with tons of industry knowledge and hands on experience in the e-mobility sector.</div>
+                </div>
+              </div>
+            </div>
+            <router-link to="/blogs" class="section__btn mt-5">Find out more reviews</router-link>
+          </div>
+        </div>
+
+        <div class="section clients">
+          <div class="section__container">
+            <div class="section__title">Our clients</div>
+            <spinner v-if="clients_is_loading"></spinner>
+
+            <div v-if="!is_loading && clients.length > 0" class="clients__items row">
+              <div v-for="client in clients" :key="client.id"
+                   class="clients__items__item col-6 col-md-2">
+                <img :src="client.photo">
+              </div>
+            </div>
+
+            <router-link class="section__btn section__btn-bg" to="/clients">Discover more</router-link>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="section">
+              <div class="section__container sub-section">
+                <div class="sub-section__title">Let's craft together</div>
+                <div class="sub-section__title-2">Tell us about your issues and we will brainstorm the best solution!</div>
+                <router-link to="/contact-us" class="sub-section__btn">Let's talk</router-link>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="section section-bg">
+              <div class="section__container sub-section">
+                <div class="sub-section__title">We are Hiring</div>
+                <div class="sub-section__title-2"> Send us your resume and become a member of We Work!</div>
+                <router-link to="/join-us" class="sub-section__btn sub-section__btn-2">Apply now</router-link>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section work-with">
+          <div class="section__container">
+            <div class="section__title">Work with future-proof technologies</div>
+            <div class="row work-with__technologies">
+              <div class="col-6 col-md-3 work-with__technologies__item">
+                <img src="../assets/img/technologies/vuejs.svg">
+              </div>
+              <div class="col-6 col-md-3 work-with__technologies__item">
+                <img src="../assets/img/technologies/aws.svg">
+              </div>
+              <div class="col-6 col-md-3 work-with__technologies__item">
+                <img src="../assets/img/technologies/golang.svg">
+              </div>
+              <div class="col-6 col-md-3 work-with__technologies__item">
+                <img src="../assets/img/technologies/laravel.svg">
+              </div>
+              <div class="col-6 col-md-3 work-with__technologies__item">
+                <img src="../assets/img/technologies/nodejs.svg">
+              </div>
+              <div class="col-6 col-md-3 work-with__technologies__item">
+                <img src="../assets/img/technologies/react.svg">
+              </div>
+              <div class="col-6 col-md-3 work-with__technologies__item">
+                <img src="../assets/img/technologies/typescript.svg">
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
@@ -535,6 +540,7 @@ export default {
       slider_1: true,
       slider_2: false,
       slider_3: false,
+      sliders: '',
       is_loading: false,
       clients_is_loading: false,
       error: false,
@@ -550,6 +556,7 @@ export default {
   created() {
     window.scrollTo(0,0);
     this.loadClients();
+    this.loadSliders();
   },
   computed: {
     getLang() {
@@ -641,6 +648,36 @@ export default {
 
       this.clients_is_loading = false;
     },
+    async loadSliders() {
+      this.is_loading = true;
+
+      let myHeaders = new Headers();
+      let token = this.$store.getters.token;
+      myHeaders.append("Authorization", "Bearer " + token);
+
+      let requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+      };
+
+      await fetch("https://backend-elbanna.we-work.pro/api/user/get-sliders", requestOptions)
+          .then(response => response.json())
+          .then(result => {
+            if (!result.status) {
+              this.error = true;
+              this.error_message_ar = result.msg;
+            } else {
+              this.sliders = result.data;
+            }
+          })
+          .catch(error => {
+            this.error = true;
+            this.error_message_ar = error.message;
+          });
+
+      this.is_loading = false;
+    },
 
   }
 }
@@ -652,6 +689,10 @@ export default {
 @import "../assets/css/mixins";
 
 .home_view {
+}
+
+.spinner {
+  margin: 10rem 0;
 }
 
 .slider {

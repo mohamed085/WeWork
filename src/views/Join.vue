@@ -211,7 +211,37 @@ export default {
       this.is_loading = true;
       this.error = false;
 
-      console.log(this.form)
+      let formdata = new FormData();
+      formdata.append("name", this.form.name);
+      formdata.append("email", this.form.email);
+      formdata.append("phone", this.form.phone);
+      formdata.append("job_title", this.form.title);
+      formdata.append("resume", this.form.cv);
+      formdata.append("job_description", this.form.job);
+      formdata.append("address", this.form.address);
+
+      let requestOptions = {
+        method: 'POST',
+        body: formdata,
+        redirect: 'follow'
+      };
+
+      await fetch("https://backend-elbanna.we-work.pro/api/user/join-us", requestOptions)
+          .then(response => response.json())
+          .then(result => {
+            if (!result.status) {
+              this.error = true;
+              this.error_message_ar = result.msg;
+              this.error_message_en = result.msg;
+            } else {
+              this.sent = true;
+            }
+
+          })
+          .catch(error => {
+            this.error = true;
+            this.error_message_ar = error.message;
+          });
 
       this.is_loading = false;
     }

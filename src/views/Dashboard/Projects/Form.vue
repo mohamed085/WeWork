@@ -5,7 +5,7 @@
     <div v-else class="contact-form row">
       <div class="err" v-if="error">{{ error_message_ar }}</div>
 
-      <div class="title-2">نموذج تواصل: {{ item.id }}</div>
+      <div class="title-2">نموذج طلب: {{ item.id }}</div>
 
       <div class="col-12 col-md-6">
         <div class="form-group">
@@ -52,7 +52,9 @@ import Spinner from "@/components/ui/Spinner";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Form",
-  components: {Spinner},
+  components: {
+    Spinner
+  },
   data() {
     return {
       is_loading: false,

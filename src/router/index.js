@@ -60,6 +60,7 @@ import DashboardTeamEdit from "@/views/Dashboard/Team/Edit";
 import DashboardTeamSettings from "@/views/Dashboard/Team/Settings";
 import Login from "@/views/Login";
 import Test from "@/views/Test";
+import Slider from "@/views/Dashboard/Slider";
 
 Vue.use(VueRouter)
 
@@ -94,6 +95,7 @@ const routes = [
     { path: '/dashboard', component: Dashboard,
         children: [
             { path: '/dashboard',component: MainDashboard },
+            { path: '/dashboard/slider',component: Slider },
             { path: '/dashboard/users',component: UsersDashboard,
                 children: [
                     { path: '/dashboard/users',component: UsersDashboardItems },

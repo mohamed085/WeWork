@@ -1,5 +1,7 @@
 <template>
   <div>
+    <div class="err" v-if="error">{{ error_message_ar }}</div>
+
     <div class="table-responsive">
       <table class="table table-striped table-hover">
         <thead>
@@ -9,25 +11,29 @@
           <th scope="col">البريد الإلكتروني</th>
           <th scope="col">رقم الجوال</th>
           <th scope="col">الوظيفة</th>
+          <th scope="col">العنوان</th>
           <th scope="col">السيرة الذاتية</th>
           <th scope="col"></th>
         </tr>
         </thead>
-        <tbody>
-        <tr>
-          <th>1</th>
-          <th>محمد عماد</th>
-          <th>mohamed085@gmail.com</th>
-          <th>01012703497</th>
-          <th>Software developer</th>
+        <tbody v-if="!is_loading && items.length > 0">
+        <tr v-for="form in items" :key="form.id">
+          <th>{{ form.id }}</th>
+          <th>{{ form.name }}</th>
+          <th>{{ form.email }}</th>
+          <th>{{ form.phone }}</th>
+          <th>{{ form.job_description }}</th>
+          <th>{{ form.address }}</th>
           <th>
             <div class="table-action">
-              <i class="fas fa-download"></i>
+              <a :href="form.resume" target="_blank">
+                <i class="fas fa-download"></i>
+              </a>
             </div>
           </th>
           <th>
             <div class="table-action">
-              <i class="fas fa-trash-alt"></i>
+              <i @click="deleteForm(form.id)" class="fas fa-trash-alt"></i>
             </div>
           </th>
         </tr>
@@ -36,13 +42,92 @@
       </table>
     </div>
 
+    <div v-if="items.length < 1" class="title-4 text-center">
+      لا يوجد طلبات توظيف
+    </div>
+
+    <spinner v-if="is_loading"></spinner>
+
   </div>
 </template>
 
 <script>
+import Spinner from "@/components/ui/Spinner";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: "Forms"
+  name: "Forms",
+  components: {Spinner},
+  data() {
+    return {
+      is_loading: false,
+      error: false,
+      error_message_ar: '',
+      items: '',
+    }
+  },
+  created() {
+    this.loadForms();
+  },
+  methods: {
+    async loadForms() {
+      this.is_loading = true;
+
+      let myHeaders = new Headers();
+      let token = this.$store.getters.token;
+      myHeaders.append("Authorization", "Bearer " + token);
+
+      let requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+      };
+
+      await fetch("https://backend-elbanna.we-work.pro/api/admin/auth/get-all-join-us", requestOptions)
+          .then(response => response.json())
+          .then(result => {
+
+            if (!result.status) {
+              this.error = true;
+              this.error_message_ar = result.msg;
+            } else {
+              this.items = result.data;
+            }
+          })
+          .catch(error => {
+            this.error = true;
+            this.error_message_ar = error.message;
+          });
+
+      this.is_loading = false;
+    },
+    async deleteForm(id) {
+      this.is_loading = true;
+
+      let myHeaders = new Headers();
+      let token = this.$store.getters.token;
+      myHeaders.append("Authorization", "Bearer " + token);
+
+      let requestOptions = {
+        method: 'DELETE',
+        headers: myHeaders,
+        redirect: 'follow'
+      };
+
+      let url = `https://backend-elbanna.we-work.pro/api/admin/auth/delete-join-us/` + id;
+
+      await fetch(url, requestOptions)
+          .then(response => response.json())
+          .then()
+          .catch(error => {
+            this.error = true;
+            this.error_message_ar = error.message;
+          });
+
+      await this.loadForms();
+      this.is_loading = false;
+    },
+  }
+
 }
 </script>
 

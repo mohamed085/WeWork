@@ -14,8 +14,7 @@
         <router-link to="/dashboard/projects" class="side-bar__items__item">المشاريع</router-link>
         <router-link to="/dashboard/clients" class="side-bar__items__item">العملاء</router-link>
         <router-link to="/dashboard/team" class="side-bar__items__item">الفريق</router-link>
-        <router-link to="/dashboard/deliver" class="side-bar__items__item">التسليم</router-link>
-        <router-link to="/dashboard/social" class="side-bar__items__item">وسائل التواصل</router-link>
+        <router-link to="/dashboard/slider" class="side-bar__items__item">سليدر الصفحة الرئيسية</router-link>
       </div>
     </div>
 
