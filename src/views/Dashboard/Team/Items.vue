@@ -33,7 +33,7 @@
           <th>{{ user.job_description_en }}</th>
           <th>
             <div class="table-action">
-              <router-link to="/dashboard/team/edit/4556"><i class="fas fa-edit"></i></router-link> |
+              <router-link :to="'/dashboard/team/edit/' + user.id"><i class="fas fa-edit"></i></router-link> |
               <i @click="deleteTeamMember(user.id)" class="fas fa-trash-alt"></i>
             </div>
           </th>

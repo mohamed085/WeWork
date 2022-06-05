@@ -176,7 +176,41 @@ export default {
       this.is_loading = true;
       this.error = false;
 
-      console.log(this.form)
+      let myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+
+      let raw = JSON.stringify({
+        "name": this.form.name,
+        "email": this.form.email,
+        "phone": this.form.phone,
+        "company_name": this.form.company_name,
+        "company_email": this.form.company_mail,
+        "project_description": this.form.idea
+      });
+
+      let requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+      };
+
+      await fetch("https://backend-elbanna.we-work.pro/api/user/insert-request-project", requestOptions)
+          .then(response => response.json())
+          .then(result => {
+            if (!result.status) {
+              this.error = true;
+              this.error_message_ar = result.msg;
+              this.error_message_en = result.msg;
+            } else {
+              this.sent = true;
+            }
+
+          })
+          .catch(error => {
+            this.error = true;
+            this.error_message_ar = error.message;
+          });
 
       this.is_loading = false;
     }

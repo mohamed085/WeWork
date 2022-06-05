@@ -195,24 +195,12 @@
       <div class="section clients">
         <div class="section__container">
           <div class="section__title">عملائنا</div>
-          <div class="clients__items row">
-            <div class="clients__items__item col-6 col-md-2">
-              <img src="../assets/img/clients/ع.png">
-            </div>
-            <div class="clients__items__item col-6 col-md-2">
-              <img src="../assets/img/clients/egada-01.png">
-            </div>
-            <div class="clients__items__item col-6 col-md-2">
-              <img src="../assets/img/clients/ui.png">
-            </div>
-            <div class="clients__items__item col-6 col-md-2">
-              <img src="../assets/img/clients/دوناتيلو-01.png">
-            </div>
-            <div class="clients__items__item col-6 col-md-2">
-              <img src="../assets/img/clients/ض.png">
-            </div>
-            <div class="clients__items__item col-6 col-md-2">
-              <img src="../assets/img/clients/نورا-01.png">
+          <spinner v-if="clients_is_loading"></spinner>
+
+          <div v-if="!is_loading && clients.length > 0" class="clients__items row">
+            <div v-for="client in clients" :key="client.id"
+                class="clients__items__item col-6 col-md-2">
+              <img :src="client.photo">
             </div>
           </div>
           <router-link class="section__btn section__btn-bg" to="/clients">تعرف علي المزيد</router-link>
@@ -458,26 +446,15 @@
       <div class="section clients">
         <div class="section__container">
           <div class="section__title">Our clients</div>
-          <div class="clients__items row">
-            <div class="clients__items__item col-6 col-md-2">
-              <img src="../assets/img/clients/ع.png">
-            </div>
-            <div class="clients__items__item col-6 col-md-2">
-              <img src="../assets/img/clients/egada-01.png">
-            </div>
-            <div class="clients__items__item col-6 col-md-2">
-              <img src="../assets/img/clients/ui.png">
-            </div>
-            <div class="clients__items__item col-6 col-md-2">
-              <img src="../assets/img/clients/دوناتيلو-01.png">
-            </div>
-            <div class="clients__items__item col-6 col-md-2">
-              <img src="../assets/img/clients/ض.png">
-            </div>
-            <div class="clients__items__item col-6 col-md-2">
-              <img src="../assets/img/clients/نورا-01.png">
+          <spinner v-if="clients_is_loading"></spinner>
+
+          <div v-if="!is_loading && clients.length > 0" class="clients__items row">
+            <div v-for="client in clients" :key="client.id"
+                 class="clients__items__item col-6 col-md-2">
+              <img :src="client.photo">
             </div>
           </div>
+
           <router-link class="section__btn section__btn-bg" to="/clients">Discover more</router-link>
         </div>
       </div>
@@ -543,10 +520,12 @@
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import SocialMedia from "@/components/ui/SocialMedia";
+import Spinner from "@/components/ui/Spinner";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Home",
   components: {
+    Spinner,
     SocialMedia,
     Footer,
     Navbar,
@@ -556,6 +535,11 @@ export default {
       slider_1: true,
       slider_2: false,
       slider_3: false,
+      is_loading: false,
+      clients_is_loading: false,
+      error: false,
+      error_message_ar: '',
+      clients: '',
     }
   },
   mounted: function () {
@@ -564,7 +548,8 @@ export default {
     }, 5000);
   },
   created() {
-    window.scrollTo(0,0)
+    window.scrollTo(0,0);
+    this.loadClients();
   },
   computed: {
     getLang() {
@@ -626,7 +611,37 @@ export default {
         }
 
       }
-    }
+    },
+    async loadClients() {
+      this.clients_is_loading = true;
+
+      let myHeaders = new Headers();
+
+      let requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+      };
+
+      await fetch("https://backend-elbanna.we-work.pro/api/user/get-6-clients", requestOptions)
+          .then(response => response.json())
+          .then(result => {
+
+            if (!result.status) {
+              this.error = true;
+              this.error_message_ar = result.msg;
+            } else {
+              this.clients = result.data;
+            }
+          })
+          .catch(error => {
+            this.error = true;
+            this.error_message_ar = error.message;
+          });
+
+      this.clients_is_loading = false;
+    },
+
   }
 }
 </script>
