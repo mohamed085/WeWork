@@ -16,18 +16,21 @@
         </div>
         <div class="strategy bg-screen row">
           <div class="col-md-4">
-            <div class="strategy__title">الخدمات
+            <div class="strategy__title">خدمات
               <br>
-              <span>البرمجية</span>
+              <span>البرمجة</span>
             </div>
             <div class="strategy__desc">
-              حقق أهداف عملك باستخدام التكنولوجيا واحصل على المنتج الذي يتكيف جيدًا مع بيئتك.
+              البرمجة من الخدمات الأكثر طلباٌ في الوقت الحالي وهذا دليل على مدي أهمية البرمجة في جميع مجالات سوق العمل
             </div>
             <div class="strategy__desc">
-              نحن نقدم ورش عمل مع جميع أصحاب المصلحة الرئيسيين ، ونجمع المتطلبات وتصميم الحل الكامل مع خريطة طريق للتسليم.
+              لذلك تعمل شركة we work  على تقديم خدماتها في مجال البرمجة لتسهل عليك مهامك وأعمالك  بإستخدام لغات البرمجه المختلفة لإنشاء  مواقع إلكترونية  وتطبيقات الهاتف المختلفه  وانشاء المتاجر الإلكتروينة
+            </div>
+            <div class="strategy__desc">
+              أن سوق العمل  في وقتنا هذا  يعتمد على قواعد البيانات  لتحليل سلوك العملاء لتقديم خدمات تتلائم مع احتياجتهم لذلك تلعب البرمجة دور مهم جدا  في وقتنا هذا
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 d-flex align-items-center">
             <div class="service__categories__category__items">
               <div class="service__categories__category__items__item">
                 <div class="service__categories__category__items__item__content">

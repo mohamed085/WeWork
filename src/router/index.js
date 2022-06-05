@@ -59,11 +59,13 @@ import DashboardTeamAdd from "@/views/Dashboard/Team/Add";
 import DashboardTeamEdit from "@/views/Dashboard/Team/Edit";
 import DashboardTeamSettings from "@/views/Dashboard/Team/Settings";
 import Login from "@/views/Login";
+import Test from "@/views/Test";
 
 Vue.use(VueRouter)
 
 const routes = [
     { path: '/',component: Home },
+    { path: '/test',component: Test },
     { path: '/login',component: Login },
     { path: '/services',component: Services },
     { path: '/deliver',component: Deliver },

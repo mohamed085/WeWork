@@ -20,38 +20,44 @@
         <div class="contact__info">
           <div class="row">
             <div class="col-12">
-              <div class="contact__info__contact-form">
+              <div class="sent" v-if="sent">
+                <div class="title-2 text-center">تم إرسال طلب التواصل بنجاح.</div>
+                <div class="title-3 text-center">سوف يصلك الرد قريبا.</div>
+              </div>
+              <div v-else class="contact__info__contact-form">
                 <div class="contact__info__title">نموذج التواصل الالكتروني</div>
-                <b-form>
+                <spinner v-if="is_loading"></spinner>
+                <b-form v-else @submit.prevent="submitForm">
+                  <div class="err" v-if="error">{{ error_message_ar }}</div>
                   <div class="row">
                     <div class="col-12 col-md-6">
                       <div class="form-group">
                         <span>الإسم*</span>
-                        <b-form-input class="input" type="text" placeholder="الإسم" required></b-form-input>
+                        <b-form-input class="input" type="text" placeholder="الإسم" v-model="form.name" required></b-form-input>
                       </div>
                     </div>
                     <div class="col-12 col-md-6">
                       <div class="form-group">
                         <span>البريد الإلكتروني*</span>
-                        <b-form-input class="input" type="email" placeholder="البريد الإلكتروني" required></b-form-input>
+                        <b-form-input class="input" type="email" placeholder="البريد الإلكتروني" v-model="form.email" required></b-form-input>
                       </div>
                     </div>
                     <div class="col-12 col-md-6">
                       <div class="form-group">
                         <span>رقم الجوال*</span>
-                        <b-form-input class="input" type="tel" placeholder="رقم الجوال" required></b-form-input>
+                        <b-form-input class="input" type="tel" placeholder="رقم الجوال" v-model="form.phone" required></b-form-input>
                       </div>
                     </div>
                     <div class="col-12">
                       <div class="form-group">
                         <span>عنوان الرسالة*</span>
-                        <b-form-input class="input" type="text" placeholder="عنوان الرسالة" required></b-form-input>
+                        <b-form-input class="input" type="text" placeholder="عنوان الرسالة" v-model="form.title" required></b-form-input>
                       </div>
                     </div>
                     <div class="col-12">
                       <div class="form-group">
                         <span>الرسالة*</span>
-                        <b-form-textarea class="input" rows="5"></b-form-textarea>
+                        <b-form-textarea class="input" rows="5" v-model="form.message" required></b-form-textarea>
                       </div>
                     </div>
                     <div class="col-12">
@@ -84,38 +90,44 @@
       <div class="contact__info">
         <div class="row">
           <div class="col-12">
-            <div class="contact__info__contact-form">
+            <div class="sent" v-if="sent">
+              <div class="title-2 text-center">The contact request has been sent successfully.</div>
+              <div class="title-3 text-center">You will receive a reply soon.</div>
+            </div>
+            <div v-else class="contact__info__contact-form">
               <div class="contact__info__title">Contact Form</div>
-              <b-form>
+              <spinner v-if="is_loading"></spinner>
+              <b-form v-else @submit.prevent="submitForm">
+                <div class="err" v-if="error">{{ error_message_en }}</div>
                 <div class="row">
                   <div class="col-12 col-md-6">
                     <div class="form-group">
                       <span>Name*</span>
-                      <b-form-input class="input" type="text" placeholder="Name" required></b-form-input>
+                      <b-form-input class="input" type="text" placeholder="Name" v-model="form.name" required></b-form-input>
                     </div>
                   </div>
                   <div class="col-12 col-md-6">
                     <div class="form-group">
                       <span>Email*</span>
-                      <b-form-input class="input" type="email" placeholder="Email" required></b-form-input>
+                      <b-form-input class="input" type="email" placeholder="Email" v-model="form.email" required></b-form-input>
                     </div>
                   </div>
                   <div class="col-12 col-md-6">
                     <div class="form-group">
                       <span>Phone*</span>
-                      <b-form-input class="input" type="tel" placeholder="Phone" required></b-form-input>
+                      <b-form-input class="input" type="tel" placeholder="Phone" v-model="form.phone" required></b-form-input>
                     </div>
                   </div>
                   <div class="col-12">
                     <div class="form-group">
                       <span>Message title*</span>
-                      <b-form-input class="input" type="text" placeholder="Message title" required></b-form-input>
+                      <b-form-input class="input" type="text" placeholder="Message title" v-model="form.title" required></b-form-input>
                     </div>
                   </div>
                   <div class="col-12">
                     <div class="form-group">
                       <span>Message*</span>
-                      <b-form-textarea class="input" rows="5"></b-form-textarea>
+                      <b-form-textarea class="input" rows="5" v-model="form.message" required></b-form-textarea>
                     </div>
                   </div>
                   <div class="col-12">
@@ -140,17 +152,28 @@
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import SocialMedia from "@/components/ui/SocialMedia";
+import Spinner from "@/components/ui/Spinner";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Contact",
   components: {
+    Spinner,
     SocialMedia,
     Footer, Navbar
   },
   data() {
     return {
-      message: {
-        type: null
+      is_loading: false,
+      sent: false,
+      error: false,
+      error_message_ar: '',
+      error_message_en: '',
+      form: {
+        name: '',
+        email: '',
+        phone: '',
+        title: '',
+        message: '',
       }
     }
   },
@@ -162,6 +185,16 @@ export default {
       return this.$store.getters['main/getLang'];
     }
   },
+  methods: {
+    async submitForm() {
+      this.is_loading = true;
+      this.error = false;
+
+      console.log(this.form)
+
+      this.is_loading = false;
+    }
+  }
 }
 </script>
 

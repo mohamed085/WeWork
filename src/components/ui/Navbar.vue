@@ -13,9 +13,9 @@
 
       <div class="navbar-2"
           :class="{sticky: scrollPosition > 40}">
-          <div class="navbar-2__logo">
+          <router-link to="/" class="navbar-2__logo">
             <img src="../../assets/img/blue-logo-2.png">
-          </div>
+          </router-link>
           <div class="navbar-2__content">
             <div class="navbar-2__content__mobile">
               <i v-if="!mobileNav" @click="openMobileNav()" class="fas fa-align-justify"></i>
@@ -40,7 +40,9 @@
 
       <div class="mobile-nav" v-if="mobileNav">
         <div class="mobile-nav__header">
-          <img src="../../assets/img/blue-logo-2.png">
+          <router-link to="/" class="me-2 ms-2">
+            <img src="../../assets/img/blue-logo-2.png">
+          </router-link>
           <i v-if="mobileNav" @click="closeMobileNav()" class="fas fa-times"></i>
         </div>
         <div class="mobile-nav__items">
@@ -72,9 +74,9 @@
 
       <div class="navbar-2"
            :class="{sticky: scrollPosition > 40}">
-        <div class="navbar-2__logo">
+        <router-link to="/" class="navbar-2__logo">
           <img src="../../assets/img/blue-logo-2.png">
-        </div>
+        </router-link>
         <div class="navbar-2__content">
           <div class="navbar-2__content__mobile">
             <i v-if="!mobileNav" @click="openMobileNav()" class="fas fa-align-justify"></i>
@@ -100,7 +102,9 @@
 
       <div class="mobile-nav" v-if="mobileNav">
         <div class="mobile-nav__header">
-          <img src="../../assets/img/black-logo.png">
+          <router-link to="/" class="me-2 ms-2">
+            <img src="../../assets/img/black-logo.png">
+          </router-link>
           <i v-if="mobileNav" @click="closeMobileNav()" class="fas fa-times"></i>
         </div>
         <div class="mobile-nav__items">

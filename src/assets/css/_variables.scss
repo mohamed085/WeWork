@@ -20,3 +20,15 @@ $color-grey-light-4: #DFE8E8;
 $color-grey-dark: #e0e0e0;
 $color-grey-dark-2: #999;
 $color-grey-dark-3: #333;
+
+.err {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  padding: .7rem 1rem;
+  border: 1px solid #ff3131;
+  font-size: 1rem;
+  color: #ff3131;
+  background: #ff8787;
+  border-radius: 10px;
+}

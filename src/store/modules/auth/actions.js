@@ -17,27 +17,26 @@ export default {
             redirect: 'follow'
         };
 
-        let url = "https://yaformelbanna.we-work.pro/api/unauth/login"
+        let url = "https://backend-elbanna.we-work.pro/api/admin/login"
+
         const response = await fetch(url, requestOptions);
         const responseData = await response.json();
-
-        console.log(responseData.msg);
 
         if (!responseData.status) {
             console.log(responseData.status);
             throw new Error('Error');
         }
 
-        localStorage.setItem('token', responseData.msg.token);
-        localStorage.setItem('userId', responseData.msg.id);
-        localStorage.setItem('name', responseData.msg.name);
-        localStorage.setItem('email', responseData.msg.id);
+        localStorage.setItem('token', responseData.data.token);
+        localStorage.setItem('userId', responseData.data.admin.id);
+        localStorage.setItem('name', responseData.data.admin.name);
+        localStorage.setItem('email', responseData.data.admin.id);
 
         context.commit('setUser', {
-            token: responseData.msg.token,
-            userId: responseData.msg.id,
-            name: responseData.msg.name,
-            email: responseData.msg.email,
+            token: responseData.data.token,
+            userId: responseData.data.admin.id,
+            name: responseData.data.admin.name,
+            email: responseData.data.admin.email,
         })
 
     },

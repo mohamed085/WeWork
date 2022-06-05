@@ -99,8 +99,8 @@ export default {
   },
   methods: {
     async login() {
-      this.error = false;
       this.is_loading = true;
+      this.error = false;
 
       try {
         await this.$store.dispatch('login', {
