@@ -1,861 +1,246 @@
 <template>
   <div class="all-categories ar" v-if="getLang === 'ar'">
 
-    <!-- Mobile apps -->
-    <div class="section">
-      <div class="section__container row">
-        <div class="section__sub-1 col-12 col-md-4">
-          <div class="section__title">
-            <h3 class="section__title__heading">تعرف علي تطبيقات وي ورك</h3>
-            <router-link to="/mobile-applications" class="section__title__btn mt-3">اكتشف الكل</router-link>
+    <spinner v-if="is_loading"></spinner>
 
+    <div v-else>
+      <div v-for="category in items" :key="category.id">
+        <div v-if="category.sub_category_name_en == 'mobile application'" class="section">
+          <div class="section__container row">
+            <div class="section__sub-1 col-12 col-md-4">
+              <div class="section__title">
+                <h3 class="section__title__heading">{{ category.sub_category_name_ar }}</h3>
+                <router-link to="/mobile-applications" class="section__title__btn mt-3">اكتشف الكل</router-link>
+              </div>
+            </div>
+            <div class="section__sub-2 col-12 col-md-8">
+              <div class="section__content">
+                <div class="mobile-apps">
+                  <img class="mobile-apps__app" :src="category.photo1">
+                  <img class="mobile-apps__app" :src="category.photo2">
+                  <img class="mobile-apps__app" :src="category.photo3">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div v-else-if="category.sub_category_name_en == 'website'" class="section">
+          <div class="section__container row">
+            <div class="composition-container col-12 col-md-8">
+              <div class="composition">
+                <img sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                     alt="Photo 1"
+                     class="composition__photo composition__photo--p1"
+                     :src="category.photo1">
+                <img sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                     alt="Photo 1"
+                     class="composition__photo composition__photo--p1"
+                     :src="category.photo2">
+                <img sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                     alt="Photo 1"
+                     class="composition__photo composition__photo--p1"
+                     :src="category.photo2">
+              </div>
+            </div>
+            <div class="section__sub section__sub-2 col-12 col-md-4">
+              <div class="section__title">
+                <h3 class="section__title__heading">{{ category.sub_category_name_ar }}</h3>
+                <router-link to="/websites" class="section__title__btn mt-3">اكتشف الكل</router-link>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="section__sub-2 col-12 col-md-8">
-          <div class="section__content">
-            <div class="mobile-apps">
-              <router-link class="mobile-apps__app" to="/mobile-application/613265">
-                <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-              </router-link>
-              <router-link class="mobile-apps__app" to="/mobile-application/613265">
-                <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-              </router-link>
-              <router-link class="mobile-apps__app" to="/mobile-application/613265">
-                <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-              </router-link>
+
+        <div v-else class="section">
+          <div class="section__container row">
+            <div class="section__sub-1 col-12 col-md-3">
+              <div class="section__title">
+                <h3 class="section__title__heading">{{ category.sub_category_name_ar }}</h3>
+                <router-link
+                    v-if="category.sub_category_name_en == 'motion graphics'"
+                    to="/motion-graphics" class="section__title__btn mt-3">اكتشف الكل</router-link>
+                <router-link
+                    v-else
+                    :to="'projects/' + category.id" class="section__title__btn mt-3">اكتشف الكل</router-link>
+
+              </div>
+            </div>
+            <div class="section__sub-2 col-12 col-md-9">
+              <div class="section__content mobile-hidden">
+                <div class="designs">
+                  <div v-if="lg_screen.slide_1" class="design-item animate__animated animate__slideInLeft">
+                    <div class="design-item__box-grad"></div>
+                    <div class="design-item__content pb-4">
+                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
+                    </div>
+                  </div>
+                  <div v-if="lg_screen.slide_1 || lg_screen.slide_2" class="design-item animate__animated animate__slideInLeft">
+                    <div class="design-item__box-grad"></div>
+                    <div class="design-item__content pb-4">
+                      <img class="design-item__content__img" src="../../assets/img/interior-design/BadRooM2.jpg">
+                    </div>
+                  </div>
+                  <div v-if="lg_screen.slide_1 || lg_screen.slide_2 || lg_screen.slide_3" class="design-item animate__animated animate__slideInLeft">
+                    <div class="design-item__box-grad"></div>
+                    <div class="design-item__content pb-4">
+                      <img class="design-item__content__img" src="../../assets/img/interior-design/bathRoom.jpg">
+                    </div>
+                  </div>
+                  <div v-if="lg_screen.slide_2 || lg_screen.slide_3" class="design-item animate__animated animate__slideInLeft">
+                    <div class="design-item__box-grad"></div>
+                    <div class="design-item__content pb-4">
+                      <img class="design-item__content__img" src="../../assets/img/interior-design/dressing-room.jpg">
+                    </div>
+                  </div>
+                  <div v-if="lg_screen.slide_3" class="design-item animate__animated animate__slideInLeft">
+                    <div class="design-item__box-grad"></div>
+                    <div class="design-item__content pb-4">
+                      <img class="design-item__content__img" src="../../assets/img/interior-design/living-room.jpg">
+                    </div>
+                  </div>
+                </div>
+                <div class="owl-dots">
+                  <div @click="displaySlider('last')" class="owl-dots__next"><i class="fas fa-angle-right"></i></div>
+                  <div class="owl-dots__slide">
+                    <div @click="displaySlider('slider_1')" class="owl-dots__slide__item" :class="(lg_screen.slide_1) ? 'active' : ''"></div>
+                    <div @click="displaySlider('slider_2')" class="owl-dots__slide__item" :class="(lg_screen.slide_2) ? 'active' : ''"></div>
+                    <div @click="displaySlider('slider_3')" class="owl-dots__slide__item" :class="(lg_screen.slide_3) ? 'active' : ''"></div>
+                  </div>
+                  <div @click="displaySlider('next')" class="owl-dots__previous"><i class="fas fa-angle-left"></i></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
-
-    <!-- Websites -->
-    <div class="section">
-      <div class="section__container row">
-        <div class="composition-container col-12 col-md-8">
-          <div class="composition">
-            <img srcset="../../assets/img/websites/2.jpg 300w, ../../assets/img/websites/2.jpg 1000w"
-                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                 alt="Photo 1"
-                 class="composition__photo composition__photo--p1"
-                 src="../../assets/img/websites/2.jpg">
-            <img srcset="../../assets/img/websites/2.jpg 300w, ../../assets/img/websites/2.jpg 1000w"
-                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                 alt="Photo 2"
-                 class="composition__photo composition__photo--p2"
-                 src="../../assets/img/websites/2.jpg">
-            <img srcset="../../assets/img/websites/2.jpg 300w, ../../assets/img/websites/2.jpg 1000w"
-                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                 alt="Photo 3"
-                 class="composition__photo composition__photo--p3"
-                 src="../../assets/img/websites/2.jpg">
-          </div>
-        </div>
-        <div class="section__sub section__sub-2 col-12 col-md-4">
-          <div class="section__title">
-            <h3 class="section__title__heading">شاهد جميع موقع وي ورك</h3>
-            <router-link to="/websites" class="section__title__btn mt-3">اكتشف الكل</router-link>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- UI \ UX apps -->
-    <div class="section">
-      <router-link to="projects/132568">
-        <div class="section__container row">
-          <div class="section__sub-1 col-12 col-md-3">
-            <div class="section__title">
-              <h3 class="section__title__heading">اعمل وي ورك في ال UI \ UX</h3>
-            </div>
-          </div>
-          <div class="section__sub-2 col-12 col-md-9">
-            <div class="section__content">
-              <div class="designs">
-                <div class="design-item">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="/project/1236">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">مشاريع مميزه</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="/project/1236">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">مشاريع مميزه</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="/project/1236">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">مشاريع مميزه</router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-dots">
-                <div class="owl-dots__next"><i class="fas fa-angle-right"></i></div>
-                <div class="owl-dots__slide">
-                  <div class="owl-dots__slide__item active"></div>
-                  <div class="owl-dots__slide__item"></div>
-                  <div class="owl-dots__slide__item"></div>
-                </div>
-                <div class="owl-dots__previous"><i class="fas fa-angle-left"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </router-link>
-    </div>
-
-    <!-- Interior Design apps -->
-    <div class="section">
-      <router-link to="projects/132568">
-        <div class="section__container row">
-          <div class="section__sub-1 col-12 col-md-3">
-            <div class="section__title">
-              <h3 class="section__title__heading">احدث اعمال التصميم داخلي</h3>
-            </div>
-          </div>
-          <div class="section__sub-2 col-12 col-md-9">
-            <div class="section__content">
-              <div class="designs">
-                <div class="design-item">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="/project/1236">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">مشاريع مميزه</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="/project/1236">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">مشاريع مميزه</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="/project/1236">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">مشاريع مميزه</router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-dots">
-                <div class="owl-dots__next"><i class="fas fa-angle-right"></i></div>
-                <div class="owl-dots__slide">
-                  <div class="owl-dots__slide__item active"></div>
-                  <div class="owl-dots__slide__item"></div>
-                  <div class="owl-dots__slide__item"></div>
-                </div>
-                <div class="owl-dots__previous"><i class="fas fa-angle-left"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </router-link>
-    </div>
-
-    <!-- Exterior Design apps -->
-    <div class="section">
-      <router-link to="projects/132568">
-        <div class="section__container row">
-          <div class="section__sub-1 col-12 col-md-3">
-            <div class="section__title">
-              <h3 class="section__title__heading">احدث اعمال التصميم الخارجي</h3>
-            </div>
-          </div>
-          <div class="section__sub-2 col-12 col-md-9">
-            <div class="section__content">
-              <div class="designs">
-                <div class="design-item">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="/project/1236">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">مشاريع مميزه</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="/project/1236">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">مشاريع مميزه</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="/project/1236">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">مشاريع مميزه</router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-dots">
-                <div class="owl-dots__next"><i class="fas fa-angle-right"></i></div>
-                <div class="owl-dots__slide">
-                  <div class="owl-dots__slide__item active"></div>
-                  <div class="owl-dots__slide__item"></div>
-                  <div class="owl-dots__slide__item"></div>
-                </div>
-                <div class="owl-dots__previous"><i class="fas fa-angle-left"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </router-link>
-    </div>
-
-    <!-- Shop Drawing apps -->
-    <div class="section">
-      <router-link to="projects/132568">
-        <div class="section__container row">
-          <div class="section__sub-1 col-12 col-md-3">
-            <div class="section__title">
-              <h3 class="section__title__heading">احدث اعمال التصورات السوقية</h3>
-            </div>
-          </div>
-          <div class="section__sub-2 col-12 col-md-9">
-            <div class="section__content">
-              <div class="designs">
-                <div class="design-item">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="/project/1236">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">مشاريع مميزه</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="/project/1236">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">مشاريع مميزه</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="/project/1236">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">مشاريع مميزه</router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-dots">
-                <div class="owl-dots__next"><i class="fas fa-angle-right"></i></div>
-                <div class="owl-dots__slide">
-                  <div class="owl-dots__slide__item active"></div>
-                  <div class="owl-dots__slide__item"></div>
-                  <div class="owl-dots__slide__item"></div>
-                </div>
-                <div class="owl-dots__previous"><i class="fas fa-angle-left"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </router-link>
-    </div>
-
-    <!-- Motion Graphics apps -->
-    <div class="section">
-      <router-link to="/motion-graphic">
-        <div class="section__container row">
-          <div class="section__sub-1 col-12 col-md-3">
-            <div class="section__title">
-              <h3 class="section__title__heading">احدث اعمال الرسوم المتحركة</h3>
-            </div>
-          </div>
-          <div class="section__sub-2 col-12 col-md-9">
-            <div class="section__content">
-              <div class="designs">
-                <div class="design-item">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="motion-graphic/4513">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">مشاريع مميزه</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="motion-graphic/4513">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">مشاريع مميزه</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="motion-graphic/4513">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">مشاريع مميزه</router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-dots">
-                <div class="owl-dots__next"><i class="fas fa-angle-right"></i></div>
-                <div class="owl-dots__slide">
-                  <div class="owl-dots__slide__item active"></div>
-                  <div class="owl-dots__slide__item"></div>
-                  <div class="owl-dots__slide__item"></div>
-                </div>
-                <div class="owl-dots__previous"><i class="fas fa-angle-left"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </router-link>
-    </div>
-
-    <!-- Photography apps -->
-    <div class="section">
-      <router-link to="/projects/132568">
-        <div class="section__container row">
-          <div class="section__sub-1 col-12 col-md-3">
-            <div class="section__title">
-              <h3 class="section__title__heading">احدث اعمال التصوير</h3>
-            </div>
-          </div>
-          <div class="section__sub-2 col-12 col-md-9">
-            <div class="section__content">
-              <div class="designs">
-                <div class="design-item">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="/project/1236">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">مشاريع مميزه</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="/project/1236">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">مشاريع مميزه</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="/project/1236">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">مشاريع مميزه</router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-dots">
-                <div class="owl-dots__next"><i class="fas fa-angle-right"></i></div>
-                <div class="owl-dots__slide">
-                  <div class="owl-dots__slide__item active"></div>
-                  <div class="owl-dots__slide__item"></div>
-                  <div class="owl-dots__slide__item"></div>
-                </div>
-                <div class="owl-dots__previous"><i class="fas fa-angle-left"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </router-link>
-    </div>
-
 
   </div>
 
   <div class="all-categories en" v-else-if="getLang === 'en'">
 
-    <!-- Mobile apps -->
-    <div class="section">
-      <div class="section__container row">
-        <div class="section__sub-1 col-12 col-md-4">
-          <div class="section__title">
-            <h3 class="section__title__heading">Learn about We Work apps</h3>
-            <router-link to="/mobile-applications" class="section__title__btn mt-3">Discover all</router-link>
+    <spinner v-if="is_loading"></spinner>
 
+    <div v-else>
+      <div v-for="category in items" :key="category.id">
+
+        <!-- Mobile apps -->
+        <div v-if="category.sub_category_name_en == 'mobile application'" class="section">
+          <div class="section__container row">
+            <div class="section__sub-1 col-12 col-md-4">
+              <div class="section__title">
+                <h3 class="section__title__heading">{{ category.sub_category_name_en }}</h3>
+                <router-link to="/mobile-applications" class="section__title__btn mt-3">Discover all</router-link>
+
+              </div>
+            </div>
+            <div class="section__sub-2 col-12 col-md-8">
+              <div class="section__content">
+                <div class="mobile-apps">
+                  <img class="mobile-apps__app" :src="category.photo1">
+                  <img class="mobile-apps__app" :src="category.photo2">
+                  <img class="mobile-apps__app" :src="category.photo3">
+                </div>
+              </div>
+            </div>
           </div>
+
         </div>
-        <div class="section__sub-2 col-12 col-md-8">
-          <div class="section__content">
-            <div class="mobile-apps">
-              <router-link class="mobile-apps__app" to="/mobile-application/613265">
-                <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-              </router-link>
-              <router-link class="mobile-apps__app" to="/mobile-application/613265">
-                <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-              </router-link>
-              <router-link class="mobile-apps__app" to="/mobile-application/613265">
-                <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-              </router-link>
+
+        <!-- Websites -->
+        <div class="section">
+          <div class="section__container row">
+            <div class="composition-container col-12 col-md-8">
+              <div class="composition">
+                <img srcset="../../assets/img/websites/2.jpg 300w, ../../assets/img/websites/2.jpg 1000w"
+                     sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                     alt="Photo 1"
+                     class="composition__photo composition__photo--p1"
+                     src="../../assets/img/websites/2.jpg">
+                <img srcset="../../assets/img/websites/2.jpg 300w, ../../assets/img/websites/2.jpg 1000w"
+                     sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                     alt="Photo 2"
+                     class="composition__photo composition__photo--p2"
+                     src="../../assets/img/websites/2.jpg">
+                <img srcset="../../assets/img/websites/2.jpg 300w, ../../assets/img/websites/2.jpg 1000w"
+                     sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                     alt="Photo 3"
+                     class="composition__photo composition__photo--p3"
+                     src="../../assets/img/websites/2.jpg">
+              </div>
+            </div>
+            <div class="section__sub section__sub-2 col-12 col-md-4">
+              <div class="section__title">
+                <h3 class="section__title__heading">See all We Work websites</h3>
+                <router-link to="/websites" class="section__title__btn mt-3">Discover all</router-link>
+              </div>
             </div>
           </div>
         </div>
+
+        <div class="section">
+          <router-link to="/motion-graphic">
+            <div class="section__container row">
+              <div class="section__sub-1 col-12 col-md-3">
+                <div class="section__title">
+                  <h3 class="section__title__heading">Latest motion graphics work</h3>
+                </div>
+              </div>
+              <div class="section__sub-2 col-12 col-md-9">
+                <div class="section__content">
+                  <div class="designs">
+                    <div class="design-item">
+                      <div class="design-item__box-grad"></div>
+                      <div class="design-item__content">
+                        <router-link to="">
+                          <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
+                        </router-link>
+                        <div class="design-item__content__title">
+                          <router-link to="">Test project</router-link>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="design-item mobile-hidden">
+                      <div class="design-item__box-grad"></div>
+                      <div class="design-item__content">
+                        <router-link to="">
+                          <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
+                        </router-link>
+                        <div class="design-item__content__title">
+                          <router-link to="">Test project</router-link>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="design-item mobile-hidden">
+                      <div class="design-item__box-grad"></div>
+                      <div class="design-item__content">
+                        <router-link to="">
+                          <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
+                        </router-link>
+                        <div class="design-item__content__title">
+                          <router-link to="">Test project</router-link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-dots">
+                    <div class="owl-dots__previous"><i class="fas fa-angle-left"></i></div>
+                    <div class="owl-dots__slide">
+                      <div class="owl-dots__slide__item active"></div>
+                      <div class="owl-dots__slide__item"></div>
+                      <div class="owl-dots__slide__item"></div>
+                    </div>
+                    <div class="owl-dots__next"><i class="fas fa-angle-right"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </router-link>
+        </div>
+
       </div>
-
-    </div>
-
-    <!-- Websites -->
-    <div class="section">
-      <div class="section__container row">
-        <div class="composition-container col-12 col-md-8">
-          <div class="composition">
-            <img srcset="../../assets/img/websites/2.jpg 300w, ../../assets/img/websites/2.jpg 1000w"
-                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                 alt="Photo 1"
-                 class="composition__photo composition__photo--p1"
-                 src="../../assets/img/websites/2.jpg">
-            <img srcset="../../assets/img/websites/2.jpg 300w, ../../assets/img/websites/2.jpg 1000w"
-                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                 alt="Photo 2"
-                 class="composition__photo composition__photo--p2"
-                 src="../../assets/img/websites/2.jpg">
-            <img srcset="../../assets/img/websites/2.jpg 300w, ../../assets/img/websites/2.jpg 1000w"
-                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                 alt="Photo 3"
-                 class="composition__photo composition__photo--p3"
-                 src="../../assets/img/websites/2.jpg">
-          </div>
-        </div>
-        <div class="section__sub section__sub-2 col-12 col-md-4">
-          <div class="section__title">
-            <h3 class="section__title__heading">See all We Work websites</h3>
-            <router-link to="/websites" class="section__title__btn mt-3">Discover all</router-link>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- UI \ UX apps -->
-    <div class="section">
-      <router-link to="projects/132568">
-        <div class="section__container row">
-          <div class="section__sub-1 col-12 col-md-3">
-            <div class="section__title">
-              <h3 class="section__title__heading">We Work projects in UI / UX</h3>
-            </div>
-          </div>
-          <div class="section__sub-2 col-12 col-md-9">
-            <div class="section__content">
-              <div class="designs">
-                <div class="design-item">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">Test project</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">Test project</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">Test project</router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-dots">
-                <div class="owl-dots__previous"><i class="fas fa-angle-left"></i></div>
-                <div class="owl-dots__slide">
-                  <div class="owl-dots__slide__item active"></div>
-                  <div class="owl-dots__slide__item"></div>
-                  <div class="owl-dots__slide__item"></div>
-                </div>
-                <div class="owl-dots__next"><i class="fas fa-angle-right"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </router-link>
-    </div>
-
-    <!-- Interior Design apps -->
-    <div class="section">
-      <router-link to="projects/132568">
-        <div class="section__container row">
-          <div class="section__sub-1 col-12 col-md-3">
-            <div class="section__title">
-              <h3 class="section__title__heading">Latest interior design work</h3>
-            </div>
-          </div>
-          <div class="section__sub-2 col-12 col-md-9">
-            <div class="section__content">
-              <div class="designs">
-                <div class="design-item">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">Test project</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">Test project</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">Test project</router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-dots">
-                <div class="owl-dots__previous"><i class="fas fa-angle-left"></i></div>
-                <div class="owl-dots__slide">
-                  <div class="owl-dots__slide__item active"></div>
-                  <div class="owl-dots__slide__item"></div>
-                  <div class="owl-dots__slide__item"></div>
-                </div>
-                <div class="owl-dots__next"><i class="fas fa-angle-right"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </router-link>
-    </div>
-
-    <!-- Exterior Design apps -->
-    <div class="section">
-      <router-link to="projects/132568">
-        <div class="section__container row">
-          <div class="section__sub-1 col-12 col-md-3">
-            <div class="section__title">
-              <h3 class="section__title__heading">Latest exterior design work</h3>
-            </div>
-          </div>
-          <div class="section__sub-2 col-12 col-md-9">
-            <div class="section__content">
-              <div class="designs">
-                <div class="design-item">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">Test project</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">Test project</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">Test project</router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-dots">
-                <div class="owl-dots__previous"><i class="fas fa-angle-left"></i></div>
-                <div class="owl-dots__slide">
-                  <div class="owl-dots__slide__item active"></div>
-                  <div class="owl-dots__slide__item"></div>
-                  <div class="owl-dots__slide__item"></div>
-                </div>
-                <div class="owl-dots__next"><i class="fas fa-angle-right"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </router-link>
-    </div>
-
-    <!-- Shop Drawing apps -->
-    <div class="section">
-      <router-link to="projects/132568">
-        <div class="section__container row">
-          <div class="section__sub-1 col-12 col-md-3">
-            <div class="section__title">
-              <h3 class="section__title__heading">Latest shop drawing work</h3>
-            </div>
-          </div>
-          <div class="section__sub-2 col-12 col-md-9">
-            <div class="section__content">
-              <div class="designs">
-                <div class="design-item">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">Test project</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">Test project</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">Test project</router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-dots">
-                <div class="owl-dots__previous"><i class="fas fa-angle-left"></i></div>
-                <div class="owl-dots__slide">
-                  <div class="owl-dots__slide__item active"></div>
-                  <div class="owl-dots__slide__item"></div>
-                  <div class="owl-dots__slide__item"></div>
-                </div>
-                <div class="owl-dots__next"><i class="fas fa-angle-right"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </router-link>
-    </div>
-
-    <!-- Motion Graphics apps -->
-    <div class="section">
-      <router-link to="/motion-graphic">
-        <div class="section__container row">
-          <div class="section__sub-1 col-12 col-md-3">
-            <div class="section__title">
-              <h3 class="section__title__heading">Latest motion graphics work</h3>
-            </div>
-          </div>
-          <div class="section__sub-2 col-12 col-md-9">
-            <div class="section__content">
-              <div class="designs">
-                <div class="design-item">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">Test project</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">Test project</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">Test project</router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-dots">
-                <div class="owl-dots__previous"><i class="fas fa-angle-left"></i></div>
-                <div class="owl-dots__slide">
-                  <div class="owl-dots__slide__item active"></div>
-                  <div class="owl-dots__slide__item"></div>
-                  <div class="owl-dots__slide__item"></div>
-                </div>
-                <div class="owl-dots__next"><i class="fas fa-angle-right"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </router-link>
-    </div>
-
-    <!-- Photography apps -->
-    <div class="section">
-      <router-link to="/projects/132568">
-        <div class="section__container row">
-          <div class="section__sub-1 col-12 col-md-3">
-            <div class="section__title">
-              <h3 class="section__title__heading">Latest photography work</h3>
-            </div>
-          </div>
-          <div class="section__sub-2 col-12 col-md-9">
-            <div class="section__content">
-              <div class="designs">
-                <div class="design-item">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">Test project</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">Test project</router-link>
-                    </div>
-                  </div>
-                </div>
-                <div class="design-item mobile-hidden">
-                  <div class="design-item__box-grad"></div>
-                  <div class="design-item__content">
-                    <router-link to="">
-                      <img class="design-item__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                    </router-link>
-                    <div class="design-item__content__title">
-                      <router-link to="">Test project</router-link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-dots">
-                <div class="owl-dots__previous"><i class="fas fa-angle-left"></i></div>
-                <div class="owl-dots__slide">
-                  <div class="owl-dots__slide__item active"></div>
-                  <div class="owl-dots__slide__item"></div>
-                  <div class="owl-dots__slide__item"></div>
-                </div>
-                <div class="owl-dots__next"><i class="fas fa-angle-right"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </router-link>
     </div>
 
   </div>
@@ -863,13 +248,119 @@
 </template>
 
 <script>
+import Spinner from "@/components/ui/Spinner";
 export default {
   name: "AllCategories",
+  components: {Spinner},
+  data() {
+    return {
+      is_loading: false,
+      error: false,
+      error_message_ar: '',
+      items: '',
+      lg_screen: {
+        slide_1: true,
+        slide_2: false,
+        slide_3: false,
+      }
+    }
+  },
   computed: {
     getLang() {
       return this.$store.getters['main/getLang'];
     }
   },
+  created() {
+    this.loadAllSubCategories();
+  },
+  methods: {
+    displaySlider(slider) {
+      if (slider == '1') {
+        this.lg_screen.slide_3 = false
+        this.lg_screen.slide_2 = false
+        this.lg_screen.slide_1 = true
+      }
+      else if (slider == '2') {
+        this.lg_screen.slide_3 = false
+        this.lg_screen.slide_1 = false
+        this.lg_screen.slide_2 = true
+      }
+      else if (slider == '3') {
+        this.lg_screen.slide_1 = false
+        this.lg_screen.slide_2 = false
+        this.lg_screen.slide_3 = true
+      }
+      else if (slider == 'next') {
+        if (this.lg_screen.slide_1) {
+          this.lg_screen.slide_3 = false
+          this.lg_screen.slide_1 = false
+          this.lg_screen.slide_2 = true
+        }
+        else if (this.lg_screen.slide_2) {
+          console.log(slider);
+          this.lg_screen.slide_2 = false
+          this.lg_screen.slide_1 = false
+          this.lg_screen.slide_3 = true
+        }
+        else if (this.lg_screen.slide_3) {
+          this.lg_screen.slide_2 = false
+          this.lg_screen.slide_3 = false
+          this.lg_screen.slide_1 = true
+        }
+      }
+      else if (slider == 'last') {
+        if (this.lg_screen.slide_1) {
+          this.lg_screen.slide_1 = false
+          this.lg_screen.slide_2 = false
+          this.lg_screen.slide_3 = true
+        }
+        else if (this.lg_screen.slide_2) {
+          this.lg_screen.slide_2 = false
+          this.lg_screen.slide_3 = false
+          this.lg_screen.slide_1 = true
+        }
+        else if (this.lg_screen.slide_3) {
+          this.lg_screen.slide_3 = false
+          this.lg_screen.slide_1 = false
+          this.lg_screen.slide_2 = true
+        }
+
+      }
+    },
+    async loadAllSubCategories() {
+      this.is_loading = true;
+
+      let myHeaders = new Headers();
+      let token = this.$store.getters.token;
+      myHeaders.append("Authorization", "Bearer " + token);
+
+      let requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+      };
+
+      await fetch("https://backend-elbanna.we-work.pro/api/user/get-all-sub-categories", requestOptions)
+          .then(response => response.json())
+          .then(result => {
+
+            if (!result.status) {
+              this.error = true;
+              this.error_message_ar = result.msg;
+            } else {
+              this.items = result.data;
+            }
+          })
+          .catch(error => {
+            this.error = true;
+            this.error_message_ar = error.message;
+          });
+
+      this.is_loading = false;
+    },
+
+  }
+
 }
 </script>
 
@@ -980,17 +471,14 @@ a {
 
   &__app {
     margin: 10px 10px 0;
+    padding: 0;
+    max-height: 25rem;
+    max-width: 100%;
 
-    & img {
-      margin: 0;
-      padding: 0;
-      max-height: 25rem;
-      max-width: 100%;
-
-      &:hover {
-        transform: scale(1.2);
-      }
+    &:hover {
+      transform: scale(1.2);
     }
+
   }
 }
 

@@ -59,7 +59,7 @@
 
 
             <div class="slider__owl-dots">
-              <div  @click="displaySlider('last')" class="slider__owl-dots__next"><i class="fas fa-angle-right"></i></div>
+              <div @click="displaySlider('last')" class="slider__owl-dots__next"><i class="fas fa-angle-right"></i></div>
               <div class="slider__owl-dots__slide">
                 <div @click="displaySlider('slider_1')" :class="{active: slider_1}" class="slider__owl-dots__slide__item"></div>
                 <div @click="displaySlider('slider_2')" :class="{active: slider_2}" class="slider__owl-dots__slide__item"></div>

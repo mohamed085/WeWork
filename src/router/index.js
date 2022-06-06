@@ -5,9 +5,6 @@ import Services from "@/views/Services";
 import Deliver from "@/views/Deliver";
 import Index from "@/views/Projects/Index";
 import AllCategories from "@/views/Projects/AllCategories";
-import SoftwareCategory from "@/views/Projects/SoftwareCategory";
-import DecorationCategory from "@/views/Projects/DecorationCategory";
-import MarketingCategory from "@/views/Projects/MarketingCategory";
 import Clients from "@/views/Clients";
 import Team from "@/views/Team";
 import Contact from "@/views/Contact";
@@ -44,11 +41,11 @@ import ProjectsMainCategoryEditDashboard from "@/views/Dashboard/Projects/MainCa
 import ProjectsSubCategoryDashboard from "@/views/Dashboard/Projects/SubCategories/Index";
 import ProjectsSubCategoryItemsDashboard from "@/views/Dashboard/Projects/SubCategories/Items";
 import ProjectsSubCategoryAddDashboard from "@/views/Dashboard/Projects/SubCategories/Add";
+import ProjectsSubCategoryEditDashboard from "@/views/Dashboard/Projects/SubCategories/Edit";
 import ProjectsIndexDashboard from "@/views/Dashboard/Projects/Projects/Index";
 import ProjectsItemDashboard from "@/views/Dashboard/Projects/Projects/Items";
 import ProjectsAddDashboard from "@/views/Dashboard/Projects/Projects/Add";
-
-
+import ProjectsEditDashboard from "@/views/Dashboard/Projects/Projects/Edit";
 import DashboardClients from "@/views/Dashboard/Clients/Index";
 import DashboardClientsItems from "@/views/Dashboard/Clients/Items";
 import DashboardClientsAdd from "@/views/Dashboard/Clients/Add";
@@ -77,16 +74,13 @@ const routes = [
     { path: '/join-us',component: Join },
     { path: '/projects',component: Index,
         children: [
-            { path: '',component: AllCategories },
-            { path: '/projects/software',component: SoftwareCategory },
-            { path: '/projects/decoration',component: DecorationCategory },
-            { path: '/projects/decoration',component: DecorationCategory },
-            { path: '/projects/marketing',component: MarketingCategory },
+            { path: '/projects',component: AllCategories },
+            { path: '/projects/sub-category/:id',component: AllCategories },
         ]
     },
     { path: '/mobile-applications', component: MobileApps },
     { path: '/websites', component: Websites },
-    { path: '/motion-graphic', component: MotionGraphicProjects },
+    { path: '/motion-graphics', component: MotionGraphicProjects },
     { path: '/projects/:id', component: ProjectsCategory },
     { path: '/mobile-application/:id', component: MobileApp },
     { path: '/project/:id', component: Project },
@@ -134,13 +128,14 @@ const routes = [
                     { path: '/dashboard/projects/sub-categories/items/:id', component: ProjectsSubCategoryItemsDashboard },
                     { path: '/dashboard/projects/sub-categories/add/:id', component: ProjectsSubCategoryAddDashboard },
                     { path: '/dashboard/projects/sub-categories/view/:id', component: ProjectsSubCategoryAddDashboard },
-                    { path: '/dashboard/projects/sub-categories/edit/:id', component: ProjectsSubCategoryAddDashboard },
                 ]
             },
+            { path: '/dashboard/projects/sub-categories/edit/:id', component: ProjectsSubCategoryEditDashboard },
             { path: '/dashboard/projects/item', component: ProjectsIndexDashboard,
                 children: [
                     { path: '/dashboard/projects/item/items/:id', component: ProjectsItemDashboard },
-                    { path: '/dashboard/projects/item/add/:id', component: ProjectsAddDashboard }
+                    { path: '/dashboard/projects/item/add/:id', component: ProjectsAddDashboard },
+                    { path: '/dashboard/projects/item/edit/:id', component: ProjectsEditDashboard }
                 ]
             },
             { path: '/dashboard/clients',component: DashboardClients,

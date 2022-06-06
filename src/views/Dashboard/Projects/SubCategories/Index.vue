@@ -4,8 +4,8 @@
 
     <div class="filter">
       <div class="filter__container">
-        <router-link to="/dashboard/projects/sub-categories/items/4556" class="filter__item">كل الفئات الفرعية</router-link>
-        <router-link to="/dashboard/projects/sub-categories/add/4556" class="filter__item">إضافة فئه غرعية</router-link>
+        <router-link :to="'/dashboard/projects/sub-categories/items/' + this.$route.params.id" class="filter__item">كل الفئات الفرعية</router-link>
+        <router-link :to="'/dashboard/projects/sub-categories/add/' + this.$route.params.id" class="filter__item">إضافة فئه غرعية</router-link>
       </div>
     </div>
 

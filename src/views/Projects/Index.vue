@@ -69,12 +69,17 @@
         </div>
       </div>
 
-      <div class="categories">
-        <div class="categories__filter">
-          <router-link class="categories__filter__item" exact to="/projects">الكل</router-link>
-          <router-link class="categories__filter__item" to="/projects/software">البرمجيات</router-link>
-          <router-link class="categories__filter__item" to="/projects/decoration">الزخرفة</router-link>
-          <router-link class="categories__filter__item" to="/projects/marketing">التسويق</router-link>
+      <spinner v-if="is_loading"></spinner>
+
+      <div v-else class="filter">
+        <div class="filter__container">
+          <div class="filter__container__item">
+            <router-link to="/projects" exact>الكل</router-link>
+          </div>
+          <div v-for="item in items" :key="item.id"
+              class="filter__container__item">
+            <router-link :to="'/projects/sub-category/' + item.id">{{ item.category_name_ar }}</router-link>
+          </div>
         </div>
       </div>
     </div>
@@ -148,12 +153,17 @@
         </div>
       </div>
 
-      <div class="categories">
-        <div class="categories__filter">
-          <router-link class="categories__filter__item" exact to="/projects">All</router-link>
-          <router-link class="categories__filter__item" to="/projects/software">Software </router-link>
-          <router-link class="categories__filter__item" to="/projects/decoration">Decoration</router-link>
-          <router-link class="categories__filter__item" to="/projects/marketing">Marketing</router-link>
+      <spinner v-if="is_loading"></spinner>
+
+      <div v-else class="filter">
+        <div class="filter__container">
+          <div class="filter__container__item">
+            <router-link to="/projects">All</router-link>
+          </div>
+          <div v-for="item in items" :key="item.id"
+               class="filter__container__item">
+            <router-link :to="'/projects/sub-category/' + item.id">{{ item.category_name_en }}</router-link>
+          </div>
         </div>
       </div>
 
@@ -172,22 +182,67 @@ import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import ProjectMessage from "@/components/ProjectMessage";
 import SocialMedia from "@/components/ui/SocialMedia";
+import Spinner from "@/components/ui/Spinner";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Index",
   components: {
+    Spinner,
     SocialMedia,
     ProjectMessage,
     Footer, Navbar
   },
+  data() {
+    return {
+      is_loading: false,
+      error: false,
+      error_message_ar: '',
+      items: '',
+    }
+  },
   created() {
-    window.scrollTo(0,0)
+    window.scrollTo(0,0);
+    this.loadMainCategories();
   },
   computed: {
     getLang() {
       return this.$store.getters['main/getLang'];
     }
   },
+  methods: {
+    async loadMainCategories() {
+      this.is_loading = true;
+
+      let myHeaders = new Headers();
+      let token = this.$store.getters.token;
+      myHeaders.append("Authorization", "Bearer " + token);
+
+      let requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+      };
+
+      await fetch("https://backend-elbanna.we-work.pro/api/user/get-main-categories", requestOptions)
+          .then(response => response.json())
+          .then(result => {
+
+            if (!result.status) {
+              this.error = true;
+              this.error_message_ar = result.msg;
+            } else {
+              this.items = result.data;
+            }
+          })
+          .catch(error => {
+            this.error = true;
+            this.error_message_ar = error.message;
+          });
+
+      this.is_loading = false;
+    },
+
+  }
 }
 </script>
 
@@ -273,47 +328,40 @@ export default {
 
 }
 
-.categories {
-  padding: 1rem 5%;
+.filter {
   display: flex;
   justify-content: center;
 
-  &__filter {
+  &__container {
     display: flex;
+    align-items: center;
     justify-content: center;
     border: 1px solid $color-primary;
-    border-radius: 1rem;
-    padding: 0 !important;
 
     &__item {
-      text-decoration: none;
-      font-size: 1.2rem;
-      padding: .5rem 1.5rem;
-      font-weight: 500;
-      color: $color-primary;
-      border-right: 1px solid $color-primary;
+      display: flex;
+      justify-content: center;
 
-      &:first-child {
-        border: none;
-        border-bottom-right-radius: 1rem;
-        border-top-right-radius: 1rem;
+      & a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: $color-primary;
+        border-right: 1px solid $color-primary;
+        padding: .5rem 1.5rem;
+        height: 100% !important;
+
+        &:hover,
+        &.active,
+        &.router-link-active {
+          color: $color-white;
+          background: linear-gradient(90deg, $color-primary-light, $color-primary-dark-1);
+        }
       }
-
-      &:last-child {
-        border-bottom-left-radius: 1rem;
-        border-top-left-radius: 1rem;
-      }
-
-      &:hover,
-      &.active,
-      &.router-link-active {
-        color: $color-white;
-        background: linear-gradient(90deg, $color-primary-light, $color-primary-dark-1);
-      }
-
     }
   }
 }
+
 
 .en .categories__filter__item {
   border-left: 1px solid $color-primary;

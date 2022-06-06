@@ -4,8 +4,8 @@
 
     <div class="filter">
       <div class="filter__container">
-        <router-link to="/dashboard/projects/item/items/4556" class="filter__item">كل المشاريع</router-link>
-        <router-link to="/dashboard/projects/item/add/4556" class="filter__item">إضافة مشروع جديد</router-link>
+        <router-link :to="'/dashboard/projects/item/items/' + this.$route.params.id" class="filter__item">كل المشاريع</router-link>
+        <router-link :to="'/dashboard/projects/item/add/' + this.$route.params.id" class="filter__item">إضافة مشروع جديد</router-link>
       </div>
     </div>
 
