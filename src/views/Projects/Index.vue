@@ -454,6 +454,11 @@ export default {
     this.loadMainCategories();
     this.loadAllSubCategories();
   },
+  mounted() {
+    window.setInterval(() => {
+      this.displaySlider('next')
+    }, 5000);
+  },
   computed: {
     getLang() {
       return this.$store.getters['main/getLang'];
@@ -492,17 +497,17 @@ export default {
       this.is_loading = false;
     },
     displaySlider(slider) {
-      if (slider == '1') {
+      if (slider == 'slider_1') {
         this.lg_screen.slide_3 = false
         this.lg_screen.slide_2 = false
         this.lg_screen.slide_1 = true
       }
-      else if (slider == '2') {
+      else if (slider == 'slider_2') {
         this.lg_screen.slide_3 = false
         this.lg_screen.slide_1 = false
         this.lg_screen.slide_2 = true
       }
-      else if (slider == '3') {
+      else if (slider == 'slider_3') {
         this.lg_screen.slide_1 = false
         this.lg_screen.slide_2 = false
         this.lg_screen.slide_3 = true

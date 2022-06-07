@@ -107,6 +107,11 @@ export default {
       currentPhoto: 0,
     }
   },
+  mounted() {
+    window.setInterval(() => {
+      this.displayNext()
+    }, 5000);
+  },
   created() {
     window.scrollTo(0,0);
     this.loadProject(this.$route.params.id);

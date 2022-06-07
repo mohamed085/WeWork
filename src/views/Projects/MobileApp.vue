@@ -132,6 +132,11 @@ export default {
     window.scrollTo(0,0);
     this.loadProject(this.$route.params.id);
   },
+  mounted() {
+    window.setInterval(() => {
+      this.displayNext()
+    }, 5000);
+  },
   computed: {
     getLang() {
       return this.$store.getters['main/getLang'];
