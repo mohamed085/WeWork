@@ -2,7 +2,7 @@
   <div>
     <spinner v-if="is_loading"></spinner>
 
-    <b-form v-else>
+    <b-form @submit.prevent="updateNewProject" v-else>
       <div class="row pe-3 ps-3">
         <div class="col-12">
           <div class="err" v-if="error">{{ error_message_ar }}</div>
@@ -45,8 +45,20 @@
         </div>
         <div class="col-12">
           <div class="form-group">
+            <span>ال url الخاص بفيديو الموشن جرافيك</span>
+            <div v-if="display_video">
+              <iframe :src="app.video"></iframe>
+            </div>
+            <div v-else>
+              <b-form-input className="input" type="text" v-model="app.video"></b-form-input>
+              <button class="btn" @click="addVideo">عرض الفيديو</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-group">
             <span>الوجو</span>
-            <b-form-file plain @change="addLogoPhoto" required></b-form-file>
+            <b-form-file plain @change="addLogoPhoto"></b-form-file>
           </div>
           <div class="img">
             <img v-if="app.logo" :src="app.logo">
@@ -62,7 +74,7 @@
             <div class="border p-2 m-2"
                  v-for="(image, index) in this.app.attachs" :key="image.id">
               <div class="d-flex justify-content-between align-items-center pe-2 ps-2">
-                <i @click="addToRemoveList(id, index)" class="fas fa-trash"></i>
+                <i @click="addToRemoveList(image.id, index)" class="fas fa-trash"></i>
               </div>
               <div class="img mt-2">
                 <img :src="image.attach">
@@ -106,6 +118,7 @@ export default {
       error_message_ar: '',
       app: '',
       logo_file: '',
+      display_video: false,
       images: [
         { id: new Date(), image_src: '', image_file: '' },
       ],
@@ -142,7 +155,12 @@ export default {
     },
     addToRemoveList(id, index) {
       this.app.attachs.splice(index, 1);
-      this.removeList.push(id)
+      this.removeList.push({ id: id });
+    },
+    addVideo() {
+      const youtube = `https://www.youtube.com/embed/${this.app.video_link.slice(this.app.video_link.indexOf("=") + 1)}?controls=0`
+      this.app.video = youtube;
+      this.display_video = true
     },
     async loadProject(id) {
       this.is_loading = true;
@@ -177,7 +195,7 @@ export default {
       this.is_loading = false;
 
     },
-    async addNewProject() {
+    async updateNewProject() {
       this.is_loading = true;
       this.error = false;
 
@@ -193,11 +211,21 @@ export default {
       formdata.append("description_ar", this.app.description_ar);
       formdata.append("link1", this.app.link1);
       formdata.append("link2", this.app.link2);
-      formdata.append("logo", this.app.logo_file);
+      formdata.append("logo", this.logo_file);
 
-      this.app.images.forEach((value, index) => {
-        formdata.append('attach[' + index + ']', value.image_file);
-      })
+      if (this.images.length > 0) {
+        console.log("this.images.length > 0")
+        this.images.forEach((value, index) => {
+          formdata.append('attach[' + index + ']', value.image_file);
+        })
+      }
+
+      if (this.removeList.length > 0) {
+        console.log("this.removeList.length > 0")
+        this.removeList.forEach((value, index) => {
+          formdata.append('deleted_attaches[' + index + ']', value.id);
+        })
+      }
 
       let requestOptions = {
         method: 'POST',
@@ -206,14 +234,15 @@ export default {
         redirect: 'follow'
       };
 
-      await fetch("https://backend-elbanna.we-work.pro/api/admin/auth/create-project", requestOptions)
+      let url = `https://backend-elbanna.we-work.pro/api/admin/auth/update-project/` + this.app.id;
+      await fetch(url, requestOptions)
           .then(response => response.json())
           .then(result => {
             if (!result.status) {
               this.error = true;
               this.error_message_ar = result.msg;
             } else {
-              router.push('/dashboard/projects/item/items/' + this.$route.params.id)
+              router.push('/dashboard/projects/item/items/' + this.app.sub_category_id)
             }
           })
           .catch(error => {

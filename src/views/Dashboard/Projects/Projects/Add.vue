@@ -34,7 +34,7 @@
         <div class="col-12">
           <div class="form-group">
             <span>ال url ( في حاله ال mobile app يكون url الاندرويد)</span>
-            <b-form-input className="input" type="text" v-model="app.link1" required></b-form-input>
+            <b-form-input className="input" type="text" v-model="app.link1"></b-form-input>
           </div>
         </div>
         <div class="col-12">
@@ -45,8 +45,20 @@
         </div>
         <div class="col-12">
           <div class="form-group">
+            <span>ال url الخاص بفيديو الموشن جرافيك</span>
+            <div v-if="app.display_video">
+              <iframe :src="app.video_link"></iframe>
+            </div>
+            <div v-else>
+              <b-form-input className="input" type="text" v-model="app.video_link"></b-form-input>
+              <button class="btn" @click="addVideo">عرض الفيديو</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-group">
             <span>الوجو</span>
-            <b-form-file plain @change="addLogoPhoto" required></b-form-file>
+            <b-form-file plain @change="addLogoPhoto"></b-form-file>
           </div>
           <div class="img">
             <img v-if="app.logo" :src="app.logo">
@@ -101,6 +113,8 @@ export default {
         link2: '',
         logo: '',
         logo_file: '',
+        video_link: '',
+        display_video: false,
         images: [
             { id: new Date(), image_src: '', image_file: '' },
         ],
@@ -133,6 +147,11 @@ export default {
     deleteImage(index) {
       this.app.images.splice(index, 1);
     },
+    addVideo() {
+      const youtube = `https://www.youtube.com/embed/${this.app.video_link.slice(this.app.video_link.indexOf("=") + 1)}?controls=0`
+      this.app.video_link = youtube;
+      this.app.display_video = true
+    },
     async addNewProject() {
       this.is_loading = true;
       this.error = false;
@@ -150,10 +169,13 @@ export default {
       formdata.append("link1", this.app.link1);
       formdata.append("link2", this.app.link2);
       formdata.append("logo", this.app.logo_file);
+      formdata.append("video", this.app.video_link);
 
-      this.app.images.forEach((value, index) => {
-        formdata.append('attach[' + index + ']', value.image_file);
-      })
+      if (this.app.images.length > 0) {
+        this.app.images.forEach((value, index) => {
+          formdata.append('attach[' + index + ']', value.image_file);
+        })
+      }
 
       let requestOptions = {
         method: 'POST',

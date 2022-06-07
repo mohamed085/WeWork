@@ -2,71 +2,74 @@
   <div>
     <Navbar></Navbar>
 
-    <div class="ar" v-if="getLang === 'ar'">
-      <main class="app">
-        <div class="row">
-          <div class="col-12">
-            <div class="app__details">
-              <div class="row">
-                <div class="col-12 col-md-4 app__details__info">
-                  <div class="app__details__info__logo">
-                    <img src="../../assets/img/mobile_apps/app_logo.png">
-                  </div>
-                  <span class="app__details__info__title">تطبيق تست</span>
-                  <span class="app__details__info__sub-title">عن الموقع</span>
-                  <span class="app__details__info__about">
+    <spinner class="spinner" v-if="is_loading"></spinner>
+
+    <div v-else>
+      <div class="ar" v-if="getLang === 'ar'">
+        <main class="app">
+          <div class="row">
+            <div class="col-12">
+              <div class="app__details">
+                <div class="row">
+                  <div class="col-12 col-md-4 app__details__info">
+                    <div class="app__details__info__logo">
+                      <img src="../../assets/img/mobile_apps/app_logo.png">
+                    </div>
+                    <span class="app__details__info__title">تطبيق تست</span>
+                    <span class="app__details__info__sub-title">عن الموقع</span>
+                    <span class="app__details__info__about">
                     الأول كل ملفوظ مفهوم المعنى من الكتاب والسنة سواء كان ظاهرا أو نصا أو مفسرا حقيقة أو مجازا عاما أو خاصا اعتبارا منهم للغالب، لأن عامة ما ورد من صاحب الشرع نصوص، وهذا المعنى هو المراد بالنصوص في قولهم عبارة النص وإشارة النص ودلالة النص واقتضاء النص. فقوله من الكتاب والسنة بيان لقوله ملفوظ، وليس المقصود حصر ذلك الملفوظ فيهما بدليل أن عبارة النص وأخواتها لا يختص بالكتاب والسنة، ولهذا قيل إن الكتاب والسنة والإجماع كلها يشترك في المتن أي ما يتضمنه الثلاثة من أمر ونهي وعام وخاص ومجمل ومبين ومنطوق ومفهوم ونحوها.
                   </span>
-                  <span class="app__details__info__sub-title">عرض </span>
-                  <a target="_blank" href="https://twitter.com/home">https://twitter.com/home</a>
-                </div>
-                <div class="col-12 col-md-8 app__details__img">
-                  <div class="app__details__img__slider">
-                    <video width="100%" controls>
-                      <source src="" type="video/mp4">
-                      Your browser does not support HTML video.
-                    </video>
+                    <span class="app__details__info__sub-title">عرض </span>
+                    <a target="_blank" href="https://twitter.com/home">https://twitter.com/home</a>
+                  </div>
+                  <div class="col-12 col-md-8 app__details__img">
+                    <div class="app__details__img__slider">
+                      <video width="100%" controls>
+                        <source src="" type="video/mp4">
+                        Your browser does not support HTML video.
+                      </video>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </main>
-    </div>
+        </main>
+      </div>
 
-
-    <div class="en" v-if="getLang === 'en'">
-      <main class="app">
-        <div class="row">
-          <div class="col-12">
-            <div class="app__details">
-              <div class="row">
-                <div class="col-12 col-md-4 app__details__info">
-                  <div class="app__details__info__logo">
-                    <img src="../../assets/img/mobile_apps/app_logo.png">
-                  </div>
-                  <span class="app__details__info__title">Test app</span>
-                  <span class="app__details__info__sub-title">about website</span>
-                  <span class="app__details__info__about">
+      <div class="en" v-if="getLang === 'en'">
+        <main class="app">
+          <div class="row">
+            <div class="col-12">
+              <div class="app__details">
+                <div class="row">
+                  <div class="col-12 col-md-4 app__details__info">
+                    <div class="app__details__info__logo">
+                      <img src="../../assets/img/mobile_apps/app_logo.png">
+                    </div>
+                    <span class="app__details__info__title">Test app</span>
+                    <span class="app__details__info__sub-title">about website</span>
+                    <span class="app__details__info__about">
                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                   </span>
-                  <span class="app__details__info__sub-title">View</span>
-                  <a target="_blank" href="https://twitter.com/home">https://twitter.com/home</a>
-                </div>
-                <div class="col-12 col-md-8 app__details__img">
-                  <div class="app__details__img__slider">
-                    <video width="100%" controls>
-                      <source src="" type="video/mp4">
-                      Your browser does not support HTML video.
-                    </video>
+                    <span class="app__details__info__sub-title">View</span>
+                    <a target="_blank" href="https://twitter.com/home">https://twitter.com/home</a>
+                  </div>
+                  <div class="col-12 col-md-8 app__details__img">
+                    <div class="app__details__img__slider">
+                      <video width="100%" controls>
+                        <source src="" type="video/mp4">
+                        Your browser does not support HTML video.
+                      </video>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </main>
+        </main>
+      </div>
     </div>
 
     <ProjectMessage></ProjectMessage>
@@ -81,21 +84,68 @@
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import ProjectMessage from "@/components/ProjectMessage";
+import Spinner from "@/components/ui/Spinner";
 export default {
   name: "MotionGraphic",
   components: {
+    Spinner,
     ProjectMessage,
     Footer,
     Navbar
   },
+  data() {
+    return {
+      is_loading: false,
+      error: false,
+      error_message_ar: '',
+      project: '',
+      currentPhoto: 0,
+    }
+  },
   created() {
-    window.scrollTo(0,0)
+    window.scrollTo(0,0);
+    this.loadProject(this.$route.params.id);
   },
   computed: {
     getLang() {
       return this.$store.getters['main/getLang'];
     }
   },
+  methods: {
+    async loadProject(id) {
+      this.is_loading = true;
+
+      let myHeaders = new Headers();
+      let token = this.$store.getters.token;
+      myHeaders.append("Authorization", "Bearer " + token);
+
+      let requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+      };
+
+      let url = `https://backend-elbanna.we-work.pro/api/user/get-project/` + id;
+
+      await fetch(url, requestOptions)
+          .then(response => response.json())
+          .then(result => {
+            if (!result.status) {
+              this.error = true;
+              this.error_message_ar = result.msg;
+            } else {
+              this.project = result.data.project;
+            }
+          })
+          .catch(error => {
+            this.error = true;
+            this.error_message_ar = error.message;
+          });
+
+      this.is_loading = false;
+
+    },
+  }
 }
 </script>
 
@@ -103,6 +153,10 @@ export default {
 @import "../../assets/css/variables";
 @import "../../assets/css/typography";
 @import "../../assets/css/mixins";
+
+.spinner{
+  margin: 6rem 0 10rem;
+}
 
 .app {
   padding: 2rem 5% 10px;

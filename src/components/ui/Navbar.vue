@@ -165,6 +165,7 @@ export default {
 @import "../../assets/css/variables";
 @import "../../assets/css/mixins";
 
+
 .navbar-1 {
   //background: -webkit-linear-gradient(to left, $color-primary, $color-primary-light); /* Chrome 10-25, Safari 5.1-6 */
   //background: linear-gradient(to left, $color-primary, $color-primary-light); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
