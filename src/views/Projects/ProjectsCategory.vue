@@ -2,230 +2,69 @@
   <div>
     <Navbar></Navbar>
 
-    <div class="mobile-apps ar" v-if="getLang === 'ar'">
-      <div class="intro">
-        <div class="intro__img">
-          <img src="../../assets/img/website-banner.webp">
-        </div>
-        <div class="intro__title">
-          <div class="title-3">مواقع الويب</div>
-          <div class="title-2">4 سنوات من </div>
-          <div class="title mb-2">صناعة تطبيقات مواقع الويب</div>
-          <div class="break mb-4"></div>
-          <div class="desc">
-            نحن مزيج يعمل بشكل مثالي من مزود ذي خبرة ، مع ما يقرب من 1000 متخصص على متن الطائرة ، وبدء تشغيل متحمس.
+    <spinner class="spinner" v-if="is_loading"></spinner>
+
+    <div v-else>
+      <div class="mobile-apps ar" v-if="getLang === 'ar'">
+        <div class="intro">
+          <div class="intro__img">
+            <img :src="category.main_photo">
           </div>
-          <div class="desc">
-            يساعدنا هذا ، جنبًا إلى جنب مع طريقتنا الفريدة في العمل مع العملاء ، في بناء شراكات طويلة الأمد وإنشاء حلول برمجية مذهلة تلبي احتياجات الأعمال والمستخدمين.
+          <div class="intro__title">
+            <div class="title-3">{{ category.sub_category_name_ar }}</div>
+            <div class="title-2">{{ category.title1_ar }}</div>
+            <div class="title-2">{{ category.title2_ar }}</div>
+            <div class="break mb-4"></div>
+            <div class="desc">{{ category.description1_ar }}</div>
+          </div>
+        </div>
+
+
+        <div class="main row">
+          <div class="project col-12 col-md-4"
+               v-for="project in projects" :key="project.id">
+          <div class="project__container">
+              <div class="project__box-grad"></div>
+              <div class="project__content">
+                <router-link :to="/project/ + project.id">
+                  <img class="project__content__img" :src="project.image.attach">
+                  <div class="project__content__title">
+                    <router-link to="">{{ project.title_ar }}</router-link>
+                  </div>
+                </router-link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
+      <div class="mobile-apps en" v-if="getLang === 'en'">
+        <div class="intro">
+          <div class="intro__img">
+            <img src="../../assets/img/website-banner.webp">
+          </div>
+          <div class="intro__title">
+            <div class="title-3">{{ category.sub_category_name_en }}</div>
+            <div class="title-2">{{ category.title1_en }}</div>
+            <div class="title-2">{{ category.title2_en }}</div>
+            <div class="break mb-4"></div>
+            <div class="desc">{{ category.description2_en }}</div>
+          </div>
+        </div>
 
-      <div class="main row">
-        <div class="project col-12 col-md-4">
-          <div class="project__container">
-            <div class="project__box-grad"></div>
-            <div class="project__content">
-              <router-link to="">
-                <img class="project__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                <div class="project__content__title">
-                  <router-link to="">مشاريع مميزه</router-link>
-                </div>
-              </router-link>
-            </div>
-          </div>
-        </div>
-        <div class="project col-12 col-md-4">
-          <div class="project__container">
-            <div class="project__box-grad"></div>
-            <div class="project__content">
-              <router-link to="">
-                <img class="project__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                <div class="project__content__title">
-                  <router-link to="">مشاريع مميزه</router-link>
-                </div>
-              </router-link>
-            </div>
-          </div>
-        </div>
-        <div class="project col-12 col-md-4">
-          <div class="project__container">
-            <div class="project__box-grad"></div>
-            <div class="project__content">
-              <router-link to="">
-                <img class="project__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                <div class="project__content__title">
-                  <router-link to="">مشاريع مميزه</router-link>
-                </div>
-              </router-link>
-            </div>
-          </div>
-        </div>
-        <div class="project col-12 col-md-4">
-          <div class="project__container">
-            <div class="project__box-grad"></div>
-            <div class="project__content">
-              <router-link to="">
-                <img class="project__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                <div class="project__content__title">
-                  <router-link to="">مشاريع مميزه</router-link>
-                </div>
-              </router-link>
-            </div>
-          </div>
-        </div>
-        <div class="project col-12 col-md-4">
-          <div class="project__container">
-            <div class="project__box-grad"></div>
-            <div class="project__content">
-              <router-link to="">
-                <img class="project__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                <div class="project__content__title">
-                  <router-link to="">مشاريع مميزه</router-link>
-                </div>
-              </router-link>
-            </div>
-          </div>
-        </div>
-        <div class="project col-12 col-md-4">
-          <div class="project__container">
-            <div class="project__box-grad"></div>
-            <div class="project__content">
-              <router-link to="">
-                <img class="project__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                <div class="project__content__title">
-                  <router-link to="">مشاريع مميزه</router-link>
-                </div>
-              </router-link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="mobile-apps en" v-if="getLang === 'en'">
-      <div class="intro">
-        <div class="intro__img">
-          <img src="../../assets/img/website-banner.webp">
-        </div>
-        <div class="intro__title">
-          <div class="title-3">Websites</div>
-          <div class="title-2">4 years of</div>
-          <div class="title mb-2">Create Websites applications</div>
-          <div class="break mb-4"></div>
-          <div class="desc">
-            We are a perfectly working hybrid of an experienced provider, with almost 1000 specialists on board, and an enthusiastic start-up.
-          </div>
-          <div class="desc">
-            This, together with our unique way of working with clients, helps us build long-lasting partnerships and create amazing software solutions that satisfy business’ and users’ needs.
-          </div>
-        </div>
-      </div>
-
-      <div class="main row">
-        <div class="project col-12 col-md-4">
-          <div class="project__container">
-            <div class="project__box-grad"></div>
-            <div class="project__content">
-              <router-link to="/">
-                <img class="project__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                <div class="project__content__title">
-                  <router-link to="">Test project</router-link>
-                </div>
-              </router-link>
-            </div>
-          </div>
-        </div>
-        <div class="project col-12 col-md-4">
-          <div class="project__container">
-            <div class="project__box-grad"></div>
-            <div class="project__content">
-              <router-link to="/">
-                <img class="project__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                <div class="project__content__title">
-                  <router-link to="">Test project</router-link>
-                </div>
-              </router-link>
-            </div>
-          </div>
-        </div>
-        <div class="project col-12 col-md-4">
-          <div class="project__container">
-            <div class="project__box-grad"></div>
-            <div class="project__content">
-              <router-link to="/">
-                <img class="project__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                <div class="project__content__title">
-                  <router-link to="">Test project</router-link>
-                </div>
-              </router-link>
-            </div>
-          </div>
-        </div>
-        <div class="project col-12 col-md-4">
-          <div class="project__container">
-            <div class="project__box-grad"></div>
-            <div class="project__content">
-              <router-link to="/">
-                <img class="project__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                <div class="project__content__title">
-                  <router-link to="">Test project</router-link>
-                </div>
-              </router-link>
-            </div>
-          </div>
-        </div>
-        <div class="project col-12 col-md-4">
-          <div class="project__container">
-            <div class="project__box-grad"></div>
-            <div class="project__content">
-              <router-link to="/">
-                <img class="project__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                <div class="project__content__title">
-                  <router-link to="">Test project</router-link>
-                </div>
-              </router-link>
-            </div>
-          </div>
-        </div>
-        <div class="project col-12 col-md-4">
-          <div class="project__container">
-            <div class="project__box-grad"></div>
-            <div class="project__content">
-              <router-link to="/">
-                <img class="project__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                <div class="project__content__title">
-                  <router-link to="">Test project</router-link>
-                </div>
-              </router-link>
-            </div>
-          </div>
-        </div>
-        <div class="project col-12 col-md-4">
-          <div class="project__container">
-            <div class="project__box-grad"></div>
-            <div class="project__content">
-              <router-link to="/">
-                <img class="project__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                <div class="project__content__title">
-                  <router-link to="">Test project</router-link>
-                </div>
-              </router-link>
-            </div>
-          </div>
-        </div>
-        <div class="project col-12 col-md-4">
-          <div class="project__container">
-            <div class="project__box-grad"></div>
-            <div class="project__content">
-              <router-link to="/">
-                <img class="project__content__img" src="../../assets/img/interior-design/BaDROOM.jpg">
-                <div class="project__content__title">
-                  <router-link to="">Test project</router-link>
-                </div>
-              </router-link>
+        <div class="main row">
+          <div class="project col-12 col-md-4"
+               v-for="project in projects" :key="project.id">
+            <div class="project__container">
+              <div class="project__box-grad"></div>
+              <div class="project__content">
+                <router-link :to="/project/ + project.id">
+                  <img class="project__content__img" :src="project.image.attach">
+                  <div class="project__content__title">
+                    <router-link to="">{{ project.title_en }}</router-link>
+                  </div>
+                </router-link>
+              </div>
             </div>
           </div>
         </div>
@@ -242,22 +81,70 @@
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import ProjectMessage from "@/components/ProjectMessage";
+import Spinner from "@/components/ui/Spinner";
 
 export default {
   name: "ProjectsCategory",
   components: {
+    Spinner,
     ProjectMessage,
     Footer,
     Navbar
   },
+  data() {
+    return {
+      is_loading: false,
+      error: false,
+      error_message_ar: '',
+      projects: '',
+      category: '',
+    }
+  },
   created() {
-    window.scrollTo(0,0)
+    window.scrollTo(0,0);
+    this.loadProjects(this.$route.params.id);
   },
   computed: {
     getLang() {
       return this.$store.getters['main/getLang'];
     }
   },
+  methods: {
+    async loadProjects(id) {
+      this.is_loading = true;
+
+      let myHeaders = new Headers();
+      let token = this.$store.getters.token;
+      myHeaders.append("Authorization", "Bearer " + token);
+
+      let requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+      };
+
+      let url = `https://backend-elbanna.we-work.pro/api/user/get-projects/` + id
+
+      await fetch(url, requestOptions)
+          .then(response => response.json())
+          .then(result => {
+
+            if (!result.status) {
+              this.error = true;
+              this.error_message_ar = result.msg;
+            } else {
+              this.projects = result.data.projects;
+              this.category = result.data.category;
+            }
+          })
+          .catch(error => {
+            this.error = true;
+            this.error_message_ar = error.message;
+          });
+
+      this.is_loading = false;
+    },
+  }
 }
 </script>
 
@@ -268,6 +155,10 @@ export default {
 
 .mobile-apps {
   margin: 4rem 0 10rem;
+}
+
+.spinner{
+  margin: 6rem 0 10rem;
 }
 
 a {

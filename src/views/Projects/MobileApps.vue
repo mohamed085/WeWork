@@ -2,532 +2,115 @@
   <div>
     <Navbar></Navbar>
 
-    <div class="mobile-apps ar" v-if="getLang === 'ar'">
-      <div class="intro">
-        <div class="intro__img">
-          <img src="../../assets/img/mobile_apps-bg.png">
-        </div>
-        <div class="intro__title">
-          <div class="title-3">تطبيقات الهاتف الجوال</div>
-          <div class="title-2">4 سنوات من </div>
-          <div class="title mb-2">صناعة تطبيقات الهاتف الجوال</div>
-          <div class="break mb-4"></div>
-          <div class="desc">
-            نحن مزيج يعمل بشكل مثالي من مزود ذي خبرة ، مع ما يقرب من 1000 متخصص على متن الطائرة ، وبدء تشغيل متحمس.
+    <spinner class="spinner" v-if="is_loading"></spinner>
+
+    <div v-else>
+
+      <div class="mobile-apps ar" v-if="getLang === 'ar'">
+        <div class="intro">
+          <div class="intro__img">
+            <img :src="category.main_photo">
           </div>
-          <div class="desc">
-            يساعدنا هذا ، جنبًا إلى جنب مع طريقتنا الفريدة في العمل مع العملاء ، في بناء شراكات طويلة الأمد وإنشاء حلول برمجية مذهلة تلبي احتياجات الأعمال والمستخدمين.
+          <div class="intro__title">
+            <div class="title-3">{{ category.sub_category_name_ar }}</div>
+            <div class="title-2">{{ category.title1_ar }}</div>
+            <div class="title-2">{{ category.title2_ar }}</div>
+            <div class="break mb-4"></div>
+            <div class="desc">{{ category.description1_ar }}</div>
           </div>
         </div>
+
+        <main>
+          <div class="apps">
+            <div class="row apps__container">
+              <div class="col-12 col-md-6"
+                   v-for="project in projects" :key="project.id">
+                <div class="app">
+                  <div class="app__box-grad"></div>
+                  <div class="app__content">
+                    <div class="app__content__body">
+                      <div class="app__content__body__img">
+                        <router-link :to="'/mobile-application/' + project.id">
+                          <img :src="project.image.attach">
+                        </router-link>
+                      </div>
+                      <div class="app__content__body__desc">
+                        <h3 class="app__content__body__desc__title">{{ project.title_ar }}</h3>
+                        <div class="app__content__body__desc__text">
+                          <p>{{ project.description_ar }}</p>
+                        </div>
+                        <router-link :to="'/mobile-application/' +  project.id" class="app__content__body__desc__btn">قراءة المزيد</router-link>
+                        <div class="app__content__body__desc__download">
+                          <a target="_blank" :href="project.link2" class="app__content__body__desc__download__link">
+                            <img src="../../assets/svg/app-store.svg">
+                          </a>
+                          <a target="_blank" :href="project.link1" class="app__content__body__desc__download__link">
+                            <img src="../../assets/svg/play-store.svg">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
       </div>
 
-      <main>
-        <div class="apps">
-          <div class="row apps__container">
-            <div class="col-12 col-md-6">
-              <div class="app">
-                <div class="app__box-grad"></div>
-                <div class="app__content">
-                  <div class="app__content__body">
-                    <div class="app__content__body__img">
-                      <router-link to="/mobile-application/125653">
-                        <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-                      </router-link>
-                    </div>
-                    <div class="app__content__body__desc">
-                      <h3 class="app__content__body__desc__title">تطبيق تست</h3>
-                      <div class="app__content__body__desc__text">
-                        <p>النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته.
-                        </p>
-                      </div>
-                      <router-link to="/mobile-application/125653" class="app__content__body__desc__btn">قراءة المزيد</router-link>
-                      <div class="app__content__body__desc__download">
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/app-store.svg">
-                        </router-link>
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/play-store.svg">
-                        </router-link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="app">
-                <div class="app__box-grad"></div>
-                <div class="app__content">
-                  <div class="app__content__body">
-                    <div class="app__content__body__img">
-                      <router-link to="/mobile-application/125653">
-                        <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-                      </router-link>
-                    </div>
-                    <div class="app__content__body__desc">
-                      <h3 class="app__content__body__desc__title">تطبيق تست</h3>
-                      <div class="app__content__body__desc__text">
-                        <p>النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته.
-                        </p>
-                      </div>
-                      <router-link to="/mobile-application/125653" class="app__content__body__desc__btn">قراءة المزيد</router-link>
-                      <div class="app__content__body__desc__download">
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/app-store.svg">
-                        </router-link>
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/play-store.svg">
-                        </router-link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="app">
-                <div class="app__box-grad"></div>
-                <div class="app__content">
-                  <div class="app__content__body">
-                    <div class="app__content__body__img">
-                      <router-link to="/mobile-application/125653">
-                        <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-                      </router-link>
-                    </div>
-                    <div class="app__content__body__desc">
-                      <h3 class="app__content__body__desc__title">تطبيق تست</h3>
-                      <div class="app__content__body__desc__text">
-                        <p>النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته.
-                        </p>
-                      </div>
-                      <router-link to="/mobile-application/125653" class="app__content__body__desc__btn">قراءة المزيد</router-link>
-                      <div class="app__content__body__desc__download">
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/app-store.svg">
-                        </router-link>
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/play-store.svg">
-                        </router-link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="app">
-                <div class="app__box-grad"></div>
-                <div class="app__content">
-                  <div class="app__content__body">
-                    <div class="app__content__body__img">
-                      <router-link to="/mobile-application/125653">
-                        <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-                      </router-link>
-                    </div>
-                    <div class="app__content__body__desc">
-                      <h3 class="app__content__body__desc__title">تطبيق تست</h3>
-                      <div class="app__content__body__desc__text">
-                        <p>النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته.
-                        </p>
-                      </div>
-                      <router-link to="/mobile-application/125653" class="app__content__body__desc__btn">قراءة المزيد</router-link>
-                      <div class="app__content__body__desc__download">
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/app-store.svg">
-                        </router-link>
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/play-store.svg">
-                        </router-link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="app">
-                <div class="app__box-grad"></div>
-                <div class="app__content">
-                  <div class="app__content__body">
-                    <div class="app__content__body__img">
-                      <router-link to="/mobile-application/125653">
-                        <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-                      </router-link>
-                    </div>
-                    <div class="app__content__body__desc">
-                      <h3 class="app__content__body__desc__title">تطبيق تست</h3>
-                      <div class="app__content__body__desc__text">
-                        <p>النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته.
-                        </p>
-                      </div>
-                      <router-link to="/mobile-application/125653" class="app__content__body__desc__btn">قراءة المزيد</router-link>
-                      <div class="app__content__body__desc__download">
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/app-store.svg">
-                        </router-link>
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/play-store.svg">
-                        </router-link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="app">
-                <div class="app__box-grad"></div>
-                <div class="app__content">
-                  <div class="app__content__body">
-                    <div class="app__content__body__img">
-                      <router-link to="/mobile-application/125653">
-                        <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-                      </router-link>
-                    </div>
-                    <div class="app__content__body__desc">
-                      <h3 class="app__content__body__desc__title">تطبيق تست</h3>
-                      <div class="app__content__body__desc__text">
-                        <p>النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته.
-                        </p>
-                      </div>
-                      <router-link to="/mobile-application/125653" class="app__content__body__desc__btn">قراءة المزيد</router-link>
-                      <div class="app__content__body__desc__download">
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/app-store.svg">
-                        </router-link>
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/play-store.svg">
-                        </router-link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="app">
-                <div class="app__box-grad"></div>
-                <div class="app__content">
-                  <div class="app__content__body">
-                    <div class="app__content__body__img">
-                      <router-link to="/mobile-application/125653">
-                        <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-                      </router-link>
-                    </div>
-                    <div class="app__content__body__desc">
-                      <h3 class="app__content__body__desc__title">تطبيق تست</h3>
-                      <div class="app__content__body__desc__text">
-                        <p>النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته.
-                        </p>
-                      </div>
-                      <router-link to="/mobile-application/125653" class="app__content__body__desc__btn">قراءة المزيد</router-link>
-                      <div class="app__content__body__desc__download">
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/app-store.svg">
-                        </router-link>
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/play-store.svg">
-                        </router-link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="app">
-                <div class="app__box-grad"></div>
-                <div class="app__content">
-                  <div class="app__content__body">
-                    <div class="app__content__body__img">
-                      <router-link to="/mobile-application/125653">
-                        <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-                      </router-link>
-                    </div>
-                    <div class="app__content__body__desc">
-                      <h3 class="app__content__body__desc__title">تطبيق تست</h3>
-                      <div class="app__content__body__desc__text">
-                        <p>النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته.
-                        </p>
-                      </div>
-                      <router-link to="/mobile-application/125653" class="app__content__body__desc__btn">قراءة المزيد</router-link>
-                      <div class="app__content__body__desc__download">
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/app-store.svg">
-                        </router-link>
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/play-store.svg">
-                        </router-link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="app">
-                <div class="app__box-grad"></div>
-                <div class="app__content">
-                  <div class="app__content__body">
-                    <div class="app__content__body__img">
-                      <router-link to="/mobile-application/125653">
-                        <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-                      </router-link>
-                    </div>
-                    <div class="app__content__body__desc">
-                      <h3 class="app__content__body__desc__title">تطبيق تست</h3>
-                      <div class="app__content__body__desc__text">
-                        <p>النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته.
-                        </p>
-                      </div>
-                      <router-link to="/mobile-application/125653" class="app__content__body__desc__btn">قراءة المزيد</router-link>
-                      <div class="app__content__body__desc__download">
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/app-store.svg">
-                        </router-link>
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/play-store.svg">
-                        </router-link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-    </div>
 
+      <div class="mobile-apps en" v-if="getLang === 'en'">
+        <div class="intro">
+          <div class="intro__img">
+            <img :src="category.main_photo">
+          </div>
+          <div class="intro__title">
+            <div class="title-3">{{ category.sub_category_name_en }}</div>
+            <div class="title-2">{{ category.title1_en }}</div>
+            <div class="title-2">{{ category.title2_en }}</div>
+            <div class="break mb-4"></div>
+            <div class="desc">{{ category.description2_en }}</div>
+          </div>
+        </div>
 
-    <div class="mobile-apps en" v-if="getLang === 'en'">
-      <div class="intro">
-        <div class="intro__img">
-          <img src="../../assets/img/mobile_apps-bg.png">
-        </div>
-        <div class="intro__title">
-          <div class="title-3">Mobile applications</div>
-          <div class="title-2">4 years of</div>
-          <div class="title mb-2">Create Mobile applications</div>
-          <div class="break mb-4"></div>
-          <div class="desc">
-            We are a perfectly working hybrid of an experienced provider, with almost 1000 specialists on board, and an enthusiastic start-up.
+        <main>
+          <div class="apps">
+            <div class="row apps__container">
+              <div class="col-12 col-md-6"
+                   v-for="project in projects" :key="project.id">
+                <div class="app">
+                  <div class="app__box-grad"></div>
+                  <div class="app__content">
+                    <div class="app__content__body">
+                      <div class="app__content__body__img">
+                        <router-link to="/mobile-application/125653">
+                          <img :src="project.image.attach">
+                        </router-link>
+                      </div>
+                      <div class="app__content__body__desc">
+                        <h3 class="app__content__body__desc__title">{{ project.title_ar }}</h3>
+                        <div class="app__content__body__desc__text">
+                          <p>{{ project.description_ar }}</p>
+                        </div>
+                        <router-link :to="'/mobile-application/' +  project.id" class="app__content__body__desc__btn">Read more</router-link>
+                        <div class="app__content__body__desc__download">
+                          <a target="_blank" :href="project.link2" class="app__content__body__desc__download__link">
+                            <img src="../../assets/svg/app-store.svg">
+                          </a>
+                          <a target="_blank" :href="project.link1" class="app__content__body__desc__download__link">
+                            <img src="../../assets/svg/play-store.svg">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="desc">
-            This, together with our unique way of working with clients, helps us build long-lasting partnerships and create amazing software solutions that satisfy business’ and users’ needs.
-          </div>
-        </div>
+        </main>
       </div>
 
-      <main>
-        <div class="apps">
-          <div class="row apps__container">
-            <div class="col-12 col-md-6">
-              <div class="app">
-                <div class="app__box-grad"></div>
-                <div class="app__content">
-                  <div class="app__content__body">
-                    <div class="app__content__body__img">
-                      <router-link to="/mobile-application/125653">
-                        <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-                      </router-link>
-                    </div>
-                    <div class="app__content__body__desc">
-                      <h3 class="app__content__body__desc__title">Project Test</h3>
-                      <div class="app__content__body__desc__text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                      </div>
-                      <router-link to="/mobile-application/125653" class="app__content__body__desc__btn">Read more</router-link>
-                      <div class="app__content__body__desc__download">
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/app-store.svg">
-                        </router-link>
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/play-store.svg">
-                        </router-link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="app">
-                <div class="app__box-grad"></div>
-                <div class="app__content">
-                  <div class="app__content__body">
-                    <div class="app__content__body__img">
-                      <router-link to="/mobile-application/125653">
-                        <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-                      </router-link>
-                    </div>
-                    <div class="app__content__body__desc">
-                      <h3 class="app__content__body__desc__title">Project Test</h3>
-                      <div class="app__content__body__desc__text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                      </div>
-                      <router-link to="/mobile-application/125653" class="app__content__body__desc__btn">Read more</router-link>
-                      <div class="app__content__body__desc__download">
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/app-store.svg">
-                        </router-link>
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/play-store.svg">
-                        </router-link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="app">
-                <div class="app__box-grad"></div>
-                <div class="app__content">
-                  <div class="app__content__body">
-                    <div class="app__content__body__img">
-                      <router-link to="/mobile-application/125653">
-                        <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-                      </router-link>
-                    </div>
-                    <div class="app__content__body__desc">
-                      <h3 class="app__content__body__desc__title">Project Test</h3>
-                      <div class="app__content__body__desc__text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                      </div>
-                      <router-link to="/mobile-application/125653" class="app__content__body__desc__btn">Read more</router-link>
-                      <div class="app__content__body__desc__download">
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/app-store.svg">
-                        </router-link>
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/play-store.svg">
-                        </router-link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="app">
-                <div class="app__box-grad"></div>
-                <div class="app__content">
-                  <div class="app__content__body">
-                    <div class="app__content__body__img">
-                      <router-link to="/mobile-application/125653">
-                        <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-                      </router-link>
-                    </div>
-                    <div class="app__content__body__desc">
-                      <h3 class="app__content__body__desc__title">Project Test</h3>
-                      <div class="app__content__body__desc__text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                      </div>
-                      <router-link to="/mobile-application/125653" class="app__content__body__desc__btn">Read more</router-link>
-                      <div class="app__content__body__desc__download">
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/app-store.svg">
-                        </router-link>
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/play-store.svg">
-                        </router-link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="app">
-                <div class="app__box-grad"></div>
-                <div class="app__content">
-                  <div class="app__content__body">
-                    <div class="app__content__body__img">
-                      <router-link to="/mobile-application/125653">
-                        <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-                      </router-link>
-                    </div>
-                    <div class="app__content__body__desc">
-                      <h3 class="app__content__body__desc__title">Project Test</h3>
-                      <div class="app__content__body__desc__text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                      </div>
-                      <router-link to="/mobile-application/125653" class="app__content__body__desc__btn">Read more</router-link>
-                      <div class="app__content__body__desc__download">
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/app-store.svg">
-                        </router-link>
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/play-store.svg">
-                        </router-link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="app">
-                <div class="app__box-grad"></div>
-                <div class="app__content">
-                  <div class="app__content__body">
-                    <div class="app__content__body__img">
-                      <router-link to="/mobile-application/125653">
-                        <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-                      </router-link>
-                    </div>
-                    <div class="app__content__body__desc">
-                      <h3 class="app__content__body__desc__title">Project Test</h3>
-                      <div class="app__content__body__desc__text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                      </div>
-                      <router-link to="/mobile-application/125653" class="app__content__body__desc__btn">Read more</router-link>
-                      <div class="app__content__body__desc__download">
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/app-store.svg">
-                        </router-link>
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/play-store.svg">
-                        </router-link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="app">
-                <div class="app__box-grad"></div>
-                <div class="app__content">
-                  <div class="app__content__body">
-                    <div class="app__content__body__img">
-                      <router-link to="/mobile-application/125653">
-                        <img src="../../assets/img/mobile_apps/mobiles1-600.png">
-                      </router-link>
-                    </div>
-                    <div class="app__content__body__desc">
-                      <h3 class="app__content__body__desc__title">Project Test</h3>
-                      <div class="app__content__body__desc__text">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                      </div>
-                      <router-link to="/mobile-application/125653" class="app__content__body__desc__btn">Read more</router-link>
-                      <div class="app__content__body__desc__download">
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/app-store.svg">
-                        </router-link>
-                        <router-link to="" class="app__content__body__desc__download__link">
-                          <img src="../../assets/svg/play-store.svg">
-                        </router-link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
     </div>
 
     <ProjectMessage></ProjectMessage>
@@ -541,21 +124,69 @@
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import ProjectMessage from "@/components/ProjectMessage";
+import Spinner from "@/components/ui/Spinner";
 export default {
   name: "MobileApps",
   components: {
+    Spinner,
     ProjectMessage,
     Footer,
     Navbar
   },
+  data() {
+    return {
+      is_loading: false,
+      error: false,
+      error_message_ar: '',
+      projects: '',
+      category: '',
+    }
+  },
   created() {
-    window.scrollTo(0,0)
+    window.scrollTo(0,0);
+    this.loadProjects(this.$route.params.id);
   },
   computed: {
     getLang() {
     return this.$store.getters['main/getLang'];
    }
   },
+  methods: {
+    async loadProjects(id) {
+      this.is_loading = true;
+
+      let myHeaders = new Headers();
+      let token = this.$store.getters.token;
+      myHeaders.append("Authorization", "Bearer " + token);
+
+      let requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+      };
+
+      let url = `https://backend-elbanna.we-work.pro/api/user/get-projects/` + id
+
+      await fetch(url, requestOptions)
+          .then(response => response.json())
+          .then(result => {
+
+            if (!result.status) {
+              this.error = true;
+              this.error_message_ar = result.msg;
+            } else {
+              this.projects = result.data.projects;
+              this.category = result.data.category;
+            }
+          })
+          .catch(error => {
+            this.error = true;
+            this.error_message_ar = error.message;
+          });
+
+      this.is_loading = false;
+    },
+  }
 }
 </script>
 
@@ -564,8 +195,12 @@ export default {
 @import "../../assets/css/typography";
 @import "../../assets/css/mixins";
 
-.mobile-apps {
+.mobile-apps,  {
   margin: 4rem 0 10rem;
+}
+
+.spinner{
+  margin: 6rem 0 10rem;
 }
 
 .intro {

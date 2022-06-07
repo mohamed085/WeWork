@@ -132,7 +132,7 @@ export default {
             this.error_message_ar = error.message;
           });
 
-      await this.loadSubCategories();
+      await this.loadSubCategories(this.$route.params.id);
       this.is_loading = false;
     },
 

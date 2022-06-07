@@ -1,11 +1,12 @@
 <template>
-  <div>
-    <div class="title-2">الفئة الفرعية: 1 (البرمجيات)</div>
+  <spinner v-if="is_loading"></spinner>
+  <div v-else>
+    <div class="title-2">الفئة الفرعية: {{ sub_category.id }} ({{ sub_category.sub_category_name_ar }})</div>
 
     <div class="filter">
       <div class="filter__container">
-        <router-link :to="'/dashboard/projects/item/items/' + this.$route.params.id" class="filter__item">كل المشاريع</router-link>
-        <router-link :to="'/dashboard/projects/item/add/' + this.$route.params.id" class="filter__item">إضافة مشروع جديد</router-link>
+        <router-link :to="'/dashboard/projects/item/items/' + this.sub_category.id" class="filter__item">كل المشاريع</router-link>
+        <router-link :to="'/dashboard/projects/item/add/' + this.sub_category.id" class="filter__item">إضافة مشروع جديد</router-link>
       </div>
     </div>
 
@@ -14,9 +15,58 @@
 </template>
 
 <script>
+import Spinner from "@/components/ui/Spinner";
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: "Index"
+  name: "Index",
+  components: {Spinner},
+  data() {
+    return {
+      is_loading: false,
+      error: false,
+      error_message_ar: '',
+      sub_category: '',
+    }
+  },
+  created() {
+    this.loadSubCategory(this.$route.params.id)
+  },
+  methods:{
+    async loadSubCategory(id) {
+      this.is_loading = true;
+
+      let myHeaders = new Headers();
+      let token = this.$store.getters.token;
+      myHeaders.append("Authorization", "Bearer " + token);
+
+      let requestOptions = {
+        method: 'GET',
+        headers: myHeaders,
+        redirect: 'follow'
+      };
+
+      let url = `https://backend-elbanna.we-work.pro/api/user/get-sub-category-by-id/` + id;
+
+      await fetch(url, requestOptions)
+          .then(response => response.json())
+          .then(result => {
+            if (!result.status) {
+              this.error = true;
+              this.error_message_ar = result.msg;
+            } else {
+              this.sub_category = result.data;
+            }
+          })
+          .catch(error => {
+            this.error = true;
+            this.error_message_ar = error.message;
+          });
+
+      this.is_loading = false;
+
+    },
+
+  }
 }
 </script>
 

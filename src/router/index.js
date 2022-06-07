@@ -4,7 +4,6 @@ import Home from "@/views/Home";
 import Services from "@/views/Services";
 import Deliver from "@/views/Deliver";
 import Index from "@/views/Projects/Index";
-import AllCategories from "@/views/Projects/AllCategories";
 import Clients from "@/views/Clients";
 import Team from "@/views/Team";
 import Contact from "@/views/Contact";
@@ -72,15 +71,10 @@ const routes = [
     { path: '/contact-us',component: Contact },
     { path: '/about-us',component: About },
     { path: '/join-us',component: Join },
-    { path: '/projects',component: Index,
-        children: [
-            { path: '/projects',component: AllCategories },
-            { path: '/projects/sub-category/:id',component: AllCategories },
-        ]
-    },
-    { path: '/mobile-applications', component: MobileApps },
-    { path: '/websites', component: Websites },
-    { path: '/motion-graphics', component: MotionGraphicProjects },
+    { path: '/projects',component: Index },
+    { path: '/mobile-applications/:id', component: MobileApps },
+    { path: '/websites/:id', component: Websites },
+    { path: '/motion-graphics/:id', component: MotionGraphicProjects },
     { path: '/projects/:id', component: ProjectsCategory },
     { path: '/mobile-application/:id', component: MobileApp },
     { path: '/project/:id', component: Project },
@@ -128,9 +122,9 @@ const routes = [
                     { path: '/dashboard/projects/sub-categories/items/:id', component: ProjectsSubCategoryItemsDashboard },
                     { path: '/dashboard/projects/sub-categories/add/:id', component: ProjectsSubCategoryAddDashboard },
                     { path: '/dashboard/projects/sub-categories/view/:id', component: ProjectsSubCategoryAddDashboard },
+                    { path: '/dashboard/projects/sub-categories/edit/:id', component: ProjectsSubCategoryEditDashboard },
                 ]
             },
-            { path: '/dashboard/projects/sub-categories/edit/:id', component: ProjectsSubCategoryEditDashboard },
             { path: '/dashboard/projects/item', component: ProjectsIndexDashboard,
                 children: [
                     { path: '/dashboard/projects/item/items/:id', component: ProjectsItemDashboard },
