@@ -1,6 +1,7 @@
 <template>
   <div class="navbar-component">
     <div class="ar" v-if="getLang === 'ar'">
+
       <div class="navbar-1">
         <div class="navbar-1__container">
           <span class="navbar-1__welcome-msg">مرحبا بكم في مؤسسة نحن نعمل</span>
@@ -16,6 +17,7 @@
           <router-link to="/" class="navbar-2__logo">
             <img src="../../assets/img/blue-logo-2.png">
           </router-link>
+
           <div class="navbar-2__content">
             <div class="navbar-2__content__mobile">
               <i v-if="!mobileNav" @click="openMobileNav()" class="fas fa-align-justify"></i>
@@ -38,7 +40,7 @@
           </div>
       </div>
 
-      <div class="mobile-nav" v-if="mobileNav">
+      <div class="mobile-nav" v-if="mobileNav"  >
         <div class="mobile-nav__header">
           <router-link to="/" class="me-2 ms-2">
             <img src="../../assets/img/blue-logo-2.png">
@@ -164,7 +166,6 @@ export default {
 <style lang="scss" scoped>
 @import "../../assets/css/variables";
 @import "../../assets/css/mixins";
-
 
 .navbar-1 {
   //background: -webkit-linear-gradient(to left, $color-primary, $color-primary-light); /* Chrome 10-25, Safari 5.1-6 */
