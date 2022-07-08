@@ -10,7 +10,7 @@
           استكشف دراسات حالة تطوير البرمجيات من الشركات التي تواجه تحديات مماثلة
         </div>
         <div class="desc">
-          طلبوا من نحن نعمل ترقية منتجهم الرقمي وتحديد اتجاه لتطوير البرمجيات المرنة. 98٪ من قادة التكنولوجيا يوصوننا. معظم البقاء أكثر من 3 سنوات.
+          عملائنا الكرام سنعدكم كما وعدنا عملائنا السابقين والحاليين بتجربه رائعة سنوفر بها احتياجاتكم وسنسعى لتحقيق اهدافكم مع فريق متميز ورائع مثل فريق نحن نعمل ,كما سنعدكم بتوفير الحلول لجميع المشكلاتو دعم فنى متاح على مدار الساعة للرد عليكم وحل مشاكلهم
         </div>
       </div>
     </div>
@@ -22,8 +22,7 @@
           Explore software development case studies from companies with similar challenges
         </div>
         <div class="desc">
-          They asked The Software House to upgrade their digital product and set a direction for resilient software development. 98% of tech leaders recommends us. Most stay over 3 years.
-        </div>
+          Our valued customers, we will promise you, as we promised our former and current customers, a wonderful experience, we will provide your needs and we will strive to achieve your goals with a distinguished and wonderful team like the team we work, and we will also promise you to provide solutions to all problems and technical support is available around the clock to respond to you and solve their problems        </div>
       </div>
     </div>
 

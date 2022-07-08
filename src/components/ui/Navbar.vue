@@ -2,42 +2,36 @@
   <div class="navbar-component">
     <div class="ar" v-if="getLang === 'ar'">
 
-      <div class="navbar-1">
-        <div class="navbar-1__container">
-          <span class="navbar-1__welcome-msg">مرحبا بكم في مؤسسة نحن نعمل</span>
-          <span class="navbar-1__lang" @click="setLang('en')">
-            <span>English</span>
-            <img src="../../assets/img/flag-icon.jpg">
-          </span>
-        </div>
-      </div>
-
       <div class="navbar-2"
-          :class="{sticky: scrollPosition > 40}">
-          <router-link to="/" class="navbar-2__logo">
-            <img src="../../assets/img/blue-logo-2.png">
-          </router-link>
+          :class="{sticky: scrollPosition > 120}">
+        <router-link to="/" class="navbar-2__logo">
+          <img src="../../assets/img/whait-logo.png">
+        </router-link>
 
-          <div class="navbar-2__content">
-            <div class="navbar-2__content__mobile">
-              <i v-if="!mobileNav" @click="openMobileNav()" class="fas fa-align-justify"></i>
-              <i v-if="mobileNav" @click="closeMobileNav()" class="fas fa-times"></i>
-            </div>
-            <div class="navbar-2__content__bg-screen">
-              <div class="navbar-2__content__bg-screen__items">
-                <router-link to="/" exact class="navbar-2__content__bg-screen__items__item"><span>الرئيسية</span></router-link>
-                <router-link to="/about-us" class="navbar-2__content__bg-screen__items__item"><span>معلومات عنا</span></router-link>
-                <router-link to="/services" class="navbar-2__content__bg-screen__items__item"><span>الخدمات</span></router-link>
-                <router-link to="/deliver" class="navbar-2__content__bg-screen__items__item"><span>التسليم</span></router-link>
-                <router-link to="/projects" class="navbar-2__content__bg-screen__items__item"><span>المشاريع</span></router-link>
-                <router-link to="/clients" class="navbar-2__content__bg-screen__items__item"><span>العملاء</span></router-link>
-                <router-link to="/team" class="navbar-2__content__bg-screen__items__item"><span>الفريق</span></router-link>
-                <router-link to="/contact-us" class="navbar-2__content__bg-screen__items__item"><span>تواصل بنا</span></router-link>
-                <router-link to="/join-us" class="navbar-2__content__bg-screen__items__item"><span>انضم الينا</span></router-link>
+        <div class="navbar-2__content">
+          <div class="navbar-2__content__mobile">
+            <i v-if="!mobileNav" @click="openMobileNav()" class="fas fa-align-justify"></i>
+            <i v-if="mobileNav" @click="closeMobileNav()" class="fas fa-times"></i>
+          </div>
+          <div class="navbar-2__content__bg-screen">
+            <div class="navbar-2__content__bg-screen__items">
+              <router-link to="/" exact class="navbar-2__content__bg-screen__items__item"><span>الرئيسية</span></router-link>
+              <router-link to="/about-us" class="navbar-2__content__bg-screen__items__item"><span>معلومات عنا</span></router-link>
+              <router-link to="/services" class="navbar-2__content__bg-screen__items__item"><span>الخدمات</span></router-link>
+              <router-link to="/deliver" class="navbar-2__content__bg-screen__items__item"><span>التسليم</span></router-link>
+              <router-link to="/projects" class="navbar-2__content__bg-screen__items__item"><span>المشاريع</span></router-link>
+              <router-link to="/clients" class="navbar-2__content__bg-screen__items__item"><span>العملاء</span></router-link>
+              <router-link to="/team" class="navbar-2__content__bg-screen__items__item"><span>الفريق</span></router-link>
+              <router-link to="/contact-us" class="navbar-2__content__bg-screen__items__item"><span>تواصل بنا</span></router-link>
+              <router-link to="/join-us" class="navbar-2__content__bg-screen__items__item"><span>انضم الينا</span></router-link>
 <!--                <router-link to="/blogs" class="navbar-2__content__bg-screen__items__item"><span>المقالات</span></router-link>-->
-              </div>
             </div>
           </div>
+        </div>
+        <div class="navbar-2__languages">
+          <span class="navbar-2__languages__lang" @click="setLang('en')">En</span>
+          <span class="navbar-2__languages__lang active" @click="setLang('ar')">ع</span>
+        </div>
       </div>
 
       <div class="mobile-nav" v-if="mobileNav"  >
@@ -64,20 +58,11 @@
     </div>
 
     <div class="en" v-if="getLang === 'en'">
-      <div class="navbar-1">
-        <div class="navbar-1__container">
-          <span class="navbar-1__welcome-msg">Welcome to the Foundation We Work</span>
-          <span class="navbar-1__lang" @click="setLang('ar')">
-            <span>عربي</span>
-            <img src="../../assets/img/flag-ar.png">
-          </span>
-        </div>
-      </div>
 
       <div class="navbar-2"
            :class="{sticky: scrollPosition > 40}">
         <router-link to="/" class="navbar-2__logo">
-          <img src="../../assets/img/blue-logo-2.png">
+          <img src="../../assets/img/whait-logo.png">
         </router-link>
         <div class="navbar-2__content">
           <div class="navbar-2__content__mobile">
@@ -99,7 +84,10 @@
             </div>
           </div>
         </div>
-
+        <div class="navbar-2__languages">
+          <span class="navbar-2__languages__lang active" @click="setLang('en')">En</span>
+          <span class="navbar-2__languages__lang" @click="setLang('ar')">ع</span>
+        </div>
       </div>
 
       <div class="mobile-nav" v-if="mobileNav">
@@ -167,52 +155,17 @@ export default {
 @import "../../assets/css/variables";
 @import "../../assets/css/mixins";
 
-.navbar-1 {
-  //background: -webkit-linear-gradient(to left, $color-primary, $color-primary-light); /* Chrome 10-25, Safari 5.1-6 */
-  //background: linear-gradient(to left, $color-primary, $color-primary-light); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-color: $color-primary;
-  color: $color-white;
-  font-family: "We work Medium";
-  z-index: 101;
-  font-size: .8rem;
-
-  &__container {
-    padding: .6rem 10%;
-    display: flex;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-  }
-
-  &__welcome-msg {
-    display: flex;
-    align-items: center;
-  }
-
-  &__lang {
-    display: flex;
-    align-items: center;
-
-    & span {
-      cursor: pointer;
-      margin: 0 5px;
-    }
-
-    & img {
-      height: 1.8rem;
-      border-radius: 1rem;
-    }
-  }
-}
-
 .navbar-2 {
   position: fixed;
-  top: 3rem;
+  top: 0rem;
   z-index: 100;
   padding: 0 5%;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  background: $color-primary;
+  opacity: .7;
+
 
   &__logo {
     padding: .5rem 0;
@@ -247,8 +200,8 @@ export default {
           margin: 0 2px;
           font-family: "The Sans Arabic";
           text-decoration: none;
-          color: $color-black;
-          font-size: 1rem;
+          color: $color-white;
+          font-size: .8rem;
           position: relative;
           display: flex;
           align-items: center;
@@ -258,7 +211,7 @@ export default {
             position: absolute;
             width: 10px;
             height: 10px;
-            background-color: $color-primary;
+            background-color: $color-white;
             transform: translate(-50%,-8px) rotate(45deg);
             transition: .3s cubic-bezier(.55,.17,.05,.85);
             opacity: 0;
@@ -269,9 +222,9 @@ export default {
           &:hover,
           &.active,
           &.router-link-active {
-            color: $color-primary;
+            color: $color-white;
             transition: 0.1s;
-            border-bottom: 3px solid $color-primary;
+            border-bottom: 3px solid $color-white;
           }
 
           &:hover::before,
@@ -286,14 +239,40 @@ export default {
       }
     }
   }
+
+  &__languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__lang {
+      margin: 0 .3rem;
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $color-white;
+      border: 1px solid $color-black;
+      font-size: 1rem;
+      cursor: pointer;
+
+      &:hover,
+      &.active{
+        background-color: $color-white;
+        color: $color-primary;
+      }
+    }
+  }
 }
 
 .sticky {
   position: fixed;
   top: 0;
   opacity: 1;
-  background: $color-white;
   z-index: 100;
+  background: $color-primary;
+  color: $color-white;
 }
 
 .mobile-nav {
@@ -387,6 +366,7 @@ export default {
   }
 
 }
+
 @include respond(tab-port) {
   .navbar-2__content {
     display: flex;

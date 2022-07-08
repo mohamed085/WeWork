@@ -2,6 +2,16 @@
   <div>
     <div class="err" v-if="error">{{ error_message_ar }}</div>
 
+    <b-modal id="modal" hide-footer title="نحن نعمل">
+      <div class="d-block text-center">
+        <h3 style="font-family: 'We work Bold'">هلا انت متاكد من انك تريد حذف {{ selectedId }}</h3>
+      </div>
+      <div class="d-flex modal-footer">
+        <button class="btn" block @click="$bvModal.hide('modal')">لا</button>
+        <button class="btn" block @click="deleteForm(selectedId)">نعم</button>
+      </div>
+    </b-modal>
+
     <div class="table-responsive">
       <table class="table table-striped table-hover">
         <thead>
@@ -26,7 +36,7 @@
           <th>
             <div class="table-action">
               <router-link :to="'/dashboard/projects/forms/view/' + form.id"><i class="fas fa-eye"></i></router-link> |
-              <i @click="deleteForm(form.id)" class="fas fa-trash-alt"></i>
+              <i @click="deleteItem(form.id)" class="fas fa-trash-alt"></i>
             </div>
           </th>
         </tr>
@@ -58,6 +68,7 @@ export default {
       error: false,
       error_message_ar: '',
       items: '',
+      selectedId: ''
     }
   },
   created() {
@@ -95,7 +106,12 @@ export default {
 
       this.is_loading = false;
     },
+    deleteItem(id) {
+      this.selectedId = id;
+      this.$bvModal.show('modal');
+    },
     async deleteForm(id) {
+      this.$bvModal.hide('modal');
       this.is_loading = true;
 
       let myHeaders = new Headers();

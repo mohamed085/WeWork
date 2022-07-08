@@ -76,14 +76,14 @@
             <div class="section__desc">الذين يستفيدون من التكنولوجيا ويطرحون الأسئلة الصحيحة ليقدموا لك نتائج ملموسة في شكل برامج موثوقة وعالية الجودة ومستدامة يتم تسليمها في الوقت المحدد وفي المرة الأولى الصحيحة.</div>
             <div class="who-we-are__service row">
               <div class="who-we-are__service__left col-12 col-md-5">
-                <img src="../assets/img/MacbookPro1.png">
+                <img src="../assets/img/2.png">
               </div>
               <div class="who-we-are__service__center col-12 col-md-2">
                 <span>ابدأ بتنفيذ مشروعك الآن</span>
                 <router-link to="/contact-us" class="section__btn">ابدأ الآن</router-link>
               </div>
               <div class="who-we-are__service__right col-12 col-md-5">
-                <img src="../assets/img/iMacProLeftSideViewMockup1.png">
+                <img src="../assets/img/1.png">
               </div>
             </div>
 
@@ -96,25 +96,17 @@
             <div class="section__desc">السبب الوحيد لعملنا هو جعل الحياة أقل صعوبة لعملائنا.</div>
             <div class="service__categories">
               <div class="service__categories__category">
-                <div class="service__categories__category__title">
-                  <span class="service__categories__category__title__main">خدمات نحن نعمل</span>
-                  <span class="break"></span>
-                  <span class="service__categories__category__title__desc">يهتم بتطوير وإنشاء برمجيات عالية الجودة ، مع مراعاة اهتمامات المستخدم واحتياجاته ومتطلباته على جميع المستويات ، ويهتم بشكل عام بتحليل البرامج والتصاميم وكيفية بنائها ، ويعمل على التحقق منها ، وحتى إدارتها ، حتى نقوم بتصميم البرامج الصحيحة والسليمة.</span>
-                </div>
                 <div class="service__categories__category__items">
                   <div class="service__categories__category__items__item">
                     <div class="service__categories__category__items__item__content">
                       <div class="service__categories__category__items__item__front">
                         <i class="fas fa-laptop"></i>
                         <span class="break"></span>
-                        <span class="service__categories__category__items__item__title">الخدمات البرمجية</span>
-                        <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                        <span class="service__categories__category__items__item__title">الخدمات البرمجيه</span>
                       </div>
                       <div class="service__categories__category__items__item__back">
-                        <span class="service__categories__category__items__item__title">الخدمات البرمجية</span>
-                        <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                        <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                        <span class="service__categories__category__items__item__title">الخدمات البرمجيه</span>
+                        <span class="service__categories__category__items__item__desc"> نعمل على تطوير موقعك الالكتروني وتطبيقات الهاتف بأحترافيه مما يناسب احتياجاتك واحتياجات عملائك للوصول للنجاح الذي تطمح له</span>
                       </div>
                     </div>
                   </div>
@@ -123,14 +115,11 @@
                       <div class="service__categories__category__items__item__front">
                         <i class="fas fa-laptop"></i>
                         <span class="break"></span>
-                        <span class="service__categories__category__items__item__title">الخدمات التسويقية</span>
-                        <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                        <span class="service__categories__category__items__item__title">الخدمات التسويقيه</span>
                       </div>
                       <div class="service__categories__category__items__item__back">
-                        <span class="service__categories__category__items__item__title">الخدمات التسويقية</span>
-                        <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                        <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                        <span class="service__categories__category__items__item__title">الخدمات التسويقيه</span>
+                        <span class="service__categories__category__items__item__desc">نقدم لك الخطط الاستراتيجية والاستشارات والتي ن دورها تساعدك على الوصول الي اهدافك التسويقية بشكل زمني واضح</span>
                       </div>
                     </div>
                   </div>
@@ -139,14 +128,24 @@
                       <div class="service__categories__category__items__item__front">
                         <i class="fas fa-laptop"></i>
                         <span class="break"></span>
-                        <span class="service__categories__category__items__item__title">الخدمات التصميمية</span>
-                        <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                        <span class="service__categories__category__items__item__title">الجرافيك</span>
                       </div>
                       <div class="service__categories__category__items__item__back">
-                        <span class="service__categories__category__items__item__title">الخدمات التصميمية</span>
-                        <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                        <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                        <span class="service__categories__category__items__item__title">الجرافيك</span>
+                        <span class="service__categories__category__items__item__desc">نركز على انشاء تصاميم جرافيك مميزه من الناحيه الجماله تجذب الانظار وتوصل هدف علامتك التجاريه الى الجمهور المستهدف</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="service__categories__category__items__item">
+                    <div class="service__categories__category__items__item__content">
+                      <div class="service__categories__category__items__item__front">
+                        <i class="fas fa-laptop"></i>
+                        <span class="break"></span>
+                        <span class="service__categories__category__items__item__title">الديكور</span>
+                      </div>
+                      <div class="service__categories__category__items__item__back">
+                        <span class="service__categories__category__items__item__title">الديكور</span>
+                        <span class="service__categories__category__items__item__desc">منذ يوم التأسيس قمنا بتصميم وتنفيذ المئات من الفلل والمنتجعات والفنادق والمراكز التجارية وابتكار العديد من التصاميم بوظائف ومفاهيم مختلفة من خلال اتباع اتجاهات التصميم المتجددة باستمرار حول العالم</span>
                       </div>
                     </div>
                   </div>
@@ -167,7 +166,7 @@
                     <b-avatar size="3rem"></b-avatar>
                     <span>Mohamed Emad</span>
                   </div>
-                  <div class="blogs__items__item__content">بمجرد أن بدأت العمل معهم ، كان من الواضح أنهم كانوا مشاركين ، وقادرون تقنيًا ، ومتفهمون للغاية.</div>
+                  <div class="blogs__items__item__content">التطبيق رائع جدا والتعامل يستمر باذن الله في المشاريع القادمه..كل الشكر لفريق العمل </div>
                 </div>
               </div>
               <div class="col-12 col-md-4">
@@ -176,7 +175,7 @@
                     <b-avatar size="3rem"></b-avatar>
                     <span>Mohamed Emad</span>
                   </div>
-                  <div class="blogs__items__item__content">تعتبر موثوقيتها وسرعتها أفضل بكثير مما تمكنت من ملاحظته مع مقدمي الخدمات الآخرين.</div>
+                  <div class="blogs__items__item__content">موقع إلكتروني رائع ودعم فني ممتاز وبرنامج إداري موفر للوقت بشكل كبير</div>
                 </div>
               </div>
               <div class="col-12 col-md-4">
@@ -185,7 +184,7 @@
                     <b-avatar size="3rem"></b-avatar>
                     <span>Mohamed Emad</span>
                   </div>
-                  <div class="blogs__items__item__content">فريق منخرط للغاية ومهني مع أطنان من المعرفة الصناعية والخبرة العملية في قطاع التنقل الإلكتروني.</div>
+                  <div class="blogs__items__item__content">ليس شكرا ولا مجامله ولكن كل فريق العمل الموجود بالشركه يعد من اكثر الفرق المتعاونه في هذا المجال  و دائما يتطلع الي الافضل</div>
                 </div>
               </div>
             </div>
@@ -325,19 +324,19 @@
 
         <div class="section section-bg who-we-are">
           <div class="section__container">
-            <div class="section__title">We are software development experts</div>
-            <div class="section__title-2">We build long-lasting partnerships</div>
-            <div class="section__desc">who leverage technology and ask the right questions to bring you tangible results in the form of reliable, high quality, sustainable software that is delivered on time, right first time.</div>
+            <div class="section__title text-center">We are software development experts</div>
+            <div class="section__title-2 text-center">We build long-lasting partnerships</div>
+            <div class="section__desc text-center">who leverage technology and ask the right questions to bring you tangible results in the form of reliable, high quality, sustainable software that is delivered on time, right first time.</div>
             <div class="who-we-are__service row">
               <div class="who-we-are__service__left col-12 col-md-5">
-                <img src="../assets/img/iMacProLeftSideViewMockup1.png">
+                <img src="../assets/img/1.png">
               </div>
               <div class="who-we-are__service__center col-12 col-md-2">
                 <span>Start your project now</span>
                 <router-link class="section__btn" to="/contact-us">Start now</router-link>
               </div>
               <div class="who-we-are__service__right col-12 col-md-5">
-                <img src="../assets/img/MacbookPro1.png">
+                <img src="../assets/img/2.png">
               </div>
             </div>
           </div>
@@ -349,24 +348,19 @@
             <div class="section__desc">The sole reason we are in business is to make life less difficult for our clients.</div>
             <div class="service__categories">
               <div class="service__categories__category">
-                <div class="service__categories__category__title">
-                  <span class="service__categories__category__title__main">Software engineering services</span>
-                  <span class="break"></span>
-                  <span class="service__categories__category__title__desc">It is concerned with developing and creating high-quality software, taking into account the user's interests, needs and requirements at all levels, and it is generally concerned with analyzing software, designs and how to build them, and works to verify them, and even manage them, until we engineer correct and sound software.</span>
-                </div>
                 <div class="service__categories__category__items">
                   <div class="service__categories__category__items__item">
                     <div class="service__categories__category__items__item__content">
                       <div class="service__categories__category__items__item__front">
                         <i class="fas fa-laptop"></i>
                         <span class="break"></span>
-                        <span class="service__categories__category__items__item__title">Websites</span>
-                        <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                        <span class="service__categories__category__items__item__title">Software services</span>
                       </div>
                       <div class="service__categories__category__items__item__back">
-                        <span class="service__categories__category__items__item__title">Websites</span>
-                        <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                        <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                        <span class="service__categories__category__items__item__title">Software services</span>
+                        <span class="service__categories__category__items__item__desc">
+                          We are working on developing your website and mobile applications professionally to suit your needs and the needs of your customers to reach the success you aspire to
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -375,13 +369,13 @@
                       <div class="service__categories__category__items__item__front">
                         <i class="fas fa-laptop"></i>
                         <span class="break"></span>
-                        <span class="service__categories__category__items__item__title">Websites</span>
-                        <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                        <span class="service__categories__category__items__item__title">Marketing Services</span>
                       </div>
                       <div class="service__categories__category__items__item__back">
-                        <span class="service__categories__category__items__item__title">Websites</span>
-                        <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                        <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                        <span class="service__categories__category__items__item__title">Marketing Services</span>
+                        <span class="service__categories__category__items__item__desc">
+                          We provide you with strategic plans and consultations, whose role will help you reach your marketing goals in a clear time frame
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -390,13 +384,28 @@
                       <div class="service__categories__category__items__item__front">
                         <i class="fas fa-laptop"></i>
                         <span class="break"></span>
-                        <span class="service__categories__category__items__item__title">Websites</span>
-                        <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                        <span class="service__categories__category__items__item__title">Graphic</span>
                       </div>
                       <div class="service__categories__category__items__item__back">
-                        <span class="service__categories__category__items__item__title">Websites</span>
-                        <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                        <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                        <span class="service__categories__category__items__item__title">Graphic</span>
+                        <span class="service__categories__category__items__item__desc">
+                          We focus on creating distinctive graphic designs in terms of beauty that attract attention and reach the goal of your brand to the target audience.
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="service__categories__category__items__item">
+                    <div class="service__categories__category__items__item__content">
+                      <div class="service__categories__category__items__item__front">
+                        <i class="fas fa-laptop"></i>
+                        <span class="break"></span>
+                        <span class="service__categories__category__items__item__title">Decoration</span>
+                      </div>
+                      <div class="service__categories__category__items__item__back">
+                        <span class="service__categories__category__items__item__title">Decoration</span>
+                        <span class="service__categories__category__items__item__desc">
+                          Since the founding day, we have designed and implemented hundreds of villas, resorts, hotels and commercial centers and created many designs with different functions and concepts by following the constantly renewed design trends around the world.
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -417,7 +426,7 @@
                     <b-avatar size="3rem"></b-avatar>
                     <span>Mohamed Emad</span>
                   </div>
-                  <div class="blogs__items__item__content">Once I started working with them, it was clear that they were engaged, technically capable, and very understanding.</div>
+                  <div class="blogs__items__item__content">It is not a thank you nor a compliment, but all the work team in the company is one of the most cooperative teams in this field and always looks forward to the best</div>
                 </div>
               </div>
               <div class="col-12 col-md-4">
@@ -426,17 +435,16 @@
                     <b-avatar size="3rem"></b-avatar>
                     <span>Mohamed Emad</span>
                   </div>
-                  <div class="blogs__items__item__content">Their dependability and speed are significantly better than what I’ve been able to observe with other providers.
+                  <div class="blogs__items__item__content">Great website, excellent technical support and hugely time-saving management software</div>
                   </div>
                 </div>
-              </div>
               <div class="col-12 col-md-4">
                 <div class="blogs__items__item">
                   <div class="blogs__items__item__name">
                     <b-avatar size="3rem"></b-avatar>
                     <span>Mohamed Emad</span>
                   </div>
-                  <div class="blogs__items__item__content">Very engaged and professional team with tons of industry knowledge and hands on experience in the e-mobility sector.</div>
+                  <div class="blogs__items__item__content">The application is very wonderful and the deal will continue, God willing, in the upcoming projects..All thanks to the work team</div>
                 </div>
               </div>
             </div>
@@ -991,7 +999,7 @@ export default {
       padding: 0 4.5%;
 
       & img {
-        width: 90%;
+        width: 100%;
       }
     }
   }
@@ -1009,30 +1017,12 @@ export default {
   }
 
   &__categories {
+    width: 100%;
 
     &__category {
+      width: 100%;
       display: flex;
       margin: 1.6rem 0 3rem;
-
-      &__title {
-        width: 25%;
-        display: flex;
-        flex-direction: column;
-        padding: 2rem .7rem .6rem;
-
-        &__main {
-          font-size: 1.8rem;
-          font-weight: 600;
-          margin-bottom: .5rem;
-          color: $color-primary-dark-1;
-        }
-
-        &__desc {
-          margin-top: 1rem;
-          font-size: .8rem;
-          color: $color-primary-dark-1;
-        }
-      }
 
       &__items {
         width: 100%;
@@ -1041,9 +1031,9 @@ export default {
         flex-wrap: wrap;
 
         &__item {
-          margin: 1.8rem 1.5%;
+          margin: 2rem 1% 2rem 0;
           position: relative;
-          width: 30%;
+          width: 24%;
           height: 20rem;
           border-radius: 1rem;
           perspective: 500rem;

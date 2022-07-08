@@ -10,7 +10,7 @@
           <div class="title">تعرف علي فريق نحن نعمل المميز</div>
           <div class="break"></div>
           <div class="desc">
-            في غضون 22 عامًا من خبرتنا ، عملنا مع أكثر من 200 عميل عالمي لمساعدتهم على حل مشاكل أعمالهم وتحويل مؤسساتهم رقميًا.
+            يتميز فريق نحن نعمل بالتخصص في مجال البرمجه واخرين في مجال التسويق واخرين في مجال الجرافيك ديزاين واخيرا في مجال الديكور ويتم تطوير الفريق بصفة مستمرة ويتم اختيارهذا الفريق بعنايه شديدة حسب مؤهلاتهم وخبراتهم في هذه المجالات ,حيث قدم الكثير من اعضاء الفريق مشاريع ناجحه للمؤسسات والشركات التي تعمل في كثير من المجالات ومنها شركات كبيره ومتوسطة وغيرها
           </div>
         </div>
         <video preload="none" playsinline="" loop="" muted="" autoplay="autoplay" class="intro__video" __idm_id__="1507329">
@@ -47,8 +47,7 @@
           <div class="title">Get to know the We Work team</div>
           <div class="break"></div>
           <div class="desc">
-            Within 22 years of our experience, we have worked for over 200 global clients helping them solve their business problems and digitally transform their organisation.
-          </div>
+            The team we work is characterized by specializing in the field of programming, others in the field of marketing, and others in the field of graphic design, and finally in the field of decoration. In many fields, including large and medium companies and others          </div>
         </div>
         <video preload="none" playsinline="" loop="" muted="" autoplay="autoplay" class="intro__video" __idm_id__="1507329">
           <source src="../assets/img/team.webm" type="video/webm">

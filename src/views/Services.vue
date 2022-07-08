@@ -21,13 +21,7 @@
               <span>البرمجة</span>
             </div>
             <div class="strategy__desc">
-              البرمجة من الخدمات الأكثر طلباٌ في الوقت الحالي وهذا دليل على مدي أهمية البرمجة في جميع مجالات سوق العمل
-            </div>
-            <div class="strategy__desc">
-              لذلك تعمل شركة we work  على تقديم خدماتها في مجال البرمجة لتسهل عليك مهامك وأعمالك  بإستخدام لغات البرمجه المختلفة لإنشاء  مواقع إلكترونية  وتطبيقات الهاتف المختلفه  وانشاء المتاجر الإلكتروينة
-            </div>
-            <div class="strategy__desc">
-              أن سوق العمل  في وقتنا هذا  يعتمد على قواعد البيانات  لتحليل سلوك العملاء لتقديم خدمات تتلائم مع احتياجتهم لذلك تلعب البرمجة دور مهم جدا  في وقتنا هذا
+              نعمل على تطوير موقعك الالكتروني وتطبيقات الهاتف بأحترافيه مع مما يناسب احتياجاتك واحتياجات عملائك للوصول للنجاح الذي تطمح له
             </div>
           </div>
           <div class="col-md-8 d-flex align-items-center">
@@ -37,46 +31,43 @@
                   <div class="service__categories__category__items__item__front">
                     <i class="fas fa-laptop"></i>
                     <span class="break"></span>
-                    <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                    <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                    <span class="service__categories__category__items__item__title">المواقع الالكترونية</span>
                   </div>
                   <div class="service__categories__category__items__item__back">
-                    <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                    <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                    <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                    <span class="service__categories__category__items__item__title">المواقع الالكترونية</span>
+                    <span class="service__categories__category__items__item__desc">
+                      موقعك الإلكتروني هو أفضل من يتحدث عنك ويشرح أفكارك ويطرح منتجاتك. لكن حتى يحدث هذا، يجب أن يكون تصميم موقعك الإلكتروني جذاباً وسلساً في التعامل
+                    </span>
                   </div>
                 </div>
               </div>
               <div class="service__categories__category__items__item">
                 <div class="service__categories__category__items__item__content">
                   <div class="service__categories__category__items__item__front">
-                    <i class="fas fa-mobile-alt"></i>
+                    <i class="fas fa-laptop"></i>
                     <span class="break"></span>
-                    <span class="service__categories__category__items__item__title">تطبيقات الجوال</span>
-                    <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                    <span class="service__categories__category__items__item__title">المتاجر الالكترونيه</span>
                   </div>
                   <div class="service__categories__category__items__item__back">
-                    <span class="service__categories__category__items__item__title">تطبيقات الجوال</span>
-                    <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                    <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                    <span class="service__categories__category__items__item__title">المتاجر الالكترونيه</span>
+                    <span class="service__categories__category__items__item__desc">
+                      هل لديك سلعة او منتجات تريد تسويقها وبيها على الانترنت اذا فالمتجر الالكتروني هو الحل الامثل لك ولعملائك ,نحن متخصصون ونمتلك الخبره الكافيه لتصميم وبرمه المتاجر الالكترونيه لنجعلك تصل لعملائك وتبيع منتجك وتستلم اموالك من خلال الانترنت ,لدينا خطط مدروسه وعمليه لحلول التجاره الالكترونيه
+                    </span>
                   </div>
                 </div>
               </div>
               <div class="service__categories__category__items__item">
                 <div class="service__categories__category__items__item__content">
                   <div class="service__categories__category__items__item__front">
-                    <i class="fas fa-quidditch"></i>
+                    <i class="fas fa-laptop"></i>
                     <span class="break"></span>
-                    <span class="service__categories__category__items__item__title">تصميمات UI/UX</span>
-                    <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                    <span class="service__categories__category__items__item__title">تطبيقات الجوال</span>
                   </div>
                   <div class="service__categories__category__items__item__back">
-                    <span class="service__categories__category__items__item__title">تصميمات UI/UX</span>
-                    <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                    <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                    <span class="service__categories__category__items__item__title">تطبيقات الجوال</span>
+                    <span class="service__categories__category__items__item__desc">
+                      تعزز تطبيقات الهاتف وصولك لعملائك بشكل أعمق ، لاسيما وأن الهواتف المحمولة باتت أقرب لأصحابها من أفراد عائلاتهم، حسبما تؤكد الدراسات السوقية الحديث
+                    </span>
                   </div>
                 </div>
               </div>
@@ -92,10 +83,7 @@
             <span>البرمجية</span>
           </div>
           <div class="strategy__desc">
-            حقق أهداف عملك باستخدام التكنولوجيا واحصل على المنتج الذي يتكيف جيدًا مع بيئتك.
-          </div>
-          <div class="strategy__desc">
-            نحن نقدم ورش عمل مع جميع أصحاب المصلحة الرئيسيين ، ونجمع المتطلبات وتصميم الحل الكامل مع خريطة طريق للتسليم.
+            نعمل على تطوير موقعك الالكتروني وتطبيقات الهاتف بأحترافيه مع مما يناسب احتياجاتك واحتياجات عملائك للوصول للنجاح الذي تطمح له
           </div>
         </div>
         <div class="col-md-8">
@@ -105,46 +93,43 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">المواقع الالكترونية</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">المواقع الالكترونية</span>
+                  <span class="service__categories__category__items__item__desc">
+                      موقعك الإلكتروني هو أفضل من يتحدث عنك ويشرح أفكارك ويطرح منتجاتك. لكن حتى يحدث هذا، يجب أن يكون تصميم موقعك الإلكتروني جذاباً وسلساً في التعامل
+                    </span>
                 </div>
               </div>
             </div>
             <div class="service__categories__category__items__item">
               <div class="service__categories__category__items__item__content">
                 <div class="service__categories__category__items__item__front">
-                  <i class="fas fa-mobile-alt"></i>
+                  <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">تطبيقات الجوال</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">المتاجر الالكترونيه</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">تطبيقات الجوال</span>
-                  <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">المتاجر الالكترونيه</span>
+                  <span class="service__categories__category__items__item__desc">
+                      هل لديك سلعة او منتجات تريد تسويقها وبيها على الانترنت اذا فالمتجر الالكتروني هو الحل الامثل لك ولعملائك ,نحن متخصصون ونمتلك الخبره الكافيه لتصميم وبرمه المتاجر الالكترونيه لنجعلك تصل لعملائك وتبيع منتجك وتستلم اموالك من خلال الانترنت ,لدينا خطط مدروسه وعمليه لحلول التجاره الالكترونيه
+                    </span>
                 </div>
               </div>
             </div>
             <div class="service__categories__category__items__item">
               <div class="service__categories__category__items__item__content">
                 <div class="service__categories__category__items__item__front">
-                  <i class="fas fa-quidditch"></i>
+                  <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">تصميمات UI/UX</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">تطبيقات الجوال</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">تصميمات UI/UX</span>
-                  <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">تطبيقات الجوال</span>
+                  <span class="service__categories__category__items__item__desc">
+                      تعزز تطبيقات الهاتف وصولك لعملائك بشكل أعمق ، لاسيما وأن الهواتف المحمولة باتت أقرب لأصحابها من أفراد عائلاتهم، حسبما تؤكد الدراسات السوقية الحديث
+                    </span>
                 </div>
               </div>
             </div>
@@ -156,13 +141,10 @@
         <div class="col-md-4">
           <div class="strategy__title">خدمات
             <br>
-            <span>التصميم</span>
+            <span>التصميم والجرافيك</span>
           </div>
           <div class="strategy__desc">
-            حقق أهداف عملك باستخدام التكنولوجيا واحصل على المنتج الذي يتكيف جيدًا مع بيئتك.
-          </div>
-          <div class="strategy__desc">
-            نحن نقدم ورش عمل مع جميع أصحاب المصلحة الرئيسيين ، ونجمع المتطلبات وتصميم الحل الكامل مع خريطة طريق للتسليم.
+            نركز على انشاء تصاميم جرافيك مميزه من الناحيه الجماله تجذب الانظار وتوصل هدف علامتك التجاريه الى الجمهور المستهدف
           </div>
         </div>
         <div class="col-md-8">
@@ -172,14 +154,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">تصميمات السوشيال ميديا</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">تصميمات السوشيال ميديا</span>
+                  <span class="service__categories__category__items__item__desc">
+                    تصميماتنا قادرة على توصيل رسالتك ولفت نظر عملائك المحتملين واداه اساسيه لترويج منتجاتك
+                  </span>
                 </div>
               </div>
             </div>
@@ -188,14 +169,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">الموشن جرافيك</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">الموشن جرافيك</span>
+                  <span class="service__categories__category__items__item__desc">
+                     تعتبر فيديوهات الموشن جرافيك من أسهل الأدوات التسويقية لعرض فكرة مشروعك/شركتك او التعريف عنه والذي يبقى في أذهان عملائك طوال الوقت
+                  </span>
                 </div>
               </div>
             </div>
@@ -204,14 +184,14 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">UI/UX تصميمات</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">UI/UX تصميمات</span>
+                  <span class="service__categories__category__items__item__desc">
+                    تعتبر تجربة المستخدم الجزء الاكثر اهميه في اي مشروع نظرا لتأثيرها الكبير على كيفيه سير المشروع
+
+                  </span>
                 </div>
               </div>
             </div>
@@ -226,10 +206,7 @@
             <span>الديكور</span>
           </div>
           <div class="strategy__desc">
-            حقق أهداف عملك باستخدام التكنولوجيا واحصل على المنتج الذي يتكيف جيدًا مع بيئتك.
-          </div>
-          <div class="strategy__desc">
-            نحن نقدم ورش عمل مع جميع أصحاب المصلحة الرئيسيين ، ونجمع المتطلبات وتصميم الحل الكامل مع خريطة طريق للتسليم.
+            الإبداع في خلق أفكار استثنائية للتصميم الداخلي والديكور ينتج من شغف الاعتناء بالتفاصيل الصغيرة ,بالفن نُسخِّر مساحات المكان لِتلبية احتياجات الإنسان, بقدراتنا الفنية المتطورة واهتمامنا بالنواحي الجمالية نَهِب الأماكن أرواحها
           </div>
         </div>
         <div class="col-md-8">
@@ -239,14 +216,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">التصميم الداخلي</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">التصميم الداخلي</span>
+                  <span class="service__categories__category__items__item__desc">
+                    نحن نعمل واحدة من الشركات الرائدة في مجال التصميم الداخلي في المملكة العربية السعودية ، نحن نقدم خدمات وتصميمات رائعة تناسب ذوقك وراحتك
+                  </span>
                 </div>
               </div>
             </div>
@@ -255,14 +231,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">التصميم الخارجي</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">التصميم الخارجي</span>
+                  <span class="service__categories__category__items__item__desc">
+                    التصميم الخارجى للفلل والمنازل يعبر منذ اللحظة الأولى عن ذوقكم الخاص أمام الضيوف لذلك نحن نعمل تتعاون معك للوصول للتصميم الخارجي الذي تحلم به مع ابرع وامهرمهندسين الديكور
+                  </span>
                 </div>
               </div>
             </div>
@@ -271,14 +246,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">مخططات تنفيذية</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">مخططات تنفيذية</span>
+                  <span class="service__categories__category__items__item__desc">
+                    هي التي تحول أفكار التصاميم الداخلية والخارجية إلى رسومات قابلة للتنفيذ على أرض الواقع , نحن نعمل نقدم خدمات رسم المخططات التنفيذية بالدقة المطلوبة حتى تنعكس أفكار التصميم على الواقع من دون أي أخطاء في تنفيذ التصاميم
+                  </span>
                 </div>
               </div>
             </div>
@@ -293,10 +267,7 @@
             <span>التسويق</span>
           </div>
           <div class="strategy__desc">
-            حقق أهداف عملك باستخدام التكنولوجيا واحصل على المنتج الذي يتكيف جيدًا مع بيئتك.
-          </div>
-          <div class="strategy__desc">
-            نحن نقدم ورش عمل مع جميع أصحاب المصلحة الرئيسيين ، ونجمع المتطلبات وتصميم الحل الكامل مع خريطة طريق للتسليم.
+            لدينا فريق قادر على ترويج منتجاتك وتقوية علاقتك بعملائك الحاليين والوصول للعملاء المحتملين وبناء الثقه بينك وبين عملائك وتصدر قوائم المنافسين بطرق تحليله ومدروسة
           </div>
         </div>
         <div class="col-md-8">
@@ -306,14 +277,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">استراتيجية تسويقية</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">استراتيجية تسويقية</span>
+                  <span class="service__categories__category__items__item__desc">
+                    نقوم بالدراسة وتحليل السوق وتحديد العملاء المستهدفين ووضع الاهداف لوضع الاستراتيجية التسويقيه التي تضمن لك وصول خدماتك ومنتجاتك للعملاء المستهدفين وتحقيق اهدافك
+                  </span>
                 </div>
               </div>
             </div>
@@ -322,14 +292,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">حملات اعلانية</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">حملات اعلانية</span>
+                  <span class="service__categories__category__items__item__desc">
+                    مثل فيسبوك وتويتر وانستجرام وجوجل بلس ويوتيوب.. كل هذه الوسائل وأكثر من خدمات التسويق عبر السوشيال ميديا التي يمكننا استخدامها لتسويق علامتك التجارية من خلالها وتُحقق تفاعلية كبيرة مع الجمهور المستهدف وتحقيق زيادة ملحوظة و سريعه في مبيعاتك
+                  </span>
                 </div>
               </div>
             </div>
@@ -338,14 +307,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">SEO</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">SEO</span>
+                  <span class="service__categories__category__items__item__desc">
+                    نقدم لك حلول لتحسين محركات البحث ليساعد في ظهور موقعك
+                  </span>
                 </div>
               </div>
             </div>
@@ -360,10 +328,7 @@
             <span>تطوير الاعمال</span>
           </div>
           <div class="strategy__desc">
-            حقق أهداف عملك باستخدام التكنولوجيا واحصل على المنتج الذي يتكيف جيدًا مع بيئتك.
-          </div>
-          <div class="strategy__desc">
-            نحن نقدم ورش عمل مع جميع أصحاب المصلحة الرئيسيين ، ونجمع المتطلبات وتصميم الحل الكامل مع خريطة طريق للتسليم.
+            نساعدك في القيام بالعمليات وتنفيذ المهام المستخدمة لإنشاء والحفاظ على نمو الأعمال والقيمة على المدى الطويل
           </div>
         </div>
         <div class="col-md-8">
@@ -373,14 +338,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">التنفيذ</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">التنفيذ</span>
+                  <span class="service__categories__category__items__item__desc">
+                    سوف نتعامل مع جميع جوانب التنفيذ وضمان سير العمل بشكل مستمر وسلس
+                  </span>
                 </div>
               </div>
             </div>
@@ -389,14 +353,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">التطوير</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">التطوير</span>
+                  <span class="service__categories__category__items__item__desc">
+                    لدينا فريق التطوير القادر على اكتشاف نقاط الضعف والعمل على تحسينها بطرق مدروسه ومتطوره والعمل على تطوير القوه
+                  </span>
                 </div>
               </div>
             </div>
@@ -405,20 +368,20 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">الاستشارات</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">المواقع الالكنرونية</span>
-                  <span class="service__categories__category__items__item__desc">النص ما ازداد وضوحا على الظاهر لمعنى المتكلم، وهو سوق الكلام لأجل ذلك المعنى، فإذا قيل أحسنوا إلى فلان الذي يفرح بفرحي ويغتم بغمي، كان نصا في بيان محبته. وما لا يحتمل إلا معنى واحدا، وقيل ما لا يحتمل التأويل.
-                      </span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">قراء المزيد <i class="fas fa-arrow-left"></i></router-link>
+                  <span class="service__categories__category__items__item__title">الاستشارات</span>
+                  <span class="service__categories__category__items__item__desc">
+                    سوف نقوم بتقييم سير العمل الخاص بك ونقدم لك أفضل الحلول التي تلبي جميع احتياجات عملك
+                  </span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
 
     </div>
 
@@ -441,11 +404,7 @@
               Services
             </div>
             <div class="strategy__desc">
-              Achieve your business goals with technology and get the product that is well adapted to your environment.
-            </div>
-            <div class="strategy__desc">
-              We offer workshops with all your key stakeholders, gathering requirements and design of a full solution with a roadmap for delivery.
-            </div>
+              We are working on developing your website and mobile applications professionally with what suits your needs and the needs of your customers to reach the success you aspire to            </div>
           </div>
           <div class="col-md-8">
             <div class="service__categories__category__items">
@@ -455,12 +414,12 @@
                     <i class="fas fa-laptop"></i>
                     <span class="break"></span>
                     <span class="service__categories__category__items__item__title">Websites</span>
-                    <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
                   </div>
                   <div class="service__categories__category__items__item__back">
-                    <span class="service__categories__category__items__item__title">Websites</span>
-                    <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                    <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                    <span class="service__categories__category__items__item__title"></span>
+                    <span class="service__categories__category__items__item__desc">
+                      Your website is the best one to talk about, explain your ideas, and introduce your products. But for this to happen, your website design must be attractive and easy to handle
+                    </span>
                   </div>
                 </div>
               </div>
@@ -469,13 +428,13 @@
                   <div class="service__categories__category__items__item__front">
                     <i class="fas fa-laptop"></i>
                     <span class="break"></span>
-                    <span class="service__categories__category__items__item__title">Websites</span>
-                    <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                    <span class="service__categories__category__items__item__title">E-Commerce stores</span>
                   </div>
                   <div class="service__categories__category__items__item__back">
-                    <span class="service__categories__category__items__item__title">Websites</span>
-                    <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                    <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                    <span class="service__categories__category__items__item__title">E-Commerce stores</span>
+                    <span class="service__categories__category__items__item__desc">
+Do you have a commodity or products that you want to market and sell online, then the online store is the best solution for you and your customers.
+                    </span>
                   </div>
                 </div>
               </div>
@@ -484,13 +443,13 @@
                   <div class="service__categories__category__items__item__front">
                     <i class="fas fa-laptop"></i>
                     <span class="break"></span>
-                    <span class="service__categories__category__items__item__title">Websites</span>
-                    <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                    <span class="service__categories__category__items__item__title">Mobile applications</span>
                   </div>
                   <div class="service__categories__category__items__item__back">
-                    <span class="service__categories__category__items__item__title">Websites</span>
-                    <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                    <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                    <span class="service__categories__category__items__item__title">Mobile applications</span>
+                    <span class="service__categories__category__items__item__desc">
+Mobile applications enhance your reach to your customers in a deeper way, especially since mobile phones are closer to their owners than their family members, as recent market studies confirm.
+                    </span>
                   </div>
                 </div>
               </div>
@@ -507,12 +466,8 @@
             Services
           </div>
           <div class="strategy__desc">
-            Achieve your business goals with technology and get the product that is well adapted to your environment.
+            We are working on developing your website and mobile applications professionally with what suits your needs and the needs of your customers to reach the success you aspire to            </div>
           </div>
-          <div class="strategy__desc">
-            We offer workshops with all your key stakeholders, gathering requirements and design of a full solution with a roadmap for delivery.
-          </div>
-        </div>
         <div class="col-md-8">
           <div class="service__categories__category__items">
             <div class="service__categories__category__items__item">
@@ -521,12 +476,12 @@
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
                   <span class="service__categories__category__items__item__title">Websites</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title"></span>
+                  <span class="service__categories__category__items__item__desc">
+                      Your website is the best one to talk about, explain your ideas, and introduce your products. But for this to happen, your website design must be attractive and easy to handle
+                    </span>
                 </div>
               </div>
             </div>
@@ -535,13 +490,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">E-Commerce stores</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">E-Commerce stores</span>
+                  <span class="service__categories__category__items__item__desc">
+Do you have a commodity or products that you want to market and sell online, then the online store is the best solution for you and your customers.
+                    </span>
                 </div>
               </div>
             </div>
@@ -550,13 +505,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Mobile applications</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Mobile applications</span>
+                  <span class="service__categories__category__items__item__desc">
+Mobile applications enhance your reach to your customers in a deeper way, especially since mobile phones are closer to their owners than their family members, as recent market studies confirm.
+                    </span>
                 </div>
               </div>
             </div>
@@ -567,16 +522,12 @@
       <div class="strategy strategy-1 row">
         <div class="col-md-4">
           <div class="strategy__title">
-            <span>Software</span>
+            <span>Design and Graphics</span>
             <br>
             Services
           </div>
           <div class="strategy__desc">
-            Achieve your business goals with technology and get the product that is well adapted to your environment.
-          </div>
-          <div class="strategy__desc">
-            We offer workshops with all your key stakeholders, gathering requirements and design of a full solution with a roadmap for delivery.
-          </div>
+            We focus on creating distinctive graphic designs in terms of beauty that attract attention and reach the goal of your brand to the target audience.  </div>
         </div>
         <div class="col-md-8">
           <div class="service__categories__category__items">
@@ -585,13 +536,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Social media designs</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Social media designs</span>
+                  <span class="service__categories__category__items__item__desc">
+Our designs are able to communicate your message and draw the attention of your potential customers and an essential tool for promoting your products
+                    </span>
                 </div>
               </div>
             </div>
@@ -600,13 +551,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Motion Graphics</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Motion Graphics</span>
+                  <span class="service__categories__category__items__item__desc">
+Motion graphics videos are one of the easiest marketing tools to present or introduce the idea of your project / company, which remains in the minds of your customers all the time.
+                    </span>
                 </div>
               </div>
             </div>
@@ -615,13 +566,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">UI/UX Designs</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">UI/UX Designs</span>
+                  <span class="service__categories__category__items__item__desc">
+The user experience is the most important part of any project due to its great impact on how the project runs
+                    </span>
                 </div>
               </div>
             </div>
@@ -632,15 +583,12 @@
       <div class="strategy strategy-1 row">
         <div class="col-md-4">
           <div class="strategy__title">
-            <span>Design </span>
+            <span>Decoration</span>
             <br>
             Services
           </div>
           <div class="strategy__desc">
-            Achieve your business goals with technology and get the product that is well adapted to your environment.
-          </div>
-          <div class="strategy__desc">
-            We offer workshops with all your key stakeholders, gathering requirements and design of a full solution with a roadmap for delivery.
+            Creativity in creating exceptional ideas for interior design and decoration results from a passion for taking care of small details, art, we harness the spaces of the place to meet human needs, our advanced technical capabilities and our attention to aesthetic aspects rob places of their lives
           </div>
         </div>
         <div class="col-md-8">
@@ -650,13 +598,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Interior Design</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Interior Design</span>
+                  <span class="service__categories__category__items__item__desc">
+We work as one of the leading companies in the field of interior design in the Kingdom of Saudi Arabia, we provide great services and designs that suit your taste and comfort.
+                    </span>
                 </div>
               </div>
             </div>
@@ -665,13 +613,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Exterior design</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Exterior design</span>
+                  <span class="service__categories__category__items__item__desc">
+The exterior design of villas and homes expresses from the first moment your special taste in front of the guests, so we work in cooperation with you to reach the exterior design that you dream of with the most skilled and skilled interior designers
+                    </span>
                 </div>
               </div>
             </div>
@@ -680,13 +628,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Executive Drawings</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Executive Drawings</span>
+                  <span class="service__categories__category__items__item__desc">
+They transform the ideas of interior and exterior designs into drawings that are executable on the ground.
+                    </span>
                 </div>
               </div>
             </div>
@@ -702,11 +650,7 @@
             Services
           </div>
           <div class="strategy__desc">
-            Achieve your business goals with technology and get the product that is well adapted to your environment.
-          </div>
-          <div class="strategy__desc">
-            We offer workshops with all your key stakeholders, gathering requirements and design of a full solution with a roadmap for delivery.
-          </div>
+            We have a team that is able to promote your products, strengthen your relationship with your current customers, reach potential customers, build trust between you and your customers, and issue lists of competitors in an analytical and thoughtful way. </div>
         </div>
         <div class="col-md-8">
           <div class="service__categories__category__items">
@@ -715,13 +659,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Marketing strategy</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Marketing strategy</span>
+                  <span class="service__categories__category__items__item__desc">
+We study and analyze the market, identify target customers and set goals to develop a marketing strategy that ensures that your services and products reach the target customers and achieve your goals
+                    </span>
                 </div>
               </div>
             </div>
@@ -730,13 +674,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Advertising campaigns</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Advertising campaigns</span>
+                  <span class="service__categories__category__items__item__desc">
+such as Facebook, Twitter, Instagram, Google Plus and YouTube.. All of these means and more than social media marketing services that we can use to market your brand through it and achieve great interaction with the target audience and achieve a noticeable and rapid increase in your sales
+                    </span>
                 </div>
               </div>
             </div>
@@ -745,13 +689,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">SEO</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">SEO</span>
+                  <span class="service__categories__category__items__item__desc">
+We offer you search engine optimization solutions to help your site appear easily in Google search engines, which helps to increase the number of visitors and potential customers for your business, so we adopt search engine optimization as an important element in our marketing strategy
+                    </span>
                 </div>
               </div>
             </div>
@@ -762,16 +706,12 @@
       <div class="strategy strategy-1 row">
         <div class="col-md-4">
           <div class="strategy__title">
-            <span>Business Development</span>
+            <span>Business development</span>
             <br>
             Services
           </div>
           <div class="strategy__desc">
-            Achieve your business goals with technology and get the product that is well adapted to your environment.
-          </div>
-          <div class="strategy__desc">
-            We offer workshops with all your key stakeholders, gathering requirements and design of a full solution with a roadmap for delivery.
-          </div>
+            We help you run the processes and perform the tasks used to create and maintain long-term business growth and value   </div>
         </div>
         <div class="col-md-8">
           <div class="service__categories__category__items">
@@ -780,13 +720,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Implementation</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Implementation</span>
+                  <span class="service__categories__category__items__item__desc">
+We will deal with all aspects of the implementation and ensure the workflow is continuous and smooth
+                    </span>
                 </div>
               </div>
             </div>
@@ -795,13 +735,13 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Development</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Development</span>
+                  <span class="service__categories__category__items__item__desc">
+We have a development team that is able to discover weaknesses and work to improve them in thoughtful and sophisticated ways and work to develop strength
+                    </span>
                 </div>
               </div>
             </div>
@@ -810,19 +750,20 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Consulting</span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">Websites</span>
-                  <span class="service__categories__category__items__item__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                  <router-link to="/" class="service__categories__category__items__item__read-more">Read more <i class="fas fa-arrow-right"></i></router-link>
+                  <span class="service__categories__category__items__item__title">Consulting</span>
+                  <span class="service__categories__category__items__item__desc">
+We will evaluate your workflow and provide you with the best solutions that meet all your business needs
+                    </span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
 
     </div>
 

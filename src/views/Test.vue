@@ -1,5 +1,12 @@
 <template>
   <div>
+    <b-modal id="modal" hide-footer title="نحن نعمل">
+      <div class="d-block text-center">
+        <h3>Hello From This Modal!</h3>
+      </div>
+      <b-button class="mt-3" block @click="$bvModal.hide('modal')">Close Me</b-button>
+    </b-modal>
+
     <button @click="test">click</button>
   </div>
 </template>
@@ -10,25 +17,7 @@ export default {
   name: "Test",
   methods: {
     test() {
-      let myHeaders = new Headers();
-      myHeaders.append("Content-Type", "application/json");
-
-      let raw = JSON.stringify({
-        "email": "admin@gmail.com",
-        "password": "admin"
-      });
-
-      let requestOptions = {
-        method: 'POST',
-        headers: myHeaders,
-        body: raw,
-        redirect: 'follow'
-      };
-
-      fetch("https://backend-elbanna.we-work.pro/api/admin/login", requestOptions)
-          .then(response => response.json())
-          .then(result => console.log(result))
-          .catch(error => console.log('error', error));
+      this.$bvModal.show('modal');
     }
   }
 }

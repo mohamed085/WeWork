@@ -10,10 +10,10 @@
           <div class="title">اكتشف دراسات الحالة لدينا</div>
           <div class="break"></div>
           <div class="desc">
-            في غضون 22 عامًا من خبرتنا ، عملنا مع أكثر من 200 عميل عالمي لمساعدتهم على حل مشاكل أعمالهم وتحويل مؤسساتهم رقميًا.
+            غضون 17 عامًا من خبرتنا ، عملنا مع أكثر من 200 عميل عالمي لمساعدتهم على حل مشاكل أعمالهم وتحويل مؤسساتهم رقميًا
           </div>
           <div class="desc">
-            لقد قمنا ببناء شراكات طويلة الأمد مبنية على الثقة من خلال تقديم حلول برمجية قوية ، مطابقة أو حتى تجاوز توقعات عملائنا.
+            من خلال رؤية أعمالنا يمكن لعملائنا الكرام تقييم مدى جودة المشاريع المنفذة وزيادة الثقة بفريق العمل لدينا
           </div>
         </div>
         <video preload="none" playsinline="" loop="" muted="" autoplay="autoplay" class="intro__video" __idm_id__="1507329">
@@ -212,10 +212,10 @@
           <div class="title">Discover our case studies</div>
           <div class="break"></div>
           <div class="desc">
-            Within 22 years of our experience, we have worked for over 200 global clients helping them solve their business problems and digitally transform their organisation.
+            In our 17 years of experience, we've worked with more than 200 global clients to help them solve their business problems and digitally transform their organizations.
           </div>
           <div class="desc">
-            We have built long-term partnerships based on trust by delivering robust software solutions, matching or even exceeding our clients’ expectations.
+            By seeing our work, our valued customers can evaluate the quality of the implemented projects and increase confidence in our work team
           </div>
         </div>
         <video preload="none" playsinline="" loop="" muted="" autoplay="autoplay" class="intro__video" __idm_id__="1507329">
@@ -707,7 +707,8 @@ export default {
 .filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
+  padding: 0 2%;
 
   & * {
     transition: 0s;
@@ -724,6 +725,7 @@ export default {
       cursor: pointer;
       display: flex;
       justify-content: center;
+      align-items: center;
       text-decoration: none;
       font-size: 1.2rem;
       font-weight: 500;
@@ -1011,7 +1013,10 @@ export default {
 
   .owl-dots__slide__item {
     width: 40px;
+  }
 
+  .main-projects {
+    margin: 3rem 1rem;
   }
 }
 </style>

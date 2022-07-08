@@ -2,31 +2,15 @@
   <div class="ar" v-if="getLang === 'ar'">
     <div class="footer">
       <div class="row">
-        <div class="col-12 col-md-3 footer__site-map footer__site-map-1">
-          <div class="footer__title">خريطة الموقع</div>
-          <div class="break"></div>
-          <div class="footer__items">
-            <router-link to="/" class="footer__items__item">الصفحة الرئيسية</router-link>
-            <router-link to="/" class="footer__items__item">الخدمات</router-link>
-            <router-link to="/" class="footer__items__item">التسليم</router-link>
-            <router-link to="/" class="footer__items__item">المشروعات</router-link>
-            <router-link to="/" class="footer__items__item">العملاء</router-link>
-            <router-link to="/" class="footer__items__item">الفريق</router-link>
-            <router-link to="/" class="footer__items__item">تواصل بنا</router-link>
-            <router-link to="/" class="footer__items__item">انضم الينا</router-link>
-            <router-link to="/" class="footer__items__item">معلومات عنا</router-link>
-            <router-link to="/" class="footer__items__item">المقالات</router-link>
-          </div>
+        <div class="col-12 col-md-5 footer-logo">
+            <img class="footer-logo__logo-site" src="../../assets/img/logo-white-2.png">
+            <span class="footer-logo__desc">الموقع موثق من قبل منصة <a href="#">معروف</a> التابعة لوزارة التجارة السعودية</span>
+            <img class="footer-logo__logo-site-2" src="../../assets/img/maroof.png">
+            <span class="footer-logo__desc">سجل تجاري رقم 4030383581</span>
+            <span class="footer-logo__desc">جميع الحقوق محفوظة لمؤسسة <router-link to="/">نحن نعمل</router-link>  @٢٠٢٢</span>
         </div>
 
-        <div class="col-12 col-md-3 footer__site-map">
-          <div class="footer__title">معلومات عنا</div>
-          <div class="break"></div>
-          <div class="footer__desc mt-4">نحن نعمل مؤسسة سعودية تأسست عام 2019.</div>
-          <div class="footer__desc">بهدف توفير تجربة متميزة لعملائنا ، سوف ترضي رغبات عملائنا ،تماشياً مع رؤية 2030 ، كل ما تحتاجه في مكان واحد بجودة عالية.</div>
-        </div>
-
-        <div class="col-12 col-md-3 footer__site-map">
+        <div class="col-12 col-md-4 footer__site-map">
           <div class="footer__title">معلومات عنا</div>
           <div class="break"></div>
           <div class="footer__desc mt-4">نحن نعمل مؤسسة سعودية تأسست عام 2019.</div>
@@ -44,14 +28,6 @@
           <router-link to="/contact-us" class="footer__contact__btn">استخدم نموذج الاتصال <i class="fas fa-arrow-left"></i> </router-link>
         </div>
       </div>
-    </div>
-
-    <div class="footer-2">
-      <img class="footer-2__logo-site" src="../../assets/img/logo-white-2.png">
-      <span class="footer-2__desc">الموقع موثق من قبل منصة <a href="#">معروف</a> التابعة لوزارة التجارة السعودية</span>
-      <img class="footer-2__logo-site-2" src="../../assets/img/maroof.png">
-      <span class="footer-2__desc">سجل تجاري رقم 4030383581</span>
-      <span class="footer-2__desc">جميع الحقوق محفوظة لمؤسسة <router-link to="/">نحن نعمل</router-link>  @٢٠٢٢</span>
     </div>
   </div>
 
@@ -139,7 +115,7 @@ export default {
 .footer {
   background-color: $color-primary-dark-1;
   color: $color-white;
-  padding: 5rem 5% 3rem;
+  padding: 2rem 5% 3rem;
   margin-top: 50px;
   position: relative;
 
@@ -232,21 +208,17 @@ export default {
   left: auto;
 }
 
-.footer-2 {
-  background-color: $color-primary;
-  color: $color-white;
-  padding: 2rem 5% 3rem;
+.footer-logo {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 
   &__logo-site {
-    width: 30%;
+    width: 12rem;
   }
 
   &__logo-site-2 {
-    width: 20%;
+    width: 10rem;
   }
 
   &__desc {
@@ -266,7 +238,7 @@ export default {
       &:active {
         box-shadow: 0 1rem 2rem rgba($color-black, .4);
         transform: rotate(5deg) scale(1.3);
-        background-color: $color-primary-dark-1;
+        background-color: $color-primary;
       }
     }
   }

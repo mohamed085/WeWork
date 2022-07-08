@@ -13,7 +13,7 @@
             <div class="title">نحن خبراء تطوير البرمجيات</div>
             <div class="break mb-4"></div>
             <div class="desc">
-              الذين يستفيدون من التكنولوجيا ويطرحون الأسئلة الصحيحة ليقدموا لك نتائج ملموسة في شكل برامج موثوقة وعالية الجودة ومستدامة يتم تسليمها في الوقت المحدد وفي المرة الأولى الصحيحة.
+              تُعد شركتنا واحدة من أفضل الشركات الرائدة في مجال تطوير وتصميم المواقع الإلكترونية  في السعودية والعالم العربي . ولدينا خبرات طويلة في مجال التسويق الإلكتروني واستضافة المواقع وبرمجة التطبيقات للأندرويد والايفون
             </div>
           </div>
         </div>
@@ -25,7 +25,7 @@
             <div class="title">نبني شراكات طويلة الأمد</div>
             <div class="break mb-4"></div>
             <div class="desc">
-              من خلال الصدق والشفافية والتواصل المفتوح. نحن نتمتع بالثقة في التعامل مع مشاكل الأعمال والتكنولوجيا لعملائنا ، مما يسعدهم بفريقنا الموهوب والرشيق والقابل للتكيف.
+              نظرا لخدماتنا التي تتميز بالكفاءه والجوده نضمن لك الوصول لاهدافك ونضمن لك استمرارها ونجاحها
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@
             <div class="title">العمل معنا يشبه وجود شريك في الجوار</div>
             <div class="break mb-4"></div>
             <div class="desc">
-              يخلق موقفنا الذي يمكننا فعله وجونا الإيجابي ونهجنا النشط ثقافة فريدة تعزز الانفتاح الذهني وتؤدي إلى النجاح.
+              لا أحد منا يمكن أن يحقق النجاح بأن يعمل لوحده لذلك فريق نحن نعمل سيوفر لك الدعم والاستشارات لضمان نجاح مشروعك
             </div>
           </div>
         </div>
@@ -114,7 +114,7 @@
         <div class="col-12 col-md-6 sub-section values__desc">
           <div class="title-4">قيمنا</div>
           <div class="title-5">
-            نسعى لخلق مكان استثنائي للعمل ، حيث كل رأي مهم ولا توجد عوائق أمام تقدم المواهب.
+            تنبع قيمنا من فهم إحتياجات عملائنا وتزويدهم بحلول عالية الجودة موجهة نحو تحقيق النتائج الفعالة , كما نحرص على توفير حلول فعالة من حيث التكلفة
           </div>
           <div class="break"></div>
           <div class="desc mt-4">
@@ -165,35 +165,35 @@
               <div class="properties__content__items-desc__item-desc__title">الجودة</div>
               <div class="break"></div>
               <div class="properties__content__items-desc__item-desc__desc">
-                الجودة هي جوهر كل ما نقوم به في نحن نعمل. لقد كان هذا مبدأ إرشاديًا منذ يومنا الأول. نعتقد أن هذا التركيز على الحفاظ على أعلى مستويات الجودة هو قوتنا الأساسية.
+                الجودة هي جوهر كل ما نقوم به في نحن نعمل. لقد كان هذا مبدأ إرشاديًا منذ يومنا الأول. نعتقد أن هذا التركيز على الحفاظ على أعلى مستويات الجودة هو قوتنا الأساسية
               </div>
             </div>
             <div v-if="passion" class="properties__content__items-desc__item-desc animate__animated animate__fadeInDown">
               <div class="properties__content__items-desc__item-desc__title">الشغف</div>
               <div class="break"></div>
               <div class="properties__content__items-desc__item-desc__desc">
-                إن الأشخاص المتحمسين لعملهم هم الذين يدفعون باستمرار شركتنا إلى الأمام. نحن متحمسون لتطوير البرمجيات ونحقق ذلك من خلال التزامنا بتقديم أعلى المعايير وأفضل تجربة ممكنة للموردين لعملائنا. نتعلم أيضًا اللغات الأجنبية ونستثمر وقتنا في تنظيم المؤتمرات.
+                نسعى للحفاظ على شغف موظفينا فالعمل لينتجو افضل ما لديهم لخدمتك ,فأن موظفينا هم الذين دفعون شركتنا باستمرار للامام
               </div>
             </div>
             <div v-if="development" class="properties__content__items-desc__item-desc animate__animated animate__fadeInDown">
               <div class="properties__content__items-desc__item-desc__title">التطوير</div>
               <div class="break"></div>
               <div class="properties__content__items-desc__item-desc__desc">
-                هذا ما نفعله كل يوم. موظفونا حريصون على توسيع معارفهم ومهاراتهم ومشاركة ذلك مع فرق المشروع الخاصة بهم.
+                هذا ما نفعله كل يوم. موظفونا حريصون على توسيع معارفهم ومهاراتهم ومشاركة ذلك مع فرق المشروع الخاصة بهم
               </div>
             </div>
             <div v-if="atmosphere" class="properties__content__items-desc__item-desc animate__animated animate__fadeInDown">
               <div class="properties__content__items-desc__item-desc__title">الأَجواء</div>
               <div class="break"></div>
               <div class="properties__content__items-desc__item-desc__desc">
-                نحن نؤسس بشكل أساسي على الانفتاح والثقة في الأشخاص الذين نعتقد أنهم في صميم بيئة العمل الإيجابية. عندما لا نستثمر وقتنا في إنشاء حلول موثوقة لإفادة عملائنا ، فإننا ننخرط في أنشطة ما بعد ساعات العمل. أحد أهدافنا هو فريق سعيد ، ولهذا السبب نحاول الاستمتاع قليلاً أثناء العمل أيضًا.
+                الاجواء الايجابيه في بيئه العمل تساعد على الانتاج بشكل اكبر وافضل وفريق العمل السعيد يعني افضل النتائج  ولهذا السبب نحاول الاستمتاع قليلاً أثناء العمل أيضًا
               </div>
             </div>
             <div v-if="team_spirit" class="properties__content__items-desc__item-desc animate__animated animate__fadeInDown">
               <div class="properties__content__items-desc__item-desc__title">روح الفريق</div>
               <div class="break"></div>
               <div class="properties__content__items-desc__item-desc__desc">
-                روح الفريق ليست شيئًا يمكن للشركة أن تخلقه. الأشخاص الذين تقابلهم كل يوم هم الذين يحددون في جزء كبير منهم ما إذا كنت تريد الاستيقاظ في الصباح والذهاب إلى العمل والمضي قدمًا معًا في مستقبل شركتنا.
+                روح الفريق ليست شيئًا يمكن للشركة أن تخلقه. الأشخاص الذين تقابلهم كل يوم هم الذين يحددون في جزء كبير منهم ما إذا كنت تريد الاستيقاظ في الصباح والذهاب إلى العمل والمضي قدمًا معًا في مستقبل شركتنا
               </div>
             </div>
           </div>
@@ -213,7 +213,7 @@
             <div class="title">We are software development experts</div>
             <div class="break mb-4"></div>
             <div class="desc">
-              who leverage technology and ask the right questions to bring you tangible results in the form of reliable, high quality, sustainable software that is delivered on time, right first time.
+              Our company is one of the best leading companies in the field of web development and design in Saudi Arabia and the Arab world. We have long experience in the field of e-marketing, web hosting and application programming for Android and iPhone
             </div>
           </div>
         </div>
@@ -225,7 +225,7 @@
             <div class="title">We build long-lasting partnerships</div>
             <div class="break mb-4"></div>
             <div class="desc">
-              through honesty, transparency and open communication. We are trusted with our clients’ business and technology problems, delighting them with our talented, agile and adaptable team.
+              Due to our efficient and quality services, we guarantee that you will reach your goals and guarantee their continuity and success
             </div>
           </div>
         </div>
@@ -237,7 +237,7 @@
             <div class="title">Working with us is like having a partner next door</div>
             <div class="break mb-4"></div>
             <div class="desc">
-              Our can-do attitude, positive atmosphere and energetic approach create a unique culture that fosters open-mindedness and drive to succeed.
+              None of us can achieve success by working alone, so our team will provide you with support and advice to ensure the success of your project
             </div>
           </div>
         </div>
@@ -313,7 +313,7 @@
         <div class="col-12 col-md-6 sub-section values__desc">
           <div class="title-4">Our values</div>
           <div class="title-5">
-            We seek to create an exceptional place to work, where every opinion matters and there are no barriers for talent to progress.
+            Our values stem from understanding the needs of our customers and providing them with high-quality, results-oriented solutions, and we are keen to provide cost-effective solutions.
           </div>
           <div class="break"></div>
           <div class="desc mt-4">
@@ -364,35 +364,36 @@
               <div class="properties__content__items-desc__item-desc__title">Quality</div>
               <div class="break"></div>
               <div class="properties__content__items-desc__item-desc__desc">
-                Quality is central to everything we do at We Work. This has been a guiding principle from our very first day. We believe that this focus on maintaining the highest quality is our core strength.
+                Quality is at the core of everything we do at We Work. This has been a guiding principle since our first day. We believe this focus on maintaining the highest quality is our core strength
+                Great website, excellent technical support and hugely time-saving management software
               </div>
             </div>
             <div v-if="passion" class="properties__content__items-desc__item-desc animate__animated animate__fadeInDown">
               <div class="properties__content__items-desc__item-desc__title">Passion</div>
               <div class="break"></div>
               <div class="properties__content__items-desc__item-desc__desc">
-                It is the people enthusiastic about their work who continually drive our company forward. We are passionate about software development and realise this through our commitment to deliver the highest standards and best possible supplier experience to our clients. We also learn foreign languages and invest our time in organising conferences.
+                In order to maintain the passion of our employees and work to produce the best they have to serve you, our employees are the ones who constantly push our company forward.
               </div>
             </div>
             <div v-if="development" class="properties__content__items-desc__item-desc animate__animated animate__fadeInDown">
               <div class="properties__content__items-desc__item-desc__title">Development</div>
               <div class="break"></div>
               <div class="properties__content__items-desc__item-desc__desc">
-                It’s what we do every day. Our people are fervent about expanding their knowledge and skills and share this with their project teams.
+                This is what we do every day. Our employees are eager to expand their knowledge and skills and share this with their project teams
               </div>
             </div>
             <div v-if="atmosphere" class="properties__content__items-desc__item-desc animate__animated animate__fadeInDown">
               <div class="properties__content__items-desc__item-desc__title">Atmosphere</div>
               <div class="break"></div>
               <div class="properties__content__items-desc__item-desc__desc">
-                We are based primarily on openness and trust in people which we believe is at the heart of a positive work environment. When we don’t invest our time in creating reliable solutions to benefit our clients, we engage ourselves in after-hours activities. One of our goals is Happy Team, that’s why we try to have a bit of fun while working too.
+                A positive atmosphere in the work environment helps to produce more and better, and a happy team means the best results, and that's why we try to have a little fun while working as well.
               </div>
             </div>
             <div v-if="team_spirit" class="properties__content__items-desc__item-desc animate__animated animate__fadeInDown">
               <div class="properties__content__items-desc__item-desc__title">Team Spirit</div>
               <div class="break"></div>
               <div class="properties__content__items-desc__item-desc__desc">
-                Team Spirit is not something that a company can just create. It is the people you meet every day that in a large part determine whether you want to get up in the morning and go to work and move forward together in the future of our company.
+                Team spirit is not something a company can create. The people you meet every day are in large part what determines whether you want to get up in the morning, go to work, and move forward together in the future of our company.
               </div>
             </div>
           </div>
