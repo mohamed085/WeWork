@@ -1,90 +1,9 @@
 <template>
   <div class="ar" v-if="getLang === 'ar'">
-    <div class="footer">
-      <div class="row">
-        <div class="col-12 col-md-5 footer-logo">
-            <img class="footer-logo__logo-site" src="../../assets/img/logo-white-2.png">
-            <span class="footer-logo__desc">الموقع موثق من قبل منصة <a href="#">معروف</a> التابعة لوزارة التجارة السعودية</span>
-            <img class="footer-logo__logo-site-2" src="../../assets/img/maroof.png">
-            <span class="footer-logo__desc">سجل تجاري رقم 4030383581</span>
-            <span class="footer-logo__desc">جميع الحقوق محفوظة لمؤسسة <router-link to="/">نحن نعمل</router-link>  @٢٠٢٢</span>
-        </div>
-
-        <div class="col-12 col-md-4 footer__site-map">
-          <div class="footer__title">معلومات عنا</div>
-          <div class="break"></div>
-          <div class="footer__desc mt-4">نحن نعمل مؤسسة سعودية تأسست عام 2019.</div>
-          <div class="footer__desc">بهدف توفير تجربة متميزة لعملائنا ، سوف ترضي رغبات عملائنا ،تماشياً مع رؤية 2030 ، كل ما تحتاجه في مكان واحد بجودة عالية.</div>
-        </div>
-
-        <div class="col-12 col-md-3 footer__contact">
-          <div class="footer__title">اتصل</div>
-          <div class="break"></div>
-          <div class="footer__contact__details">
-            <p><span>الهاتف: </span>+966 50 352 2883</p>
-            <p><span>الهاتف: </span>+20 0533516227</p>
-            <p><span>البريد الالكتروني: </span>info@we-work.pro</p>
-          </div>
-          <router-link to="/contact-us" class="footer__contact__btn">استخدم نموذج الاتصال <i class="fas fa-arrow-left"></i> </router-link>
-        </div>
-      </div>
-    </div>
   </div>
 
   <div class="en" v-else-if="getLang === 'en'">
-    <div class="footer">
-      <div class="row">
-        <div class="col-12 col-md-3 footer__site-map footer__site-map-1">
-          <div class="footer__title">Site map</div>
-          <div class="break"></div>
-          <div class="footer__items">
-            <router-link to="/" class="footer__items__item">Home</router-link>
-            <router-link to="/" class="footer__items__item">Service</router-link>
-            <router-link to="/" class="footer__items__item">Deliver</router-link>
-            <router-link to="/" class="footer__items__item">Projects</router-link>
-            <router-link to="/" class="footer__items__item">Clients</router-link>
-            <router-link to="/" class="footer__items__item">Team</router-link>
-            <router-link to="/" class="footer__items__item">Contact us</router-link>
-            <router-link to="/" class="footer__items__item">Join us</router-link>
-            <router-link to="/" class="footer__items__item">About us</router-link>
-            <router-link to="/" class="footer__items__item">Blogs</router-link>
-          </div>
-        </div>
 
-        <div class="col-12 col-md-3 footer__site-map">
-          <div class="footer__title">About us</div>
-          <div class="break"></div>
-          <div class="footer__desc mt-4">We work is a Saudi institution Created in 2019.</div>
-          <div class="footer__desc">Aiming to provide a premium experience to our customers, it will satisfy our customers' desires , In line with Vision 2030, Everything you need in one place with high quality.</div>
-        </div>
-
-        <div class="col-12 col-md-3 footer__site-map">
-          <div class="footer__title">About us</div>
-          <div class="break"></div>
-          <div class="footer__desc mt-4">We work is a Saudi institution Created in 2019.</div>
-          <div class="footer__desc">Aiming to provide a premium experience to our customers, it will satisfy our customers' desires , In line with Vision 2030, Everything you need in one place with high quality.</div>
-        </div>
-
-        <div class="col-12 col-md-3 footer__contact">
-          <div class="footer__title">Contact</div>
-          <div class="break"></div>
-          <div class="footer__contact__details">
-            <p><span>Phone: </span>+966 50 352 2883</p>
-            <p><span>Phone: </span>+20 0533516227</p>
-            <p><span>Email: </span>info@we-work.pro</p>
-          </div>
-          <router-link to="/contact-us" class="footer__contact__btn">Use contact form <i class="fas fa-arrow-right"></i> </router-link>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-2">
-      <img class="footer-2__logo-site" src="../../assets/img/logo-white-2.png">
-      <span class="footer-2__desc">The site is authenticated by <a href="#">Marouf </a> platform of the Saudi Ministry of Commerce</span>
-      <img class="footer-2__logo-site-2" src="../../assets/img/maroof.png">
-      <span class="footer-2__desc">Commercial Registration No. 4030383581</span>
-      <span class="footer-2__desc">All rights reserved to the Foundation <router-link to="/">We Work</router-link>  @2022</span>
-    </div>
   </div>
 </template>
 

@@ -55,60 +55,60 @@
 
       <div class="space"></div>
 
-      <div class="about-section facts row">
-        <div class="col-12 col-md-4 sub-section facts__title">
-          <div class="title-4">حقائق وأرقام</div>
-          <div class="title-2 mb-0">تجربتنا تجعلنا شريكًا موثوقًا به</div>
-        </div>
-        <div class="col-12 col-md-8 sub-section facts__desc">
-          <div class="row">
-            <div class="col-12 col-md-6 facts__desc__clients">
-              <div class="facts__desc__clients__content">
-                <div class="title-3 mb-0">لقد عملنا مع أكثر من </div>
-                <div class="title-3 mb-2 mt-2">200</div>
-                <div class="title-3 mb-0">عميل عالمي في أكثر من</div>
-                <div class="title-3 mb-2 mt-2">600</div>
-                <div class="title-3 mb-0">مشروع</div>
-              </div>
-              <i class="facts__desc__clients__icon fas fa-users"></i>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="row">
-                <div class="col-6 col-md-6 facts__desc__employee">
-                  <div class="desc mb-0">40%</div>
-                  <div class="desc mb-0">من أعضاء الفريق بخبرة تزيد عن 5 سنوات</div>
-                  <div class="facts__desc__employee__bg">40%</div>
-                </div>
-                <div class="col-6 col-md-6 facts__desc__employee">
-                  <div class="desc mb-0">40%</div>
-                  <div class="desc mb-0">من أعضاء الفريق بخبرة تزيد عن 5 سنوات</div>
-                  <div class="facts__desc__employee__bg">40%</div>
-                </div>
-                <div class="col-6 col-md-6 facts__desc__employee">
-                  <div class="desc mb-0">40%</div>
-                  <div class="desc mb-0">من أعضاء الفريق بخبرة تزيد عن 5 سنوات</div>
-                  <div class="facts__desc__employee__bg">40%</div>
-                </div>
-                <div class="col-6 col-md-6 facts__desc__employee">
-                  <div class="desc mb-0">40%</div>
-                  <div class="desc mb-0">من أعضاء الفريق بخبرة تزيد عن 5 سنوات</div>
-                  <div class="facts__desc__employee__bg">40%</div>
-                </div>
-                <div class="col-6 col-md-6 facts__desc__employee">
-                  <div class="desc mb-0">40%</div>
-                  <div class="desc mb-0">من أعضاء الفريق بخبرة تزيد عن 5 سنوات</div>
-                  <div class="facts__desc__employee__bg">40%</div>
-                </div>
-                <div class="col-6 col-md-6 facts__desc__employee">
-                  <div class="desc mb-0">40%</div>
-                  <div class="desc mb-0">من أعضاء الفريق بخبرة تزيد عن 5 سنوات</div>
-                  <div class="facts__desc__employee__bg">40%</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<!--      <div class="about-section facts row">-->
+<!--        <div class="col-12 col-md-4 sub-section facts__title">-->
+<!--          <div class="title-4">حقائق وأرقام</div>-->
+<!--          <div class="title-2 mb-0">تجربتنا تجعلنا شريكًا موثوقًا به</div>-->
+<!--        </div>-->
+<!--        <div class="col-12 col-md-8 sub-section facts__desc">-->
+<!--          <div class="row">-->
+<!--            <div class="col-12 col-md-6 facts__desc__clients">-->
+<!--              <div class="facts__desc__clients__content">-->
+<!--                <div class="title-3 mb-0">لقد عملنا مع أكثر من </div>-->
+<!--                <div class="title-3 mb-2 mt-2">200</div>-->
+<!--                <div class="title-3 mb-0">عميل عالمي في أكثر من</div>-->
+<!--                <div class="title-3 mb-2 mt-2">600</div>-->
+<!--                <div class="title-3 mb-0">مشروع</div>-->
+<!--              </div>-->
+<!--              <i class="facts__desc__clients__icon fas fa-users"></i>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-6">-->
+<!--              <div class="row">-->
+<!--                <div class="col-6 col-md-6 facts__desc__employee">-->
+<!--                  <div class="desc mb-0">40%</div>-->
+<!--                  <div class="desc mb-0">من أعضاء الفريق بخبرة تزيد عن 5 سنوات</div>-->
+<!--                  <div class="facts__desc__employee__bg">40%</div>-->
+<!--                </div>-->
+<!--                <div class="col-6 col-md-6 facts__desc__employee">-->
+<!--                  <div class="desc mb-0">40%</div>-->
+<!--                  <div class="desc mb-0">من أعضاء الفريق بخبرة تزيد عن 5 سنوات</div>-->
+<!--                  <div class="facts__desc__employee__bg">40%</div>-->
+<!--                </div>-->
+<!--                <div class="col-6 col-md-6 facts__desc__employee">-->
+<!--                  <div class="desc mb-0">40%</div>-->
+<!--                  <div class="desc mb-0">من أعضاء الفريق بخبرة تزيد عن 5 سنوات</div>-->
+<!--                  <div class="facts__desc__employee__bg">40%</div>-->
+<!--                </div>-->
+<!--                <div class="col-6 col-md-6 facts__desc__employee">-->
+<!--                  <div class="desc mb-0">40%</div>-->
+<!--                  <div class="desc mb-0">من أعضاء الفريق بخبرة تزيد عن 5 سنوات</div>-->
+<!--                  <div class="facts__desc__employee__bg">40%</div>-->
+<!--                </div>-->
+<!--                <div class="col-6 col-md-6 facts__desc__employee">-->
+<!--                  <div class="desc mb-0">40%</div>-->
+<!--                  <div class="desc mb-0">من أعضاء الفريق بخبرة تزيد عن 5 سنوات</div>-->
+<!--                  <div class="facts__desc__employee__bg">40%</div>-->
+<!--                </div>-->
+<!--                <div class="col-6 col-md-6 facts__desc__employee">-->
+<!--                  <div class="desc mb-0">40%</div>-->
+<!--                  <div class="desc mb-0">من أعضاء الفريق بخبرة تزيد عن 5 سنوات</div>-->
+<!--                  <div class="facts__desc__employee__bg">40%</div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
 
       <div class="about-section values row">
         <div class="col-12 col-md-6 sub-section values__desc">
@@ -254,60 +254,60 @@
 
       <div class="space"></div>
 
-      <div class="about-section facts row">
-        <div class="col-12 col-md-4 sub-section facts__title">
-          <div class="title-4">Facts & Figures</div>
-          <div class="title-2 mb-0">Our experience makes us</div>
-        </div>
-        <div class="col-12 col-md-8 sub-section facts__desc">
-          <div class="row">
-            <div class="col-12 col-md-6 facts__desc__clients">
-              <div class="facts__desc__clients__content">
-                <div class="title-3 mb-0">We have worked for</div>
-                <div class="title-3 mb-2 mt-2">200</div>
-                <div class="title-3 mb-0">global clients on over</div>
-                <div class="title-3 mb-2 mt-2">600</div>
-                <div class="title-3 mb-0">projects</div>
-              </div>
-              <i class="facts__desc__clients__icon fas fa-users"></i>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="row">
-                <div class="col-6 col-md-6 facts__desc__employee">
-                  <div class="desc mb-0">40%</div>
-                  <div class="desc mb-0">team members with over 5 years of experience</div>
-                  <div class="facts__desc__employee__bg">40%</div>
-                </div>
-                <div class="col-6 col-md-6 facts__desc__employee">
-                  <div class="desc mb-0">40%</div>
-                  <div class="desc mb-0">team members with over 5 years of experience</div>
-                  <div class="facts__desc__employee__bg">40%</div>
-                </div>
-                <div class="col-6 col-md-6 facts__desc__employee">
-                  <div class="desc mb-0">40%</div>
-                  <div class="desc mb-0">team members with over 5 years of experience</div>
-                  <div class="facts__desc__employee__bg">40%</div>
-                </div>
-                <div class="col-6 col-md-6 facts__desc__employee">
-                  <div class="desc mb-0">40%</div>
-                  <div class="desc mb-0">team members with over 5 years of experience</div>
-                  <div class="facts__desc__employee__bg">40%</div>
-                </div>
-                <div class="col-6 col-md-6 facts__desc__employee">
-                  <div class="desc mb-0">40%</div>
-                  <div class="desc mb-0">team members with over 5 years of experience</div>
-                  <div class="facts__desc__employee__bg">40%</div>
-                </div>
-                <div class="col-6 col-md-6 facts__desc__employee">
-                  <div class="desc mb-0">40%</div>
-                  <div class="desc mb-0">team members with over 5 years of experience</div>
-                  <div class="facts__desc__employee__bg">40%</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<!--      <div class="about-section facts row">-->
+<!--        <div class="col-12 col-md-4 sub-section facts__title">-->
+<!--          <div class="title-4">Facts & Figures</div>-->
+<!--          <div class="title-2 mb-0">Our experience makes us</div>-->
+<!--        </div>-->
+<!--        <div class="col-12 col-md-8 sub-section facts__desc">-->
+<!--          <div class="row">-->
+<!--            <div class="col-12 col-md-6 facts__desc__clients">-->
+<!--              <div class="facts__desc__clients__content">-->
+<!--                <div class="title-3 mb-0">We have worked for</div>-->
+<!--                <div class="title-3 mb-2 mt-2">200</div>-->
+<!--                <div class="title-3 mb-0">global clients on over</div>-->
+<!--                <div class="title-3 mb-2 mt-2">600</div>-->
+<!--                <div class="title-3 mb-0">projects</div>-->
+<!--              </div>-->
+<!--              <i class="facts__desc__clients__icon fas fa-users"></i>-->
+<!--            </div>-->
+<!--            <div class="col-12 col-md-6">-->
+<!--              <div class="row">-->
+<!--                <div class="col-6 col-md-6 facts__desc__employee">-->
+<!--                  <div class="desc mb-0">40%</div>-->
+<!--                  <div class="desc mb-0">team members with over 5 years of experience</div>-->
+<!--                  <div class="facts__desc__employee__bg">40%</div>-->
+<!--                </div>-->
+<!--                <div class="col-6 col-md-6 facts__desc__employee">-->
+<!--                  <div class="desc mb-0">40%</div>-->
+<!--                  <div class="desc mb-0">team members with over 5 years of experience</div>-->
+<!--                  <div class="facts__desc__employee__bg">40%</div>-->
+<!--                </div>-->
+<!--                <div class="col-6 col-md-6 facts__desc__employee">-->
+<!--                  <div class="desc mb-0">40%</div>-->
+<!--                  <div class="desc mb-0">team members with over 5 years of experience</div>-->
+<!--                  <div class="facts__desc__employee__bg">40%</div>-->
+<!--                </div>-->
+<!--                <div class="col-6 col-md-6 facts__desc__employee">-->
+<!--                  <div class="desc mb-0">40%</div>-->
+<!--                  <div class="desc mb-0">team members with over 5 years of experience</div>-->
+<!--                  <div class="facts__desc__employee__bg">40%</div>-->
+<!--                </div>-->
+<!--                <div class="col-6 col-md-6 facts__desc__employee">-->
+<!--                  <div class="desc mb-0">40%</div>-->
+<!--                  <div class="desc mb-0">team members with over 5 years of experience</div>-->
+<!--                  <div class="facts__desc__employee__bg">40%</div>-->
+<!--                </div>-->
+<!--                <div class="col-6 col-md-6 facts__desc__employee">-->
+<!--                  <div class="desc mb-0">40%</div>-->
+<!--                  <div class="desc mb-0">team members with over 5 years of experience</div>-->
+<!--                  <div class="facts__desc__employee__bg">40%</div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
 
       <div class="about-section values row">
         <div class="col-12 col-md-6 sub-section values__desc">

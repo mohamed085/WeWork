@@ -5,16 +5,16 @@
     <spinner class="spinner" v-if="is_loading"></spinner>
 
     <div class="mobile-apps ar" v-if="getLang === 'ar'">
-      <div class="intro">
-        <div class="intro__img">
-          <img :src="category.main_photo">
-        </div>
-        <div class="intro__title">
+      <div class="intro row">
+        <div class="intro__title col-12 col-md-6">
           <div class="title-3">{{ category.sub_category_name_ar }}</div>
           <div class="title-2">{{ category.title1_ar }}</div>
           <div class="title-2">{{ category.title2_ar }}</div>
           <div class="break mb-4"></div>
           <div class="desc">{{ category.description1_ar }}</div>
+        </div>
+        <div class="intro__img col-12 col-md-6">
+          <img :src="category.main_photo">
         </div>
       </div>
 
@@ -35,16 +35,16 @@
     </div>
 
     <div class="mobile-apps en" v-if="getLang === 'en'">
-      <div class="intro">
-        <div class="intro__img">
-          <img :src="category.main_photo">
-        </div>
-        <div class="intro__title">
+      <div class="intro row ">
+        <div class="intro__title col-12 col-md-6">
           <div class="title-3">{{ category.sub_category_name_en }}</div>
           <div class="title-2">{{ category.title1_en }}</div>
           <div class="title-2">{{ category.title2_en }}</div>
           <div class="break mb-4"></div>
           <div class="desc">{{ category.description2_en }}</div>
+        </div>
+        <div class="intro__img col-12 col-md-6">
+          <img :src="category.main_photo">
         </div>
       </div>
 
@@ -118,7 +118,7 @@ export default {
         redirect: 'follow'
       };
 
-      let url = `https://backend-elbanna.we-work.pro/api/user/get-projects/` + id
+      let url = `https://api.we-work.pro/api/user/get-projects/` + id
 
       await fetch(url, requestOptions)
           .then(response => response.json())
@@ -158,37 +158,20 @@ export default {
 }
 
 .intro {
-  position: relative;
   padding: 2rem 4rem 0;
 
   &__img {
-    display: block;
-    position: absolute;
-    top: 2%;
-    left: 0;
-    right: 50%;
-    bottom: 0;
-    z-index: -1;
 
     & img {
-      height: 100%;
-      object-fit: cover;
+      max-width: 100%;
+      max-height: 100%;
     }
   }
 
   &__title {
     padding: 4rem 0;
-    z-index: 1;
-    width: 50%;
     margin-bottom: 2rem;
   }
-}
-
-.en .intro__img {
-  top: 2%;
-  left: 50%;
-  right: 0;
-  bottom: 0;
 }
 
 .motion-graphic__items {
@@ -237,18 +220,11 @@ export default {
   .intro {
     padding: 2rem 2rem 0;
   }
-
   .intro__img {
-    width: 100%;
-    opacity: .3;
-    top: 0;
-    left: 0;
-    right: auto;
-    bottom: 0;
-  }
-
-  .intro__title {
-    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    display: none;
   }
 }
 </style>

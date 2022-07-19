@@ -91,7 +91,7 @@ export default {
         redirect: 'follow'
       };
 
-      let url = `https://backend-elbanna.we-work.pro/api/user/get-projects/` + id
+      let url = `https://api.we-work.pro/api/user/get-projects/` + id
 
       await fetch(url, requestOptions)
           .then(response => response.json())
@@ -129,7 +129,7 @@ export default {
         redirect: 'follow'
       };
 
-      let url = `https://backend-elbanna.we-work.pro/api/admin/auth/delete-project/` + id;
+      let url = `https://api.we-work.pro/api/admin/auth/delete-project/` + id;
 
       await fetch(url, requestOptions)
           .then(response => response.json())

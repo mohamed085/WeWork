@@ -217,7 +217,7 @@ export default {
         redirect: 'follow'
       };
 
-      let url = `https://backend-elbanna.we-work.pro/api/user/get-sub-category-by-id/` + id;
+      let url = `https://api.we-work.pro/api/user/get-sub-category-by-id/` + id;
 
       await fetch(url, requestOptions)
           .then(response => response.json())
@@ -268,7 +268,7 @@ export default {
         redirect: 'follow'
       };
 
-      let url = `https://backend-elbanna.we-work.pro/api/admin/auth/update-sub-category/` + this.sub_category.id
+      let url = `https://api.we-work.pro/api/admin/auth/update-sub-category/` + this.sub_category.id
       await fetch(url, requestOptions)
           .then(response => response.json())
           .then(result => {

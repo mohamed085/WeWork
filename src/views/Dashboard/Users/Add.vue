@@ -96,7 +96,7 @@ export default {
         redirect: 'follow'
       };
 
-      await fetch("https://backend-elbanna.we-work.pro/api/admin/auth/create-admin", requestOptions)
+      await fetch("https://api.we-work.pro/api/admin/auth/create-admin", requestOptions)
           .then(response => response.json())
           .then(result => {
             if (!result.status) {

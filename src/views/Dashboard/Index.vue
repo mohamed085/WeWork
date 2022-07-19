@@ -3,7 +3,7 @@
     <div class="side-bar animate__animated animate__fadeInRight" v-if="sidebar">
       <div class="side-bar__top">
         <router-link to="/">
-          <img src="../../assets/img/logo-white-2.png">
+          <img src="../../assets/img/logo_white.png">
         </router-link>
       </div>
       <div class="side-bar__items">

@@ -226,7 +226,7 @@ export default {
         redirect: 'follow'
       };
 
-      await fetch("https://backend-elbanna.we-work.pro/api/user/join-us", requestOptions)
+      await fetch("https://api.we-work.pro/api/user/join-us", requestOptions)
           .then(response => response.json())
           .then(result => {
             if (!result.status) {

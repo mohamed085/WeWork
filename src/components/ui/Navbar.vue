@@ -5,7 +5,7 @@
       <div class="navbar-2"
           :class="{sticky: scrollPosition > 120}">
         <router-link to="/" class="navbar-2__logo">
-          <img src="../../assets/img/whait-logo.png">
+          <img src="../../assets/img/logo_white.png">
         </router-link>
 
         <div class="navbar-2__content">
@@ -34,10 +34,10 @@
         </div>
       </div>
 
-      <div class="mobile-nav" v-if="mobileNav"  >
+      <div class="mobile-nav" v-if="mobileNav">
         <div class="mobile-nav__header">
           <router-link to="/" class="me-2 ms-2">
-            <img src="../../assets/img/blue-logo-2.png">
+            <img src="../../assets/img/logo_blue.png">
           </router-link>
           <i v-if="mobileNav" @click="closeMobileNav()" class="fas fa-times"></i>
         </div>
@@ -62,7 +62,7 @@
       <div class="navbar-2"
            :class="{sticky: scrollPosition > 40}">
         <router-link to="/" class="navbar-2__logo">
-          <img src="../../assets/img/whait-logo.png">
+          <img src="../../assets/img/logo_white_en.png">
         </router-link>
         <div class="navbar-2__content">
           <div class="navbar-2__content__mobile">
@@ -93,7 +93,7 @@
       <div class="mobile-nav" v-if="mobileNav">
         <div class="mobile-nav__header">
           <router-link to="/" class="me-2 ms-2">
-            <img src="../../assets/img/black-logo.png">
+            <img src="../../assets/img/logo_blue_en.png">
           </router-link>
           <i v-if="mobileNav" @click="closeMobileNav()" class="fas fa-times"></i>
         </div>
@@ -368,6 +368,21 @@ export default {
 }
 
 @include respond(tab-port) {
+  .navbar-2 {
+    display: flex;
+    justify-content: normal;
+
+    &__logo {
+      margin-left: auto;
+      width: 50%;
+    }
+  }
+
+  .en .navbar-2__logo {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
   .navbar-2__content {
     display: flex;
     align-items: center;

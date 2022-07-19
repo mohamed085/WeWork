@@ -85,7 +85,7 @@ export default {
         redirect: 'follow'
       };
 
-      await fetch("https://backend-elbanna.we-work.pro/api/admin/auth/admins", requestOptions)
+      await fetch("https://api.we-work.pro/api/admin/auth/admins", requestOptions)
           .then(response => response.json())
           .then(result => {
 
@@ -121,7 +121,7 @@ export default {
         redirect: 'follow'
       };
 
-      let url = `https://backend-elbanna.we-work.pro/api/admin/auth/delete-admin/` + id;
+      let url = `https://api.we-work.pro/api/admin/auth/delete-admin/` + id;
 
       await fetch(url, requestOptions)
           .then(response => response.json())

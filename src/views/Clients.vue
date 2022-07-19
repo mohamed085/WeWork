@@ -83,7 +83,7 @@ export default {
         redirect: 'follow'
       };
 
-      await fetch("https://backend-elbanna.we-work.pro/api/user/get-all-clients", requestOptions)
+      await fetch("https://api.we-work.pro/api/user/get-all-clients", requestOptions)
           .then(response => response.json())
           .then(result => {
 

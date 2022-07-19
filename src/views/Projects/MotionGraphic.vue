@@ -125,7 +125,7 @@ export default {
         redirect: 'follow'
       };
 
-      let url = `https://backend-elbanna.we-work.pro/api/user/get-project/` + id;
+      let url = `https://api.we-work.pro/api/user/get-project/` + id;
 
       await fetch(url, requestOptions)
           .then(response => response.json())

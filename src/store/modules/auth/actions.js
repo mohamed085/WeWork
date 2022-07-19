@@ -17,7 +17,7 @@ export default {
             redirect: 'follow'
         };
 
-        let url = "https://backend-elbanna.we-work.pro/api/admin/login"
+        let url = "https://api.we-work.pro/api/admin/login"
 
         const response = await fetch(url, requestOptions);
         const responseData = await response.json();

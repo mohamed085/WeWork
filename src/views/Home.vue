@@ -636,7 +636,7 @@ export default {
         redirect: 'follow'
       };
 
-      await fetch("https://backend-elbanna.we-work.pro/api/user/get-6-clients", requestOptions)
+      await fetch("https://api.we-work.pro/api/user/get-6-clients", requestOptions)
           .then(response => response.json())
           .then(result => {
 
@@ -667,7 +667,7 @@ export default {
         redirect: 'follow'
       };
 
-      await fetch("https://backend-elbanna.we-work.pro/api/user/get-sliders", requestOptions)
+      await fetch("https://api.we-work.pro/api/user/get-sliders", requestOptions)
           .then(response => response.json())
           .then(result => {
             if (!result.status) {

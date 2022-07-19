@@ -284,7 +284,7 @@ export default {
         redirect: 'follow'
       };
 
-      await fetch("https://backend-elbanna.we-work.pro/api/user/get-sliders", requestOptions)
+      await fetch("https://api.we-work.pro/api/user/get-sliders", requestOptions)
           .then(response => response.json())
           .then(result => {
 
@@ -327,7 +327,7 @@ export default {
         redirect: 'follow'
       };
 
-      await fetch("https://backend-elbanna.we-work.pro/api/admin/auth/update-slider/1", requestOptions)
+      await fetch("https://api.we-work.pro/api/admin/auth/update-slider/1", requestOptions)
           .then(response => response.json())
           .then(result => {
             if (!result.status) {
@@ -366,7 +366,7 @@ export default {
         redirect: 'follow'
       };
 
-      await fetch("https://backend-elbanna.we-work.pro/api/admin/auth/update-slider/2", requestOptions)
+      await fetch("https://api.we-work.pro/api/admin/auth/update-slider/2", requestOptions)
           .then(response => response.json())
           .then(result => {
             if (!result.status) {
@@ -406,7 +406,7 @@ export default {
         redirect: 'follow'
       };
 
-      await fetch("https://backend-elbanna.we-work.pro/api/admin/auth/update-slider/3", requestOptions)
+      await fetch("https://api.we-work.pro/api/admin/auth/update-slider/3", requestOptions)
           .then(response => response.json())
           .then(result => {
             if (!result.status) {

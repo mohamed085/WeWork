@@ -175,7 +175,7 @@ export default {
         redirect: 'follow'
       };
 
-      let url = `https://backend-elbanna.we-work.pro/api/user/get-project/` + id;
+      let url = `https://api.we-work.pro/api/user/get-project/` + id;
 
       await fetch(url, requestOptions)
           .then(response => response.json())
@@ -234,7 +234,7 @@ export default {
         redirect: 'follow'
       };
 
-      let url = `https://backend-elbanna.we-work.pro/api/admin/auth/update-project/` + this.app.id;
+      let url = `https://api.we-work.pro/api/admin/auth/update-project/` + this.app.id;
       await fetch(url, requestOptions)
           .then(response => response.json())
           .then(result => {

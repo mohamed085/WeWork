@@ -243,7 +243,7 @@ export default {
         redirect: 'follow'
       };
 
-      await fetch("https://backend-elbanna.we-work.pro/api/admin/auth/creare-sub-category", requestOptions)
+      await fetch("https://api.we-work.pro/api/admin/auth/creare-sub-category", requestOptions)
           .then(response => response.json())
           .then(result => {
             if (!result.status) {

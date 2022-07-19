@@ -93,7 +93,7 @@ export default {
         redirect: 'follow'
       };
 
-      await fetch("https://backend-elbanna.we-work.pro/api/admin/auth/get-all-join-us", requestOptions)
+      await fetch("https://api.we-work.pro/api/admin/auth/get-all-join-us", requestOptions)
           .then(response => response.json())
           .then(result => {
 
@@ -129,7 +129,7 @@ export default {
         redirect: 'follow'
       };
 
-      let url = `https://backend-elbanna.we-work.pro/api/admin/auth/delete-join-us/` + id;
+      let url = `https://api.we-work.pro/api/admin/auth/delete-join-us/` + id;
 
       await fetch(url, requestOptions)
           .then(response => response.json())

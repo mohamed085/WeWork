@@ -109,7 +109,7 @@ export default {
         redirect: 'follow'
       };
 
-      let url = `https://backend-elbanna.we-work.pro/api/admin/auth/get-team-member/` + id;
+      let url = `https://api.we-work.pro/api/admin/auth/get-team-member/` + id;
 
       await fetch(url, requestOptions)
           .then(response => response.json())
@@ -152,7 +152,7 @@ export default {
         redirect: 'follow'
       };
 
-      let url = `https://backend-elbanna.we-work.pro/api/admin/auth/update-team-member/` + this.item.id;
+      let url = `https://api.we-work.pro/api/admin/auth/update-team-member/` + this.item.id;
 
       await fetch(url, requestOptions)
           .then(response => response.json())
