@@ -14,7 +14,7 @@
           </div>
         </div>
         <video preload="none" playsinline="" loop="" muted="" autoplay="autoplay" class="intro__video" __idm_id__="1507329">
-          <source src="../assets/img/team.webm" type="video/webm">
+          <source src="../assets/img/team.mp4" type="video/webm">
         </video>
       </div>
 
@@ -50,7 +50,7 @@
             The team we work is characterized by specializing in the field of programming, others in the field of marketing, and others in the field of graphic design, and finally in the field of decoration. In many fields, including large and medium companies and others          </div>
         </div>
         <video preload="none" playsinline="" loop="" muted="" autoplay="autoplay" class="intro__video" __idm_id__="1507329">
-          <source src="../assets/img/team.webm" type="video/webm">
+          <source src="../assets/img/team.mp4" type="video/webm">
         </video>
       </div>
 

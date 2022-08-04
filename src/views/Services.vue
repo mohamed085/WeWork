@@ -29,9 +29,7 @@
               <div class="service__categories__category__items__item">
                 <div class="service__categories__category__items__item__content">
                   <div class="service__categories__category__items__item__front">
-                    <i class="fas fa-laptop"></i>
-                    <span class="break"></span>
-                    <span class="service__categories__category__items__item__title">المواقع الالكترونية</span>
+                    <img src="../assets/img/services/software.jpg">
                   </div>
                   <div class="service__categories__category__items__item__back">
                     <span class="service__categories__category__items__item__title">المواقع الالكترونية</span>
@@ -154,12 +152,19 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">تصميمات السوشيال ميديا</span>
+                  <span class="service__categories__category__items__item__title">تصميم هوية العلامة التجارية </span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">تصميمات السوشيال ميديا</span>
                   <span class="service__categories__category__items__item__desc">
-                    تصميماتنا قادرة على توصيل رسالتك ولفت نظر عملائك المحتملين واداه اساسيه لترويج منتجاتك
+                    هوية الشركة يعد من اشهر أنواع التصميم  لأن بالطبع لا تستطيع شركة او مؤسشة الاستغناء عن تأسيس هوية لها تميزها عن غيرها و تكون وسيط بينها و بين الجمهور المستهدف و تعرف من خلالها.
+                    <br>
+                    <span>و تتضمن</span>
+                    <ul class="mt-2 ps-4 pe-4">
+                      <li>اللوجو</li>
+                      <li>المطبوعات</li>
+                      <li>لوحات الشركة</li>
+                      <li>الكروت الشخصية</li>
+                    </ul>
                   </span>
                 </div>
               </div>
@@ -169,12 +174,20 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">الموشن جرافيك</span>
+                  <span class="service__categories__category__items__item__title">تصميم الدعاية و التسويق </span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">الموشن جرافيك</span>
                   <span class="service__categories__category__items__item__desc">
-                     تعتبر فيديوهات الموشن جرافيك من أسهل الأدوات التسويقية لعرض فكرة مشروعك/شركتك او التعريف عنه والذي يبقى في أذهان عملائك طوال الوقت
+                    غالبا يرتبط تصميم الجرافيك في اذهان الكثيرين بهذا النوع من التصميم ، التصميم من اجل الدعاية و التسويق لأن ذلك النوع من التصميم لا يمكن الاستغناء عنه ابدا ايضا.
+                    <br>
+                    <span>و تتضمن</span>
+                    <ul class="mt-2 ps-4 pe-4">
+                      <li>إعلانات المجلات والصحف .</li>
+                      <li>ملصقات ولافتات ولوحات إعلانية .</li>
+                      <li>القوائم </li>
+                      <li>إعلانات السوشيال ميديا</li>
+                      <li>بانرات و الكثير</li>
+                    </ul>
                   </span>
                 </div>
               </div>
@@ -184,13 +197,17 @@
                 <div class="service__categories__category__items__item__front">
                   <i class="fas fa-laptop"></i>
                   <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">UI/UX تصميمات</span>
+                  <span class="service__categories__category__items__item__title">تصميم واجهة المستخدم </span>
                 </div>
                 <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">UI/UX تصميمات</span>
                   <span class="service__categories__category__items__item__desc">
-                    تعتبر تجربة المستخدم الجزء الاكثر اهميه في اي مشروع نظرا لتأثيرها الكبير على كيفيه سير المشروع
-
+                    أمثلة على التصميم الجرافيكي لواجهة المستخدم
+                    <br>
+                    <ul class="mt-2 ps-4 pe-4">
+                      <li>تصميم صفحة الويب</li>
+                      <li>واجهات اللعبة (تطبيقات الألعاب) </li>
+                      <li>تصميم التطبيق</li>
+                    </ul>
                   </span>
                 </div>
               </div>
@@ -320,69 +337,6 @@
           </div>
         </div>
       </div>
-
-      <div class="strategy strategy-1 row">
-        <div class="col-md-4">
-          <div class="strategy__title">خدمات
-            <br>
-            <span>تطوير الاعمال</span>
-          </div>
-          <div class="strategy__desc">
-            نساعدك في القيام بالعمليات وتنفيذ المهام المستخدمة لإنشاء والحفاظ على نمو الأعمال والقيمة على المدى الطويل
-          </div>
-        </div>
-        <div class="col-md-8">
-          <div class="service__categories__category__items">
-            <div class="service__categories__category__items__item">
-              <div class="service__categories__category__items__item__content">
-                <div class="service__categories__category__items__item__front">
-                  <i class="fas fa-laptop"></i>
-                  <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">التنفيذ</span>
-                </div>
-                <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">التنفيذ</span>
-                  <span class="service__categories__category__items__item__desc">
-                    سوف نتعامل مع جميع جوانب التنفيذ وضمان سير العمل بشكل مستمر وسلس
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="service__categories__category__items__item">
-              <div class="service__categories__category__items__item__content">
-                <div class="service__categories__category__items__item__front">
-                  <i class="fas fa-laptop"></i>
-                  <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">التطوير</span>
-                </div>
-                <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">التطوير</span>
-                  <span class="service__categories__category__items__item__desc">
-                    لدينا فريق التطوير القادر على اكتشاف نقاط الضعف والعمل على تحسينها بطرق مدروسه ومتطوره والعمل على تطوير القوه
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="service__categories__category__items__item">
-              <div class="service__categories__category__items__item__content">
-                <div class="service__categories__category__items__item__front">
-                  <i class="fas fa-laptop"></i>
-                  <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">الاستشارات</span>
-                </div>
-                <div class="service__categories__category__items__item__back">
-                  <span class="service__categories__category__items__item__title">الاستشارات</span>
-                  <span class="service__categories__category__items__item__desc">
-                    سوف نقوم بتقييم سير العمل الخاص بك ونقدم لك أفضل الحلول التي تلبي جميع احتياجات عملك
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
     </div>
 
     <div class="services-view en" v-if="getLang === 'en'">
@@ -911,12 +865,17 @@ export default {
       width: 100%;
       backface-visibility: hidden;
       border-radius: 15px;
-      padding: 15% 5% 10%;
       display: flex;
       flex-direction: column;
     }
 
+    &__front img {
+      width: 100%;
+      height: 100%;
+    }
+
     &__back {
+      padding: 15% 5% 10%;
       transform: rotateY(180deg);
       background-color: $color-primary;
       color: $color-white;

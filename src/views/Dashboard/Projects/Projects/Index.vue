@@ -45,7 +45,7 @@ export default {
         redirect: 'follow'
       };
 
-      let url = `https://backend-elbanna.we-work.pro/api/user/get-sub-category-by-id/` + id;
+      let url = `https://api.we-work.pro/api/user/get-sub-category-by-id/` + id;
 
       await fetch(url, requestOptions)
           .then(response => response.json())

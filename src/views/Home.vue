@@ -199,7 +199,7 @@
 
             <div v-if="!is_loading && clients.length > 0" class="clients__items row">
               <div v-for="client in clients" :key="client.id"
-                   class="clients__items__item col-6 col-md-2">
+                   class="clients__items__item col-12 col-md-4">
                 <img :src="client.photo">
               </div>
             </div>
@@ -459,7 +459,7 @@
 
             <div v-if="!is_loading && clients.length > 0" class="clients__items row">
               <div v-for="client in clients" :key="client.id"
-                   class="clients__items__item col-6 col-md-2">
+                   class="clients__items__item col-12 col-md-4">
                 <img :src="client.photo">
               </div>
             </div>
@@ -870,28 +870,19 @@ export default {
       &__slide-items {
 
         &__item {
-          background-image: linear-gradient(45deg, rgba(104, 119, 132, 0.5) 1%, rgba(194, 233, 221, 0.5) 100%), linear-gradient(-45deg, rgba(217, 230, 185, 0.5) 0%, #494d71 80%);
 
-          &__content {
-            top: 0;
-            left: 0;
-            padding: 0 0 0 12%;
+          &__overlay {
 
-            &__btn a {
-              background: linear-gradient(90deg, $color-primary-dark-1, $color-primary-light);
-
-              &:hover,
-              &:active,
-              &:focus {
-                background: linear-gradient(90deg, $color-primary-light, $color-primary-dark-1);
-              }
+            &:after {
+              background-image: url(../assets/img/hero-after-en.png);
             }
           }
 
-          &__overlay {
-            background-image: url(../assets/img/hero-after-en.png);
+          &__content {
+            right: auto;
+            left: 0;
+            padding: 0 0 0 12%;
           }
-
         }
       }
     }
@@ -1172,10 +1163,18 @@ export default {
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      padding: 0 3rem;
+      height: 250px;
 
       & img {
-        height: 150px;
+        max-height: 100%;
         max-width: 100%;
+
+        &:hover {
+          transform: scale(1.2);
+        }
       }
     }
   }

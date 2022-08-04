@@ -125,7 +125,7 @@
                     </div>
                     <div class="col-12">
                       <div class="form-group form-group-btn">
-                        <button type="submit" class="form-btn">إرسال</button>
+                        <button type="submit" class="form-btn">Send</button>
                       </div>
                     </div>
                   </div>

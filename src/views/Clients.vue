@@ -30,7 +30,7 @@
 
     <div v-if="!is_loading && items.length > 0" class="clients-items row">
       <div v-for="client in items" :key="client.id"
-           class="clients-items__item col-6 col-md-3">
+           class="clients-items__item col-12 col-md-4">
         <img :src="client.photo">
       </div>
 
@@ -133,6 +133,7 @@ export default {
   display: flex;
   justify-content: center;
   margin-bottom: 10rem;
+  padding: 0 5%;
 
   &__item {
     display: flex;
@@ -140,9 +141,11 @@ export default {
     align-items: center;
     margin-bottom: 1rem;
     cursor: pointer;
+    padding: 0 3rem;
+    height: 250px;
 
     & img {
-      height: 150px;
+      max-height: 100%;
       max-width: 100%;
 
       &:hover {
@@ -158,6 +161,10 @@ export default {
   .intro .title-2,
   .intro .desc {
     width: 92%;
+  }
+
+  .clients-items__item {
+    height: 200px;
   }
 }
 </style>

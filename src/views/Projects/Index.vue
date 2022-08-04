@@ -17,7 +17,7 @@
           </div>
         </div>
         <video preload="none" playsinline="" loop="" muted="" autoplay="autoplay" class="intro__video" __idm_id__="1507329">
-          <source src="../../assets/img/Banner.webm" type="video/webm">
+          <source src="../../assets/img/projects.mp4" type="video/webm">
         </video>
       </div>
 
@@ -219,7 +219,7 @@
           </div>
         </div>
         <video preload="none" playsinline="" loop="" muted="" autoplay="autoplay" class="intro__video" __idm_id__="1507329">
-          <source src="../../assets/img/Banner.webm" type="video/webm">
+          <source src="../../assets/img/projects.mp4" type="video/webm">
         </video>
       </div>
 
@@ -1018,5 +1018,24 @@ export default {
   .main-projects {
     margin: 3rem 1rem;
   }
+
+  .mobile-apps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__app {
+      margin: 10px 10px 0;
+      padding: 0;
+      max-height: 25rem;
+      max-width: 30%;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+    }
+  }
+
 }
 </style>

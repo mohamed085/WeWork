@@ -35,7 +35,7 @@
           <div class="row">
             <div class="col-6 col-md-3 step__title">
               <div class="step__title__num">1</div>
-              <div class="title-3">المرحلة الاولي</div>
+              <div class="title-3">تصميم المشروع</div>
               <div class="break"></div>
             </div>
           </div>
@@ -57,7 +57,7 @@
                   </div>
                   <div class="step1-details__item__desc">
                     <span class="step1-details__item__desc__num">1</span>
-                    <span class="desc">بدء الاجتماع ونقل المعرفة</span>
+                    <span class="desc">الاجتماع مع الشخص المعنى لجمع أكبر قدر من المتطلبات</span>
                   </div>
                 </div>
                 <div class="col-6 col-md-3 step1-details__item">
@@ -66,7 +66,7 @@
                   </div>
                   <div class="step1-details__item__desc">
                     <span class="step1-details__item__desc__num">2</span>
-                    <span class="desc">إنشاء إدارة الاتصال</span>
+                    <span class="desc">تحديد أهداف و أغراض المشروع</span>
                   </div>
                 </div>
                 <div class="col-6 col-md-3 step1-details__item">
@@ -75,7 +75,7 @@
                   </div>
                   <div class="step1-details__item__desc">
                     <span class="step1-details__item__desc__num">3</span>
-                    <span class="desc">إعداد الجداول والخطط</span>
+                    <span class="desc">تحديد ميزانية المشروع و مدة تنفيذها</span>
                   </div>
                 </div>
                 <div class="col-6 col-md-3 step1-details__item">
@@ -84,7 +84,16 @@
                   </div>
                   <div class="step1-details__item__desc">
                     <span class="step1-details__item__desc__num">4</span>
-                    <span class="desc">اختيار أدوات التعاون</span>
+                    <span class="desc">كتابة تقريرا بمقترحات المختصين لرفع مستوي المشروع</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.4.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">5</span>
+                    <span class="desc">نحصل على الموافقة للمرحلة القادمة</span>
                   </div>
                 </div>
               </div>
@@ -98,8 +107,50 @@
           <div class="row">
             <div class="col-6 col-md-3 step__title">
               <div class="step__title__num">2</div>
-              <div class="title-3">المرحلة الثانية</div>
+              <div class="title-3">تنفيذ المشروع</div>
               <div class="break"></div>
+            </div>
+          </div>
+          <div class="step__details row">
+            <div class="col-12 step__details__desc step1-details">
+              <div class="row">
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.1.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">1</span>
+                    <span class="desc">تعيين أعضاء الفريق المناسب للتطوير</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.2.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">2</span>
+                    <span class="desc">تحليل بيانات المشروع إذا لزم الأمر</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.3.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">3</span>
+                    <span class="desc">تطوير خطة المشروع و عرضها على الشخص المعنى</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.4.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">4</span>
+                    <span class="desc">نحصل على الموافقة للمتابعة</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -111,12 +162,96 @@
           <div class="row">
             <div class="col-6 col-md-3 step__title">
               <div class="step__title__num">3</div>
-              <div class="title-3">المرحلة الثالثة</div>
+              <div class="title-3">تنفيذ المشروع</div>
               <div class="break"></div>
             </div>
           </div>
-          <div class="row">
+          <div class="step__details row">
+            <div class="col-12 step__details__desc step1-details">
+              <div class="row">
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.1.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">1</span>
+                    <span class="desc">تنظيم جميع المهام و توزيعها</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.2.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">2</span>
+                    <span class="desc">تقرير بشكل دورى للشخص المعنى</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.3.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">3</span>
+                    <span class="desc">اجتماع مع الشخص المعنى بعد انتهاء كل مرحلة من العمل لأخذ الموافقة أو الملاحظات</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.4.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">4</span>
+                    <span class="desc">الإنتهاء من جميع المراحل و رفعها للتجربة و المراجعه</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="section step">
+        <div class="row step__content">
+          <div class="row">
+            <div class="col-6 col-md-3 step__title">
+              <div class="step__title__num">4</div>
+              <div class="title-3">إنهاء المشروع</div>
+              <div class="break"></div>
+            </div>
+          </div>
+          <div class="step__details row">
+            <div class="col-12 step__details__desc step1-details">
+              <div class="row">
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.1.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">1</span>
+                    <span class="desc">اخذ الموافقة بإنهاء المشروع من الشخص المعنى بعد المراجعة و التجربة</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.2.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">2</span>
+                    <span class="desc">تسليم الشخص المعنى جميع مصادر المشروع</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.3.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">3</span>
+                    <span class="desc">اخذ تقييم من العميل</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -162,27 +297,30 @@
         </div>
       </div>
 
+      <div class="space"></div>
+      <div class="space"></div>
+
       <div class="section step">
         <div class="step-dark"></div>
         <div class="row step__content">
           <div class="row">
             <div class="col-6 col-md-3 step__title">
               <div class="step__title__num">1</div>
-              <div class="title-3">Step one</div>
+              <div class="title-3">Project design</div>
               <div class="break"></div>
             </div>
           </div>
           <div class="step__details row">
             <div class="col-12 col-md-3 step__details__title">
               <div class="desc">
-                We have robust onboarding procedures (e.g. project kick-off checklist) in place to guarantee the smooth start of your development project.
+                We have robust setup procedures (such as a project initiation checklist) to ensure a smooth start to your development project.
               </div>
               <div class="desc mt-4">
-                We’ll invest time to get to know all stakeholders on your side before the development process begins. We’ll work as one team from the very beginning.
+                We will invest the time to get to know all the stakeholders on your side before starting the development process. We will work as a team from the start.
               </div>
             </div>
             <div class="col-12 col-md-9 step__details__desc step1-details">
-              <div class="title-3">Getting started:</div>
+              <div class="title-3">Start:</div>
               <div class="row">
                 <div class="col-6 col-md-3 step1-details__item">
                   <div class="step1-details__item__img">
@@ -190,7 +328,7 @@
                   </div>
                   <div class="step1-details__item__desc">
                     <span class="step1-details__item__desc__num">1</span>
-                    <span class="desc">Kick off meeting and knowledge transfer</span>
+                    <span class="desc">Meeting with the person concerned to gather as many requirements as possible</span>
                   </div>
                 </div>
                 <div class="col-6 col-md-3 step1-details__item">
@@ -199,7 +337,7 @@
                   </div>
                   <div class="step1-details__item__desc">
                     <span class="step1-details__item__desc__num">2</span>
-                    <span class="desc">Establishing communication management</span>
+                    <span class="desc">Defining the goals and objectives of the project</span>
                   </div>
                 </div>
                 <div class="col-6 col-md-3 step1-details__item">
@@ -208,7 +346,7 @@
                   </div>
                   <div class="step1-details__item__desc">
                     <span class="step1-details__item__desc__num">3</span>
-                    <span class="desc">Preparing schedules and plans</span>
+                    <span class="desc">Determine the project budget and implementation period</span>
                   </div>
                 </div>
                 <div class="col-6 col-md-3 step1-details__item">
@@ -217,7 +355,16 @@
                   </div>
                   <div class="step1-details__item__desc">
                     <span class="step1-details__item__desc__num">4</span>
-                    <span class="desc">Choosing collaboration tools</span>
+                    <span class="desc">Writing a report on the proposals of specialists to raise the level of the project</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.4.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">5</span>
+                    <span class="desc">We get approval for the next stage</span>
                   </div>
                 </div>
               </div>
@@ -231,12 +378,51 @@
           <div class="row">
             <div class="col-6 col-md-3 step__title">
               <div class="step__title__num">2</div>
-              <div class="title-3">المرحلة الثانية</div>
+              <div class="title-3">Project execution</div>
               <div class="break"></div>
             </div>
           </div>
-          <div class="row">
-
+          <div class="step__details row">
+            <div class="col-12 step__details__desc step1-details">
+              <div class="row">
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.1.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">1</span>
+                    <span class="desc">Appointing the right team members for development</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.2.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">2</span>
+                    <span class="desc">Analyze project data if needed</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.3.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">3</span>
+                    <span class="desc">Develop a project plan and present it to the person concerned</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.4.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">4</span>
+                    <span class="desc">We get approval to continue</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -247,25 +433,108 @@
           <div class="row">
             <div class="col-6 col-md-3 step__title">
               <div class="step__title__num">3</div>
-              <div class="title-3">المرحلة الثالثة</div>
+              <div class="title-3">Project execution</div>
               <div class="break"></div>
             </div>
           </div>
-          <div class="row">
-
+          <div class="step__details row">
+            <div class="col-12 step__details__desc step1-details">
+              <div class="row">
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.1.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">1</span>
+                    <span class="desc">Organizing and distributing all tasks</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.2.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">2</span>
+                    <span class="desc">Periodically report to the person concerned</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.3.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">3</span>
+                    <span class="desc">A meeting with the person concerned after each stage of the work to take approval or feedback</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.4.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">4</span>
+                    <span class="desc">Completing all stages and submitting them for testing and review</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
+      <div class="section step">
+        <div class="row step__content">
+          <div class="row">
+            <div class="col-6 col-md-3 step__title">
+              <div class="step__title__num">4</div>
+              <div class="title-3">Project finish</div>
+              <div class="break"></div>
+            </div>
+          </div>
+          <div class="step__details row">
+            <div class="col-12 step__details__desc step1-details">
+              <div class="row">
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.1.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">1</span>
+                    <span class="desc">Obtaining approval to terminate the project from the person concerned after reviewing and testing</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.2.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">2</span>
+                    <span class="desc">Hand over to the person concerned all project resources</span>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3 step1-details__item">
+                  <div class="step1-details__item__img">
+                    <img src="../assets/img/step-1.3.jpg">
+                  </div>
+                  <div class="step1-details__item__desc">
+                    <span class="step1-details__item__desc__num">3</span>
+                    <span class="desc">Take an evaluation from the client</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="section deliver row">
         <div class="col-12 col-md-6 deliver__content">
           <div class="title-4">We Work</div>
-          <div class="title-2">Deliver your project</div>
+          <div class="title-2">Receive your project</div>
           <div class="break"></div>
           <div class="deliver__content__items">
             <span><i class="fas fa-plus"></i> Smoothly</span>
-            <span><i class="fas fa-plus"></i> On time</span>
+            <span><i class="fas fa-plus"></i> At the exact time</span>
             <span><i class="fas fa-plus"></i> Quickly</span>
           </div>
         </div>
