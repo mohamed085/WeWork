@@ -29,7 +29,7 @@
               <div class="service__categories__category__items__item">
                 <div class="service__categories__category__items__item__content">
                   <div class="service__categories__category__items__item__front">
-                    <img src="../assets/img/services/software.jpg">
+                    <img src="../assets/img/services/programming.png">
                   </div>
                   <div class="service__categories__category__items__item__back">
                     <span class="service__categories__category__items__item__title">المواقع الالكترونية</span>
@@ -42,9 +42,7 @@
               <div class="service__categories__category__items__item">
                 <div class="service__categories__category__items__item__content">
                   <div class="service__categories__category__items__item__front">
-                    <i class="fas fa-laptop"></i>
-                    <span class="break"></span>
-                    <span class="service__categories__category__items__item__title">المتاجر الالكترونيه</span>
+                    <img src="../assets/img/services/software.png">
                   </div>
                   <div class="service__categories__category__items__item__back">
                     <span class="service__categories__category__items__item__title">المتاجر الالكترونيه</span>
@@ -57,9 +55,7 @@
               <div class="service__categories__category__items__item">
                 <div class="service__categories__category__items__item__content">
                   <div class="service__categories__category__items__item__front">
-                    <i class="fas fa-laptop"></i>
-                    <span class="break"></span>
-                    <span class="service__categories__category__items__item__title">تطبيقات الجوال</span>
+                    <img src="../assets/img/services/programming(3).png">
                   </div>
                   <div class="service__categories__category__items__item__back">
                     <span class="service__categories__category__items__item__title">تطبيقات الجوال</span>
@@ -89,9 +85,7 @@
             <div class="service__categories__category__items__item">
               <div class="service__categories__category__items__item__content">
                 <div class="service__categories__category__items__item__front">
-                  <i class="fas fa-laptop"></i>
-                  <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">المواقع الالكترونية</span>
+                  <img src="../assets/img/services/programming.png">
                 </div>
                 <div class="service__categories__category__items__item__back">
                   <span class="service__categories__category__items__item__title">المواقع الالكترونية</span>
@@ -104,9 +98,7 @@
             <div class="service__categories__category__items__item">
               <div class="service__categories__category__items__item__content">
                 <div class="service__categories__category__items__item__front">
-                  <i class="fas fa-laptop"></i>
-                  <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">المتاجر الالكترونيه</span>
+                  <img src="../assets/img/services/software.png">
                 </div>
                 <div class="service__categories__category__items__item__back">
                   <span class="service__categories__category__items__item__title">المتاجر الالكترونيه</span>
@@ -119,9 +111,7 @@
             <div class="service__categories__category__items__item">
               <div class="service__categories__category__items__item__content">
                 <div class="service__categories__category__items__item__front">
-                  <i class="fas fa-laptop"></i>
-                  <span class="break"></span>
-                  <span class="service__categories__category__items__item__title">تطبيقات الجوال</span>
+                  <img src="../assets/img/services/programming(3).png">
                 </div>
                 <div class="service__categories__category__items__item__back">
                   <span class="service__categories__category__items__item__title">تطبيقات الجوال</span>
@@ -872,6 +862,7 @@ export default {
     &__front img {
       width: 100%;
       height: 100%;
+      border-radius: 15px;
     }
 
     &__back {
